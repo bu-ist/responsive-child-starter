@@ -1,5 +1,5 @@
 /*
-Theme Name: Responsive Framework Child
+Theme Name: Responsive Child Starter
 Author: Boston University Interactive Design
 Website: http://www.bu.edu/interactive-design/
 Version: 1.0.0
@@ -8,7 +8,7 @@ Template: responsive-framework
 */
 
 // Import base foundation styles
-@import 'burf';
+@import "burf-base";
 
 // Import additional theme styles. Optional.
-@import 'burf-theme';
+@import "burf-theme";
