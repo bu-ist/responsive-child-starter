@@ -1,6 +1,5 @@
-# Responsive Framework Child Theme Starter
 
-## How to Use This Repository
+# How to Use This Repository
 
 1. Download (don't clone!) the master branch of this repository to your `wp-content/themes` directory
 2. Replace all references to "responsive-child-starter" / "Responsive Child Starter" with your theme name
@@ -37,10 +36,10 @@ This will install all of your local development dependencies. These commands onl
 
 ## Theme Meta Data Checklist
 
-[ ] Is your `package.json` filled out accurately (`name`, `version`, `description`, `contributors`, `repository`)?
-[ ] Is your `css-dev/style.scss` filled out accurately (`Description`, `Version`)?
-[ ] Does your theme have a README.md file that summarizes what site it is for and what functionality it adds?
-[ ] Does your theme have a `screenshot.png` that will help identify it under Appearance > Themes?
+- [ ] Is your `package.json` filled out accurately (`name`, `version`, `description`, `contributors`, `repository`)?
+- [ ] Is your `css-dev/style.scss` filled out accurately (`Description`, `Version`)?
+- [ ] Does your theme have a README.md file that summarizes what site it is for and what functionality it adds?
+- [ ] Does your theme have a `screenshot.png` that will help identify it under Appearance > Themes?
 
 ## Updating your Theme Version
 
