@@ -1,10 +1,5 @@
 {
   "name": "responsive-child-starter",
-  "version": "1.0.0",
-  "authors": [
-    "Your Email <you@bu.edu>"
-  ],
-  "description": "A starting point for Responsive Framework child themes.",
   "dependencies": {
     "responsive-foundation": "git@github.com:bu-ist/responsive-foundation.git#1.0.0"
   }
