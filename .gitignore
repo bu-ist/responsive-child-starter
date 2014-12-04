@@ -1,4 +1,6 @@
-npm-debug.log
-node_modules
+.DS_Store
+sftp-config.json
 .sass-cache
+node_modules
+npm-debug.log
 
