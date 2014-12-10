@@ -14,8 +14,8 @@ module.exports = function(grunt) {
 			scripts: {
 				files: [
 					'bower_components/responsive-foundation/js-dev/*.js',
-					'js-dev/*.js',
-					'js/vendor/**/*.js'
+					'js-dev/**/*.js',
+					'js/**/*.js'
 				],
 				tasks: [ 'scripts' ],
 				options: {
@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 			styles: {
 				files: [
 					'bower_components/responsive-foundation/css-dev/**/*.scss',
-					'css-dev/*.scss'
+					'css-dev/**/*.scss'
 				],
 				tasks: [ 'styles' ],
 				options: {
@@ -36,8 +36,8 @@ module.exports = function(grunt) {
 		concat: {
 			scripts: {
 				src: [
-					'bower_components/responsive-foundation/js-dev/*.js',
-					'js-dev/*.js'
+					'bower_components/responsive-foundation/js-dev/**/*.js',
+					'js-dev/**/*.js'
 				],
 				dest: 'js/script.js',
 			}
@@ -48,14 +48,16 @@ module.exports = function(grunt) {
 				cwd: 'js',
 				src: [ '*.js', '!*.min.js' ],
 				dest: 'js',
-				ext: '.min.js'
+				ext: '.min.js',
+				extDot: 'last'
 			},
 			vendor: {
 				expand: true,
 				cwd: 'js/vendor',
 				src: [ '**/*.js', '!**/*.min.js' ],
 				dest: 'js/vendor',
-				ext: '.min.js'
+				ext: '.min.js',
+				extDot: 'last'
 			}
 		},
 		sass: {
@@ -119,7 +121,7 @@ module.exports = function(grunt) {
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask( 'styles',   [ 'sass' ] );
 	grunt.registerTask( 'scripts',  [ 'concat', 'uglify' ] );
-	grunt.registerTask( 'build',    [ 'styles', 'scripts' ]);
-	grunt.registerTask( 'default',  [ 'watch' ]);
+	grunt.registerTask( 'build',    [ 'styles', 'scripts' ] );
+	grunt.registerTask( 'default',  [ 'watch' ] );
 
 };
