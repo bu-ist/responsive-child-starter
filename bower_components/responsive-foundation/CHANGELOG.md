@@ -1,4 +1,8 @@
-# 0.1.2
+# 1.0.3
+
+* Fix issue with .button font-family (#7). Props ashleykolodziej.
+
+# 1.0.2
 
 * Adding push, pull, and offset classes back into grid.scss
 
