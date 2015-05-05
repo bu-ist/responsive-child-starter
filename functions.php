@@ -13,5 +13,3 @@ define( 'RESPONSIVE_THEME_VERSION', '1.0.0' );
 // Branding
 // define( 'BU_BRANDING_TYPE', 'logotype' );
 
-// Uncomment to use un-minified scripts and styles and enable source maps
-// define( 'SCRIPT_DEBUG', true );
