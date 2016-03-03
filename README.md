@@ -42,20 +42,35 @@ This will install all of your local development dependencies. These commands onl
 - [ ] Does your theme have a `screenshot.png` that will help identify it under Appearance > Themes?
 - [ ] Make sure you're pulling in the newest version of Foundation. Use the [newest release] (https://github.com/bu-ist/responsive-foundation/releases).
 
-## Busting the JS and CSS Cache (by updating your child theme's version)
+## Force CSS/JS to refresh
 
-You may have noticed this line at the top of functions.php:
+You can force your CSS and Javascript to refresh in your theme by updating your theme version. When you update your theme version, the framework uses a process called cache busting to make sure browsers know there is a new version of the CSS and Javascript available.
+
+You'll need to update the theme version in two places: `functions.php` and `package.json`.
+
+### Update the version number
+
+In `functions.php`, increment the [`RESPONSIVE_THEME_VERSION`](https://github.com/bu-ist/responsive-framework/wiki/PHP-Constants#responsive_theme_version) appropriately. For this example, we'll assume we're making a minor update from the first big release of the theme. That means we'll be going from `1.0.0` to `1.0.1`. (You can learn more about version number guidelines [here](http://semver.org/)).
 
 ```php
-define( 'RESPONSIVE_THEME_VERSION', '1.0.0' );
+define( 'RESPONSIVE_THEME_VERSION', '1.0.1' );
 ```
 
-This is used by the Framework to version static assets for cache busting (`style.css` and `script.js`).
+Update [`package.json`](https://github.com/bu-ist/responsive-child-starter/blob/master/package.json#L3 with that same number.
 
-To increment the theme version:
+```json
+"version": "1.0.1",
+```
 
-1. Set the new version in`package.json`
-2. Run the `grunt version` command
-3. Regenerate your static assets (`grunt build`)
+### Regenerate assets
+
+We'll need to run grunt after updating these files so that the new version number is applied to the CSS and Javascript. This is what will tell browsers that there is a new version available for download.
+
+1. Run the `grunt version` command
+2. Regenerate your static assets (`grunt build`)
 
 This will make sure the version change propogates to `functions.php` and `css-dev/style.scss`.
+
+### Commit and push
+
+Last step: commit and push your changes! When you're ready to release it to the world, request a deploy.
