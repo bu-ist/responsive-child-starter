@@ -40,8 +40,9 @@ This will install all of your local development dependencies. These commands onl
 - [ ] Is your `css-dev/style.scss` filled out accurately (`Description`, `Version`)?
 - [ ] Does your theme have a README.md file that summarizes what site it is for and what functionality it adds?
 - [ ] Does your theme have a `screenshot.png` that will help identify it under Appearance > Themes?
+- [ ] Make sure you're pulling in the newest version of Foundation. Use the [newest release] (https://github.com/bu-ist/responsive-foundation/releases).
 
-## Updating your Theme Version
+## Busting the JS and CSS Cache (by updating your child theme's version)
 
 You may have noticed this line at the top of functions.php:
 
