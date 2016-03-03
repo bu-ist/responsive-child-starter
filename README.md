@@ -56,7 +56,7 @@ In `functions.php`, increment the [`RESPONSIVE_THEME_VERSION`](https://github.co
 define( 'RESPONSIVE_THEME_VERSION', '1.0.1' );
 ```
 
-Update [`package.json`](https://github.com/bu-ist/responsive-child-starter/blob/master/package.json#L3 with that same number.
+Update [`package.json`](https://github.com/bu-ist/responsive-child-starter/blob/master/package.json#L3) with that same number.
 
 ```json
 "version": "1.0.1",
