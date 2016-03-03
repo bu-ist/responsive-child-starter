@@ -50,7 +50,7 @@ You'll need to update the theme version in two places: `functions.php` and `pack
 
 ### Update the version number
 
-In `functions.php`, increment the [`RESPONSIVE_THEME_VERSION`](https://github.com/bu-ist/responsive-framework/wiki/PHP-Constants#responsive_theme_version) appropriately. For this example, we'll assume we're making a minor update from the first big release of the theme. That means we'll be going from `1.0.0` to `1.0.1`. (You can learn more about version number guidelines [here](http://semver.org/)).
+In [`functions.php`](https://github.com/bu-ist/responsive-child-starter/blob/master/functions.php#L8), increment the [`RESPONSIVE_THEME_VERSION`](https://github.com/bu-ist/responsive-framework/wiki/PHP-Constants#responsive_theme_version) appropriately. For this example, we'll assume we're making a minor update from the first big release of the theme. That means we'll be going from `1.0.0` to `1.0.1`. (You can learn more about version number guidelines [here](http://semver.org/)).
 
 ```php
 define( 'RESPONSIVE_THEME_VERSION', '1.0.1' );
