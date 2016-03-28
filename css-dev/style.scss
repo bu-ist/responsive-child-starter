@@ -7,8 +7,14 @@ Description: Enter child theme description here
 Template: responsive-framework
 */
 
+// Variables to override Responsive base styles in your custom theme.
+@import "starter-base";
+
 // Import base foundation styles
 @import "burf-base";
+
+// Variables to override Responsive theme styles in your custom theme.
+@import "starter-theme";
 
 // Import additional theme styles. Optional.
 @import "burf-theme";

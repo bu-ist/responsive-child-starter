@@ -1,0 +1,341 @@
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// Responsive Child Starter Theme Variables
+//
+// These variables override the variables in burf-theme.
+// You can uncomment each variable as you need to override things there.
+// You shouldn't delete variables from this file - just leave stuff you
+// don't need commented out.
+// This makes it clear exactly what you have and haven't changed in
+// your child theme.
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// Global
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+
+// Color and Typography
+
+// $color-body-bg:                            $color-grayScale-0;
+// $fontFamily-base:                          "Benton", sans-serif;
+// $fontFamily-serif:                         "TiemposText", Georgia, serif;
+// $fontFamily-sansSerif:                     "Benton", sans-serif;
+// $fontFamily-brand:                         "Whitney SSm A", "Whitney SSm B", $fontFamily-sansSerif;
+
+// Grid
+
+// $number-columns: 									 3;
+// $margin-width: 			  					    5.2%;
+// $number-widgets-footbar: 						 $number-columns;
+// $width-sideNav:                            240px;
+// $sidebar-padding:                          0 0 0 ($margin-width - $margin-width*(1/($number-widgets-footbar)));
+// $column-paddingBottom:                     10px;
+// $column-paddingBottom-largeScreen:         35px;
+
+// Borders
+
+// $border-base:										 1px solid $color-grayScale-d;
+
+// Message
+
+// $border-message:                           $border-base;
+// $borderWidth-message:                      1px 1px 1px 5px;
+// $borderRadius-message:                     3px;
+// $padding-message:                          20px;
+// $fontSize-message:                         $fontSize-small;
+// $color-message-bg:                         $color-grayScale-f0;
+// $color-message-borderLeft:                 $color-grayScale-0;
+
+// Wordpress WYSIWYG
+
+// $margin-floatedContent: 						 10px;
+// $fontFamily-caption:                       $fontFamily-sansSerif;
+// $fontSize-caption:                         $fontSize-smaller;
+// $color-caption:                            $color-grayScale-9;
+// $borderColor-table:                        $color-grayScale-d;
+// $borderColor-table-dark:                   $color-grayScale-9;
+// $boxShadow-table:                          inset -20px 0px 20px -10px $color-grayScale-f0;
+
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// Navigation
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+
+// Masthead and Brand
+
+// $border-masthead:                          $border-base;
+// $borderWidth-masthead:                     $border-bottom;
+// $color-masthead-bg:                        $color-grayScale-f;
+// $fontFamily-brand-sponsored:               $fontFamily-brand;
+// $fontFamily-brand-unbranded:               $fontFamily-sansSerif;
+// $height-brand:                             120px;
+// $color-brand:                              $color-grayScale-0;
+
+// Primary Navigation
+
+// $borderWidth-primaryNav:                   $border-top;
+// $color-primaryNav-border:                  $color-grayScale-3;
+// $fontFamily-navigation:                    $fontFamily-sansSerif;
+// $fontSize-navigation:                      $fontSize-small;
+// $color-primaryNav-bg:                      $color-grayScale-0;
+// $color-primaryNav-dropdown-bg:             $color-grayScale-0;
+// $color-primaryNav-link:                    $color-grayScale-f;
+// $color-primaryNav-link-hover:              $color-grayScale-a;
+// $color-primaryNav-link-current:            $color-grayScale-9;
+// $color-primaryNav-dropdown-link:           $color-primaryNav-link;
+// $color-primaryNav-dropdown-link-hover:     $color-primaryNav-link-hover;
+
+// Utility Navigation
+
+// $borderWidth-utilityNav:                   $border-top;
+// $fontSize-utilityNav:                      $fontSize-smaller;
+// $color-utilityNav-link:                    $color-grayScale-7;
+// $color-utilityNav-link-hover:              $color-grayScale-0;
+// $color-utilityNav-inPrimaryNav-link:       $color-grayScale-a;
+// $color-utilityNav-inPrimaryNav-link-hover: $color-grayScale-f;
+
+// Navigation and Search Toggles
+
+// $color-navToggle:                          $color-grayScale-f;
+// $color-navToggle-hover:                    $color-grayScale-a;
+// $color-navToggle-alt:                      $color-grayScale-9;
+// $color-navToggle-alt-hover:                $color-grayScale-0;
+
+// Search
+
+// $borderWidth-quicksearch:                  $border-top;
+// $color-quicksearch-border:                 $color-grayScale-d;
+// $borderRadius-quicksearch-input:           20px 0 0 20px;
+// $borderRadius-quicksearch-button:          0 20px 20px 0;
+// $border-search:                            0;
+// $color-search-bg:                          $color-grayScale-f5;
+// $color-search-text:                        $color-grayScale-0;
+
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// Content and Templates
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+
+// All content and templates
+
+// $color-bannerContainer:                    $color-grayScale-f0;
+// $color-content-bg:                         $color-grayScale-f;
+// $color-backLink-before:                    $color-grayScale-f;
+// $backLink-before:                          "← ";
+
+// Calendar Template: Event List
+
+// $fontSize-calendar-topic:                  $fontSize-large;
+// $color-calendar-headingDateRange:          $color-grayScale-9;
+// $fontSize-calendar-eventDate:              $fontSize-medium;
+// $color-calendar-eventLink:                 $color-link;
+// $color-calendar-eventLink-hover:           $color-link;
+
+// Calendar Template: Sidebar
+
+// $fontFamily-calendarMonth-caption:         $fontFamily-sansSerif;
+// $fontSize-calendarMonth-caption:           $fontSize-medium;
+// $color-calendarMonth-caption:              $color-grayScale-7;
+// $color-calendarMonth-th-bg:                $color-grayScale-e;
+// $color-calendarMonth-th:                   $color-grayScale-0;
+// $padding-monthCalendar-cell:               4px;
+// $fontFamily-calendarMonth-cell:            $fontFamily-sansSerif;
+// $color-calendarMonth-cellLink:             $color-link;
+// $color-calendarMonth-cellLink-hover:       $color-link;
+// $color-calendarMonth-cellLinkOut-bg:       $color-grayScale-f5;
+// $color-calendarMonth-cellLinkOut:          $color-grayScale-9;
+// $color-calendarMonth-cellLinkToday-bg:     $color-grayScale-e;
+// $color-calendarMonth-cellLinkToday:        $color-grayScale-0;
+
+// Calendar Template: Single
+
+// $fontFamily-singleEvent-label:             $fontFamily-sansSerif;
+// $fontWeight-calendar-label:                700;
+// $color-calendarSingle-label:               $color-grayScale-9;
+
+// Profiles Template: List
+
+// $border-profiles:                          $border-base;
+// $borderRadius-profile-figure:              50%;
+// $fontFamily-profile-name:                  $fontFamily-sansSerif;
+// $fontSize-profile-name:                    $fontSize-medium;
+// $color-profile-name:                       $color-link;
+// $fontFamily-profile-title:                 $fontFamily-base;
+// $fontSize-profile-title:                   $fontSize-small;
+// $color-profile-title:                      $color-base;
+// $color-profile-info-label:                 $color-grayScale-a;
+
+// Profiles Template: List Mini
+
+// $color-profile-mini-border:                $color-grayScale-e;
+// $fontSize-profile-mini-name:               $fontSize-small;
+// $fontSize-profile-mini-email:              $fontSize-smaller;
+// $lineHeight-profile-mini-email:            $lineHeight-medium;
+
+
+// $fontSize-single-meta:                     $fontSize-small;
+
+// News and Archive Template: Listing
+
+// $border-news-post:                         $border-base;
+// $borderWidth-news-post:                    $border-top;
+
+// $fontFamily-news-meta:                     $fontFamily-sansSerif;
+// $fontSize-news-meta:                       $fontSize-smaller;
+// $color-news-metaEm:                        $color-grayScale-7;
+// $color-news-metaBefore:                    $color-grayScale-a;
+
+// News and Archive Template: Single
+
+// $padding-single-meta:                      20px;
+// $border-single-meta:                       $border-message;
+// $borderWidth-single-meta:                  $borderWidth-message;
+// $borderRadius-single-meta:                 $borderRadius-message;
+// $color-single-meta-bg:                     $color-grayScale-f0;
+// $color-single-meta-borderLeft:             $color-message-borderLeft;
+
+// $comment-margin:                           15px 0;
+// $comment-padding:                          0 0 0 30px;
+// $border-comment:                           $border-base;
+// $borderWidth-comment:                      $border-top;
+// $border-commentForm:                       1px solid $color-grayScale-e;
+// $borderWidth-commentForm:                  3px;
+// $fontFamily-comment:                       $fontFamily-sansSerif;
+// $color-comments:                           $color-base;
+// $color-comment-reply:                      $color-grayScale-a;
+// $color-comment-author:                     $color-grayScale-a;
+// $color-comment-authorName:                 $color-grayScale-0;
+// $color-commentForm-bg:                     $color-grayScale-f5;
+
+// Plugins and Shortcodes
+
+// $color-collapsible-after-border:           $color-grayScale-c;
+// $color-collapsible-after-border-hover:     $color-link;
+
+/// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// Widgets
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+
+// All Widgets
+
+// $widget-marginBottom:                      40px;
+// $fontSize-widget:                          $fontSize-small;
+// $lineHeight-widget:								 $lineHeight-base;
+
+// $fontFamily-widget-heading:                $fontFamily-sansSerif;
+// $fontFamily-widgetTitle:                   $fontFamily-sansSerif;
+// $border-widgetTitle:                       4px solid $color-grayScale-0;
+// $borderWidth-widgetTitle:                  0 0 4px 0;
+// $fontSize-widgetTitle:                     $fontSize-small;
+// $lineHeight-widgetTitle:                   $lineHeight-large;
+// $color-widgetTitle:                        $color-grayScale-0;
+// $widgetTitle-link-after:                   " →";
+// $color-widgetTitle-link-after:             $color-grayScale-a;
+// $color-widgetTitle-link-after-hover:       $color-grayScale-0;
+
+// $color-widget-link:                        $color-link;
+// $color-widget-link-hover:                  $color-link;
+
+// Calendar Widget
+
+// $fontFamily-widget-calendar-date:          $fontFamily-sansSerif;
+// $fontSize-widget-calendarDate:             $fontSize-smallest;
+// $lineHeight-widget-calendarDate:           $lineHeight-large;
+// $color-widget-calendarDate:                $color-grayScale-0;
+// $fontSize-widget-calendarDateDay:          $fontSize-large;
+// $color-widget-calendarDateDay:             $color-widget-calendarDate;
+// $fontSize-widget-calendarDateMonth:        $fontSize-smallest;
+// $color-widget-calendarDateMonth:           $color-widget-calendarDate;
+
+// Navigation and Menu Widgets
+
+// $border-widget-contentnav:                 $border-base;
+// $borderWidth-widget-contentnav:            $border-bottom;
+// $border-widgetList:                        $border-base;
+// $borderWidth-widgetList:                   $border-top;
+// $fontFamily-widget-contentnav:             $fontFamily-sansSerif;
+// $fontSize-widget-contentnav-link:          $fontSize-small;
+// $fontSize-widget-contentnav-nestedLink:    $fontSize-small;
+// $color-widget-contentnav:                  $color-link;
+// $color-widget-contentnav-hover:            $color-link;
+// $color-widget-contentnav-active:           $color-link-active;
+
+// BU Posts Widget
+
+// $fontSize-widget-postHeadline:             $fontSize-small;
+// $lineHeight-widget-postHeadline:           1.4;
+// $fontSize-widget-postExcerpt:              $fontSize-small;
+// $lineHeight-widget-postExcerpt:            $lineHeight-medium;
+// $fontSize-widget-postDate:                 $fontSize-smallest;
+// $fontSize-widget-postMeta:                 $fontSize-smallest;
+// $color-widget-postMeta:                    $color-grayScale-a;
+
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// Footer
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+
+// $footbar-paddingBottom:                    20px;
+// $color-footbar-bg:                         $color-grayScale-f5;
+// $color-footbar-border:                     $color-grayScale-c;
+// $border-footbar:                           1px solid $color-footbar-border;
+// $borderWidth-footbar:                      $border-top;
+// $color-footbar-container-bg:               $color-footbar-bg;
+// $color-footbar-widget-link:                $color-link;
+// $color-footbar-widget-link-hover:          $color-link;
+
+// $padding-siteFooter:                       40px 20px 5px;
+// $color-siteFooter-bg:                      $color-grayScale-0;
+// $color-siteFooter:								 $color-grayScale-f;
+// $color-siteFooter-link:							 $color-grayScale-8;
+// $color-siteFooter-link-hover:					 $color-grayScale-f;
+
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// Miscellaneous
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+
+// $image-masterPlate:         "https://www.bu.edu/cdn/images/logos/masterplate112x50.png";
+// $image-masterPlate-retina:  "https://www.bu.edu/cdn/images/logos/masterplate112x50-retina.png";
+// $image-subBrand:            "https://www.bu.edu/cdn/images/logos/subbrand49x35.png";
+// $image-subBrand-retina:     "https://www.bu.edu/cdn/images/logos/subbrand49x35-retina.png";
+// $image-searchToggle-sprite: "images/search.png";
+// $image-bumcLogo:         "https://www.bu.edu/cdn/images/logos/bumclogo96x40.png";
+// $image-bumcLogo-retina:  "https://www.bu.edu/cdn/images/logos/bumclogo96x40-retina.png";
