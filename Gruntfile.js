@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 					'bower_components/responsive-foundation/css-dev/**/*.scss',
 					'css-dev/**/*.scss'
 				],
-				tasks: [ 'styles' ],
+				tasks: [ 'lint', 'styles' ],
 				options: {
 					spawn: false,
 				}
@@ -106,6 +106,14 @@ module.exports = function(grunt) {
 				src: 'hooks/post-merge',
 				dest: '.git/hooks/post-merge'
 			}
+		},
+		sasslint: {
+			options: {
+				configFile: '.sass-lint.yml',
+				//formatter: 'html',
+				//outputFile: 'errors.html',
+			},
+				target: ['css-dev/*.scss']
 		}
 	});
 
@@ -117,11 +125,13 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-sass' );
 	grunt.loadNpmTasks( 'grunt-notify' );
 	grunt.loadNpmTasks( 'grunt-version' );
+	grunt.loadNpmTasks( 'grunt-sass-lint' );
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask( 'styles',   [ 'sass' ] );
 	grunt.registerTask( 'scripts',  [ 'concat', 'uglify' ] );
 	grunt.registerTask( 'build',    [ 'styles', 'scripts' ] );
+	grunt.registerTask( 'lint',  [ 'sasslint' ] );
 	grunt.registerTask( 'default',  [ 'watch' ] );
 
 };
