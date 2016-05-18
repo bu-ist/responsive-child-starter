@@ -130,7 +130,7 @@ module.exports = function(grunt) {
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask( 'styles',   [ 'sass' ] );
 	grunt.registerTask( 'scripts',  [ 'concat', 'uglify' ] );
-	grunt.registerTask( 'build',    [ 'styles', 'scripts' ] );
+	grunt.registerTask( 'build',    [ 'lint', 'styles', 'scripts' ] );
 	grunt.registerTask( 'lint',  [ 'sasslint' ] );
 	grunt.registerTask( 'default',  [ 'watch' ] );
 
