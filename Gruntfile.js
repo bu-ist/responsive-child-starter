@@ -27,7 +27,7 @@ module.exports = function(grunt) {
 					'bower_components/responsive-foundation/css-dev/**/*.scss',
 					'css-dev/**/*.scss'
 				],
-				tasks: [ 'lint', 'styles' ],
+				tasks: [ 'sasslint:dev', 'styles' ],
 				options: {
 					spawn: false,
 				}
@@ -108,13 +108,21 @@ module.exports = function(grunt) {
 			}
 		},
 		sasslint: {
-			options: {
-				configFile: '.sass-lint.yml',
-				//formatter: 'html',
-				//outputFile: 'errors.html',
+			dev: {
+				options: {
+					configFile: '.sass-lint.yml',
+				},
+				src: ['css-dev/*.scss'],
 			},
-				target: ['css-dev/*.scss']
-		}
+			report: {
+				options: {
+					configFile: '.sass-lint.yml',
+					formatter: 'html',
+					outputFile: 'errors.html',
+				},
+				src: ['css-dev/*.scss'],
+			},
+		},
 	});
 
 	// 3. Where we tell Grunt we plan to use this plug-in.
@@ -128,10 +136,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-sass-lint' );
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
+	//grunt.registerMultiTask( 'sasslint',   [ 'sasslint' ] );
 	grunt.registerTask( 'styles',   [ 'sass' ] );
 	grunt.registerTask( 'scripts',  [ 'concat', 'uglify' ] );
-	grunt.registerTask( 'build',    [ 'lint', 'styles', 'scripts' ] );
-	grunt.registerTask( 'lint',  [ 'sasslint' ] );
+	grunt.registerTask( 'build',    [ 'sasslint:report', 'styles', 'scripts' ] );
+	grunt.registerTask( 'lint',  [ 'sasslint:report' ] );
 	grunt.registerTask( 'default',  [ 'watch' ] );
 
 };
