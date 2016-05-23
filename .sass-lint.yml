@@ -54,28 +54,28 @@ rules:
   url-quotes: 2
   zero-unit: 2
   class-name-format:
-    - 1
+    - 2
     -
-      convention:  (^[a-z][a-zA\--Z0-9]*$) | (/^col-)
+      convention: (?!^col-)^[a-z][a-zA-Z0-9-?]*$
       convention-explanation: 'Classes may not use UPPERCASE or underscores. Additonally, overriding the col- classes is prohibited.'
       allow-leading-underscore: false
   placeholder-name-format:
-    - 1
+    - 2
     -
-      convention:  (^[a-z][a-zA\--Z0-9]*$)
+      convention:  (?!^col-)^[a-z][a-zA-Z0-9-?]*$
       convention-explanation: 'Please use camelCase and hyphenation for your placeholder naming.'
       allow-leading-underscore: false
   variable-name-format:
-    - 1
+    - 0
     -
       convention:  (^[a-z][a-zA\--Z0-9]*$)
       convention-explanation: 'Please use camelCase and hyphenation for your variable naming.'
       allow-leading-underscore: false
   id-name-format:
-    - 1
+    - 0
     -
       convention:  (^[a-z][a-zA\--Z0-9]*$)
-      convention-explanation: 'Please use camelCase and hyphenation for your variable naming.'
+      convention-explanation: 'Please use camelCase and hyphenation for your ID naming.'
       allow-leading-underscore: false
 
   # Just a warning
@@ -93,6 +93,7 @@ rules:
   # shorthand: 0
 
   # Stuff we don't care about
+  no-css-comments: 0
   final-newline: 0
   no-ids: 0
   indentation: 0
