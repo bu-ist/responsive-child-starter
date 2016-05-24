@@ -7,6 +7,13 @@
 	- bower.json
 	- functions.php
 	- css-dev/style.scss
+		-	Theme Name: Responsive Child Starter (R)
+		-	Author: Boston University Interactive Design
+		-	Website: http://www.bu.edu/interactive-design/
+		-	Version: 1.0.0
+		-	Description: Responsive theme for BU School of Education
+		-	Template: responsive-framework
+
 3. Update theme metadata (see the checklist below)
 4. Install development dependencies
 5. Run `grunt` to watch your Sass and Javascript files as you work
