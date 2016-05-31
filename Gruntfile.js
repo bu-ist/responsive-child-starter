@@ -2,7 +2,6 @@ module.exports = function(grunt) {
 
 	// 1. All configuration goes here
 	grunt.initConfig({
-
 		// 2. All functions go here.
 		watch: {
 			grunt: {
@@ -30,6 +29,13 @@ module.exports = function(grunt) {
 				tasks: [ 'styles' ],
 				options: {
 					spawn: false,
+				}
+			},
+			phplint : {
+				files : '*.php',
+				tasks : ['phplint'],
+				options : {
+					spawn : false
 				}
 			}
 		},
@@ -106,6 +112,16 @@ module.exports = function(grunt) {
 				src: 'hooks/post-merge',
 				dest: '.git/hooks/post-merge'
 			}
+		},
+		phplint: {
+			options : {
+				phpArgs : {
+					'-lf': null
+				}
+			},
+			all : {
+				src : '*.php'
+			}
 		}
 	});
 
@@ -117,11 +133,14 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-sass' );
 	grunt.loadNpmTasks( 'grunt-notify' );
 	grunt.loadNpmTasks( 'grunt-version' );
+	grunt.loadNpmTasks( 'grunt-phplint' );
+
+	// Load PHPlint tasks
+	grunt.loadTasks( 'node_modules/grunt-phplint/tasks' );
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask( 'styles',   [ 'sass' ] );
-	grunt.registerTask( 'scripts',  [ 'concat', 'uglify' ] );
+	grunt.registerTask( 'scripts',  [ 'phplint', 'concat', 'uglify' ] );
 	grunt.registerTask( 'build',    [ 'styles', 'scripts' ] );
 	grunt.registerTask( 'default',  [ 'watch' ] );
-
 };
