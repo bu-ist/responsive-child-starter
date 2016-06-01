@@ -68,3 +68,35 @@ This will make sure the version change propogates to `functions.php` and `css-de
 ### Commit and push
 
 Last step: commit and push your changes! When you're ready to release it to the world, request a deploy.
+
+## Sass Linter
+
+The child starter includes a Sass linter to help ensure your code conforms to [BU Coding Standards](https://github.com/bu-ist/coding-standards). The linter runs on the `grunt` command just before your Sass is built, and you can manually run a full report using the `grunt lint` command.
+
+### Automatic linting using `grunt`
+
+The linter will run each time you save any Sass file. If you have errors, you will need to resolve them before your Sass will build. Warnings are okay, but it's recommended you make your best effort to resolve those before code review. Messages will show in the terminal.
+
+### Run a full report using `grunt lint`
+
+You can run a full report at any time (without affecting your Sass) using the `grunt lint` command. If there are errors or warnings, a `sass-lint.html` file will appear in your `css-dev` folder. You can open this up in any browser for an easier way to view lots of errors and warnings that should be resolved, if you have them.
+
+`grunt build` will run a report as well, but will try to compile your Sass afterwards.
+
+### Troubleshooting
+
+If you get this error while running the linter:
+
+```bash
+Running "sasslint:report" (sasslint) task
+Warning: Object #<Object> has no method 'isAbsolute' Use --force to continue.
+Aborted due to warnings.
+```
+
+You'll need to update Node. Run each of the three commands below to clear your cache and install the latest stable version.
+
+```bash
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+```
