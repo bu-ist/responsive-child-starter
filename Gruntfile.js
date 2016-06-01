@@ -118,7 +118,7 @@ module.exports = function(grunt) {
 				options: {
 					configFile: '.sass-lint.yml',
 					formatter: 'html',
-					outputFile: 'errors.html',
+					outputFile: 'css-dev/sass-lint.html',
 				},
 				src: ['css-dev/*.scss'],
 			},
