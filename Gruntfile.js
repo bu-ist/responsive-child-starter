@@ -122,6 +122,15 @@ module.exports = function(grunt) {
 			all : {
 				src : '*.php'
 			}
+		},
+		phpcs: {
+			application: {
+				src: ['*.php']
+			},
+			options: {
+				bin: "node_modules/grunt-phpcs",
+				standard: 'bower_components/wpcs/WordPress/ruleset.xml'
+			}
 		}
 	});
 
@@ -134,6 +143,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-notify' );
 	grunt.loadNpmTasks( 'grunt-version' );
 	grunt.loadNpmTasks( 'grunt-phplint' );
+	grunt.loadNpmTasks( 'grunt-phpcs' );
 
 	// Load PHPlint tasks
 	grunt.loadTasks( 'node_modules/grunt-phplint/tasks' );
