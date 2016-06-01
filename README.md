@@ -7,9 +7,16 @@
 	- bower.json
 	- functions.php
 	- css-dev/style.scss
+		-	Theme Name: Responsive Child Starter (R)
+		-	Author: Boston University Interactive Design
+		-	Website: http://www.bu.edu/interactive-design/
+		-	Version: 1.0.0
+		-	Description: Responsive theme for BU School of Education
+		-	Template: responsive-framework
+
 3. Update theme metadata (see the checklist below)
 4. Install development dependencies
-5. Run `grunt` to watch your Sass and Javascript files as you work
+5. Run `grunt build` to compile your Sass and Javascript files before your initial commit
 
 Before your initial commit you should also replace this README.md with your own -- be sure to include what site the theme is for and summarize any additional functionality that your theme provides.
 
@@ -40,6 +47,7 @@ This will install all of your local development dependencies. These commands onl
 - [ ] Is your `css-dev/style.scss` filled out accurately (`Description`, `Version`)?
 - [ ] Does your theme have a README.md file that summarizes what site it is for and what functionality it adds?
 - [ ] Does your theme have a `screenshot.png` that will help identify it under Appearance > Themes?
+- [ ] Did you run `grunt build` to compile your Sass and Javascript files?
 - [ ] Make sure you're pulling in the newest version of Foundation. Use the [newest release] (https://github.com/bu-ist/responsive-foundation/releases).
 
 ## Force CSS/JS to refresh
