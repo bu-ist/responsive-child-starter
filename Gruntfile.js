@@ -32,8 +32,8 @@ module.exports = function(grunt) {
 				}
 			},
 			phplint : {
-				files : '*.php',
-				tasks : ['phplint'],
+				files : [ '**/*.php' ],
+				tasks : [ 'phplint' ],
 				options : {
 					spawn : false
 				}
@@ -120,7 +120,7 @@ module.exports = function(grunt) {
 				}
 			},
 			all : {
-				src : '*.php'
+				src : '**/*.php'
 			}
 		},
 		phpcs: {
