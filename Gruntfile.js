@@ -106,7 +106,14 @@ module.exports = function(grunt) {
 				src: 'hooks/post-merge',
 				dest: '.git/hooks/post-merge'
 			}
-		}
+		},
+		bower: {
+			install: {
+				options: {
+					targetDir: 'bower_components'
+				}
+			}
+ 		}
 	});
 
 	// 3. Where we tell Grunt we plan to use this plug-in.
@@ -117,11 +124,13 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-sass' );
 	grunt.loadNpmTasks( 'grunt-notify' );
 	grunt.loadNpmTasks( 'grunt-version' );
+	grunt.loadNpmTasks( 'grunt-bower-task' );
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
+	grunt.registerTask( 'install',  [ 'copy:hooks', 'build' ] );
 	grunt.registerTask( 'styles',   [ 'sass' ] );
 	grunt.registerTask( 'scripts',  [ 'concat', 'uglify' ] );
-	grunt.registerTask( 'build',    [ 'styles', 'scripts' ] );
-	grunt.registerTask( 'default',  [ 'watch' ] );
+	grunt.registerTask( 'build',    [ 'bower:install', 'styles', 'scripts' ] );
+	grunt.registerTask( 'default',  [ 'bower:install', 'watch' ] );
 
 };
