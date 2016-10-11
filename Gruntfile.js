@@ -31,6 +31,13 @@ module.exports = function(grunt) {
 				options: {
 					spawn: false,
 				}
+			},
+			phplint : {
+				files : [ '**/*.php' ],
+				tasks : [ 'phplint' ],
+				options : {
+					spawn : false
+				}
 			}
 		},
 		concat: {
@@ -107,6 +114,16 @@ module.exports = function(grunt) {
 				dest: '.git/hooks/post-merge'
 			}
 		},
+		phplint: {
+			options : {
+				phpArgs : {
+					'-lf': null
+				}
+			},
+			all : {
+				src : '**/*.php'
+			}
+		},
 		bower: {
 			install: {
 				options: {
@@ -124,12 +141,13 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-sass' );
 	grunt.loadNpmTasks( 'grunt-notify' );
 	grunt.loadNpmTasks( 'grunt-version' );
+	grunt.loadNpmTasks( 'grunt-phplint' );
 	grunt.loadNpmTasks( 'grunt-bower-task' );
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask( 'install',  [ 'copy:hooks', 'build' ] );
 	grunt.registerTask( 'styles',   [ 'sass' ] );
-	grunt.registerTask( 'scripts',  [ 'concat', 'uglify' ] );
+	grunt.registerTask( 'scripts',  [ 'phplint', 'concat', 'uglify' ] );
 	grunt.registerTask( 'build',    [ 'bower:install', 'styles', 'scripts' ] );
 	grunt.registerTask( 'default',  [ 'bower:install', 'watch' ] );
 
