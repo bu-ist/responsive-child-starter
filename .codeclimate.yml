@@ -50,8 +50,10 @@ engines:
     enabled: true
 ratings:
   paths:
+  - "**.css"
   - "**.inc"
   - "**.js"
+  - "**.json"
+  - "**.md"
   - "**.php"
-  - "**.css"
   - "**.scss"
