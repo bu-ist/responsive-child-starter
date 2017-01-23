@@ -3,6 +3,8 @@
  * Theme functions
  *
  * @see  https://github.com/bu-ist/responsive-framework/wiki/Starting-a-new-Child-Theme
+ *
+ * @package Responsive_Child_Starter
  */
 
 define( 'RESPONSIVE_THEME_VERSION', '1.0.0' );
