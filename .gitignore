@@ -7,3 +7,4 @@ bower_components
 .eslintignore
 .eslintrc
 .sass-lint.yml
+.scss-lint.yml

@@ -19,8 +19,8 @@ module.exports = function(grunt) {
 				],
 				tasks: [ 'scripts' ],
 				options: {
-					spawn: false,
-				},
+					spawn: false
+				}
 			},
 			styles: {
 				files: [
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 				],
 				tasks: [ 'styles' ],
 				options: {
-					spawn: false,
+					spawn: false
 				}
 			},
 			phplint : {
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 					'bower_components/responsive-foundation/js-dev/**/*.js',
 					'js-dev/**/*.js'
 				],
-				dest: 'js/script.js',
+				dest: 'js/script.js'
 			}
 		},
 		uglify: {
@@ -89,7 +89,7 @@ module.exports = function(grunt) {
 					'style.min.css': 'css-dev/style.scss',
 					'ie.min.css': 'css-dev/ie.scss'
 				}
-			},
+			}
 		},
 		version: {
 			functions: {
