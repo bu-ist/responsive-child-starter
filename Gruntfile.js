@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 				],
 				tasks: [ 'scripts' ],
 				options: {
-					spawn: false,
+					spawn: false
 				}
 			},
 			styles: {
