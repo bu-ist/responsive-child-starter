@@ -1,3 +1,4 @@
+
 /*
 Theme Name: Responsive Child Starter
 Author: Boston University Interactive Design
@@ -7,14 +8,64 @@ Description: Enter child theme description here
 Template: responsive-framework
 */
 
-// Variables to override Responsive base styles in your custom theme.
-@import "starter-base";
+// It's highly recommended you work on partials in the order they are listed here.
+// Start with variables, if they are available. After setting all variables, override with Sass.
 
-// Import base foundation styles
-@import "burf-base";
+// A note on vendor stylesheets: it's best to set these up as bower dependencies, separate
+// from your custom code, where possible.
 
-// Variables to override Responsive theme styles in your custom theme.
-@import "starter-theme";
+// =================================================================
+// Global and Base Styles
+// =================================================================
 
-// Import additional theme styles. Optional.
-@import "burf-theme";
+@import "global/config";
+// @import "global/mixins";
+// @import "global/fonts";
+// @import "global/icons";
+// @import "global/grid";
+// @import "global/typography";
+
+// =================================================================
+// Layout
+// =================================================================
+
+// @import 'layout/global';
+// @import 'layout/branding';
+// @import 'layout/navigation';
+// @import 'layout/banner';
+// @import 'layout/content';
+// @import 'layout/footer';
+
+// =================================================================
+// Shortcodes
+// =================================================================
+
+// @import 'shortcodes/collapsible';
+// @import 'shortcodes/courses';
+// @import 'shortcodes/profiles';
+
+// =================================================================
+// Widgets
+// =================================================================
+
+// @import 'widgets/global';
+// @import 'widgets/posts';
+// @import 'widgets/calendar';
+// @import 'widgets/navigation';
+// @import 'widgets/footbar';
+
+// =================================================================
+// Templates
+// =================================================================
+
+// @import 'templates/global';
+// @import 'templates/comments';//
+
+// @import 'templates/archive';
+// @import 'templates/archive-news';
+// @import 'templates/archive-profile';
+// @import 'templates/archive-calendar';//
+
+// @import 'templates/single';
+// @import 'templates/single-profile';
+// @import 'templates/single-calendar';

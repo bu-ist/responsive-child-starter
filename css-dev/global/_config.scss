@@ -1,0 +1,58 @@
+// =================================================================
+// Responsive Variables
+// =================================================================
+
+/////////////////////////// Breakpoints ////////////////////////////
+
+// $mqs: true;
+// $xs:                                       500px;
+// $sm:                                       768px;
+// $md:                                       992px;
+// $lg:                                       1200px;
+// $xl:                                       1500px;
+// $lte-ie8-target-width:                     $lg;
+
+///////////////////////// Container Sizes //////////////////////////
+
+// $container-sm:                             750px;
+// $container-md:                             970px;
+// $container-lg:                             1170px;
+
+////////////////////////// Stacking Order //////////////////////////
+
+// $z-index-content:                          $z-index-1;
+// $z-index-states:                           $z-index-3;
+// $z-index-panels:                           $z-index-5;
+// $z-index-primarynav:                       $z-index-7;
+// $z-index-overlays:                         $z-index-9;
+// $z-index-dev:                              $z-index-10;
+
+///////////////////////////// Spacing //////////////////////////////
+
+// $margin:                                   30px;
+// $margin-small:                             $margin / 2;
+// $margin-large:                             $margin * 2;
+// $padding:                                  30px;
+// $padding-small:                            $padding / 2;
+// $padding-large:                            $padding * 2;
+
+////////////////////////////// Colors //////////////////////////////
+
+// $tint-hue:                                 none;
+// $tint-saturation:                          15%;
+
+///////////////////////////// Borders //////////////////////////////
+
+// $border:                                   1px solid $color-grayscale-d;
+
+// =================================================================
+// Responsive Styles
+// =================================================================
+
+@import "normalize/import-now";
+@import "math";
+@import "burf-base/config";
+
+// =================================================================
+// Custom Styles & Variables
+// =================================================================
