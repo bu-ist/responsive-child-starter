@@ -1,0 +1,47 @@
+// =================================================================
+// Responsive Forms Variables
+// =================================================================
+
+// $font-family-button:                        $font-family-sans-serif;
+// $font-size-button:                          inherit;
+// $color-button-bg:                           $color-grayscale-e;
+// $color-button-text:                         $color-grayscale-4;
+// $margin-button:                             0 $margin-small $margin-small 0;
+// $padding-button:                            0.5em 1em;
+// $border-button:                             0;
+// $border-radius-button:                      2px;
+
+// $color-button-primary-bg:                   #0078e7;
+// $color-button-primary-text:                 $color-grayscale-f;
+
+// $font-family-form:                          $font-family-sans-serif;
+
+// $form-legend-border:                        $border;
+// $form-legend-margin:                        0 0 $margin;
+// $form-legend-padding:                       0 0 0.5em;
+
+// $form-fieldset-border:                      0;
+// $form-fieldset-margin:                      $margin 0;
+// $form-fieldset-padding:                     0;
+
+// $form-label-margin:                         0.5em 0;
+
+// $form-row-margin:                           0 0 $margin-small;
+
+// $form-input-margin:                         0 0 $margin-small;
+// $form-input-padding:                        0.5em;
+// $form-input-border:                         $border;
+// $form-input-shadow:                         inset 0 1px 3px $color-grayscale-e;
+// $form-input-border-radius:                  0;
+// $form-input-focus-shadow:                   0 0 4px 0 rgba( 18, 159, 234, 0.2 );
+// $color-input-focus-border:                  #129fea;
+
+// =================================================================
+// Responsive Forms Import
+// =================================================================
+
+@import 'burf-base/forms';
+
+// =================================================================
+// Custom Forms Styles
+// =================================================================
