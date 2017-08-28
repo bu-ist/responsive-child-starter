@@ -14,6 +14,10 @@ Template: responsive-framework
 // from your custom code, where possible.
 
 // =================================================================
+// Libraries and Dependencies
+// =================================================================
+
+// =================================================================
 // Global and Base Styles
 // =================================================================
 
@@ -28,6 +32,15 @@ Template: responsive-framework
 @import "global/forms";
 
 // =================================================================
+// Content and Shortcodes
+// =================================================================
+
+@import 'content/collapsibles';
+@import 'content/courses';
+// @import 'shortcodes/courses';
+// @import 'shortcodes/profiles';
+
+// =================================================================
 // Layout
 // =================================================================
 
@@ -37,14 +50,6 @@ Template: responsive-framework
 // @import 'layout/banner';
 // @import 'layout/content';
 // @import 'layout/footer';
-
-// =================================================================
-// Shortcodes
-// =================================================================
-
-// @import 'shortcodes/collapsible';
-// @import 'shortcodes/courses';
-// @import 'shortcodes/profiles';
 
 // =================================================================
 // Widgets
