@@ -1,0 +1,39 @@
+// =================================================================
+// Responsive Grid Variables
+// =================================================================
+
+// $grid-number-columns:                      12;
+// $grid-margin-width:                        ( $margin / $container-lg ) * 100;
+
+$grid-breakpoints: (
+	xs: 		$xs, // optional
+	sm: 		$sm, // required for the framework
+	md: 		$md, // required for the framework
+	lg: 		$lg  // optional
+);
+
+$grid-supports: (
+	margin: 		true, // optional
+	push: 		true, // required for the framework
+	pull: 		true, // required for the framework
+	offset: 		true  // optional
+);
+
+// $grid-classes:										 true;
+// $grid-container-padding:                   $padding-small;
+// $grid-container-padding-desktop:           $padding-large $padding;
+// $grid-row-margin:                          0 -#{$grid-container-padding};
+// $grid-column-padding: 0 $padding;
+
+// =================================================================
+// Responsive Grid Import
+// =================================================================
+
+@import 'burf-base/grid';
+
+// =================================================================
+// Custom Grid Styles
+//
+// Note: You should never override the grid unless you have an
+// approved reason to.
+// =================================================================

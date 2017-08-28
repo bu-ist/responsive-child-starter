@@ -1,0 +1,58 @@
+// =================================================================
+// Responsive Typography Variables
+// =================================================================
+
+// $font-family-serif:                         "TiemposText", Georgia, serif;
+// $font-family-sans-serif:                    "Benton-Sans", "Helvetica", sans-serif;
+// $font-family-monospace:                     "Consolas", "Liberation Mono", Courier, monospace;
+// $font-family-base:                          $font-family-sans-serif;
+// $font-margin-base:                          0 0 1.5em 0;
+
+// $font-family-heading:                       $font-family-sans-serif;
+// $color-heading:                             $color-grayscale-0;
+// $color-heading-small:                       $color-grayscale-9;
+// $min-size-headings:                         $font-size-base;
+// $max-size-headings:                         55px;
+// $max-size-headings-mobile:                  36px;
+// $min-line-height:                           1.15;
+// $max-line-height:                           $line-height-base;
+// $heading-growth-rate:                       3.5;
+
+/// Overrides invidividual font size values and allows you to create your
+/// own custom values and placeholders by redeclaring values you want
+/// to override and adding new values here.
+/// For exmaple, you may want to create %font-size-caption, as below:
+
+// $font-styles-theme: (
+// 	font-size-caption: (
+// 	  	font-size-mobile: 14px,
+// 	  	font-size-desktop: 18px,
+// 		line-height: 1.3,
+// 	),
+// );
+
+// $color-link:                                #0f69d7;
+// $color-link-visited:                        #7337af;
+// $color-link-active:                         $color-grayscale-0;
+
+// $font-padding-code:                         0.2em 0.4em;
+// $font-margin-code:                          $margin 0;
+// $color-code:                                $color-grayscale-7;
+// $color-code-bg:                             $color-grayscale-f5;
+// $border-code:                               $border;
+
+// $font-margin-blockquote:                    1em $margin-large;
+
+// $font-margin-list:                          $font-margin-base;
+// $font-padding-list:                         0 0 0 40px;
+// $font-margin-dd:                            0 0 0 $margin;
+
+// =================================================================
+// Responsive Typography Import
+// =================================================================
+
+@import 'burf-base/typography';
+
+// =================================================================
+// Custom Typography Styles
+// =================================================================
