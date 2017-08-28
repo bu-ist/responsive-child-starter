@@ -13,6 +13,13 @@ Template: responsive-framework
 // A note on vendor stylesheets: it's best to set these up as bower dependencies, separate
 // from your custom code, where possible.
 
+// If you don't see a partial you need here, don't hesitate to add it! Think carefully about
+// how much of the site your new partial will effect. If it affects the whole site - it's
+// global, and it should go at the top. If it only affects a single template, it's probably
+// very specific, and should go at the bottom. If it's content that could show up on several
+// templates, it probably belongs somewhere in the middle. If you need to override something
+// that's already here, make sure your custom partial comes after the partial you want to override.
+
 // =================================================================
 // Libraries and Dependencies
 // =================================================================
@@ -46,6 +53,16 @@ Template: responsive-framework
 @import 'profiles/profile-format-mini';
 
 // =================================================================
+// Widgets
+// =================================================================
+
+@import 'widgets/widgets';
+// @import 'widgets/posts';
+// @import 'widgets/calendar';
+// @import 'widgets/navigation';
+// @import 'widgets/footbar';
+
+// =================================================================
 // Layout
 // =================================================================
 
@@ -55,16 +72,6 @@ Template: responsive-framework
 // @import 'layout/banner';
 // @import 'layout/content';
 // @import 'layout/footer';
-
-// =================================================================
-// Widgets
-// =================================================================
-
-// @import 'widgets/global';
-// @import 'widgets/posts';
-// @import 'widgets/calendar';
-// @import 'widgets/navigation';
-// @import 'widgets/footbar';
 
 // =================================================================
 // Templates

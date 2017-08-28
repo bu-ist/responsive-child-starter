@@ -1,0 +1,31 @@
+// =================================================================
+// Responsive Widgets Variables
+// =================================================================
+
+// $widget-margin-bottom:                      $margin;
+
+// $font-family-widget-title:                  $font-family-sans-serif;
+// $border-widget-title:                       $border;
+// $border-width-widget-title:                 0 0 4px 0;
+// $color-widget-title:                        $color-grayscale-0;
+
+// $widget-title-link-after:                   " →";
+// $color-widget-title-link-after:             currentColor;
+// $color-widget-title-link-after-hover:       $color-grayscale-0;
+
+// $font-family-widget-heading:                $font-family-sans-serif;
+
+// $color-widget-link:                         $color-link;
+// $color-widget-link-hover:                   $color-link;
+
+// $border-widget-list:                        $border;
+
+// =================================================================
+// Responsive Widgets Import
+// =================================================================
+
+@import "burf-theme/widgets/widgets";
+
+// =================================================================
+// Custom Widgets Styles
+// =================================================================
