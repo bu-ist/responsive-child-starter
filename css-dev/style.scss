@@ -67,8 +67,8 @@ Template: responsive-framework
 // =================================================================
 
 @import 'layout/branding';
-// @import 'layout/navigation';
-// @import 'layout/banner';
+@import 'layout/navigation';
+@import 'layout/banner';
 // @import 'layout/content';
 // @import 'layout/footer';
 
