@@ -76,8 +76,8 @@ Template: responsive-framework
 // Templates
 // =================================================================
 
-// @import 'templates/global';
-// @import 'templates/comments';//
+@import "burf-theme/news/base";
+@import "burf-theme/news/comments";
 
 // @import 'templates/archive';
 // @import 'templates/archive-news';
