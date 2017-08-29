@@ -1,6 +1,6 @@
 {
 	"name": "responsive-child-starter",
 	"dependencies": {
-		"responsive-foundation": "git@github.com:bu-ist/responsive-foundation.git#master"
+		"responsive-foundation": "git@github.com:bu-ist/responsive-foundation.git#develop"
 	}
 }
