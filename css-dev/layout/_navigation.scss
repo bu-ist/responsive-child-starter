@@ -1,0 +1,33 @@
+// =================================================================
+// Responsive Branding Variables
+//
+// Generally speaking, you shouldn't change any of these settings
+// except for color, height, and the unbranded font family. All
+// other changes require approval from your creative director.
+// =================================================================
+
+// $font-family-brand:                         "Whitney SSm A", "Whitney SSm B", $font-family-sans-serif;
+// $font-family-brand-sponsored:               $font-family-brand;
+// $font-family-brand-unbranded:               $font-family-sans-serif;
+
+// $color-brand:                               $color-grayscale-0;
+// $color-unbranded:                           #c00;
+
+// $height-brand:                              120px;
+
+// $image-masterplate:                         "https://www.bu.edu/cdn/images/logos/masterplate112x50.png";
+// $image-masterplate-retina:                  "https://www.bu.edu/cdn/images/logos/masterplate112x50-retina.png";
+// $image-subbrand:                            "https://www.bu.edu/cdn/images/logos/subbrand49x35.png";
+// $image-subbrand-retina:                     "https://www.bu.edu/cdn/images/logos/subbrand49x35-retina.png";
+// $image-bumclogo:                            "https://www.bu.edu/cdn/images/logos/bumclogo96x40.png";
+// $image-bumclogo-retina:                     "https://www.bu.edu/cdn/images/logos/bumclogo96x40-retina.png";
+
+// =================================================================
+// Responsive Branding Import
+// =================================================================
+
+@import "burf-theme/layout/branding";
+
+// =================================================================
+// Custom Branding Styles
+// =================================================================
