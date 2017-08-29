@@ -85,11 +85,8 @@ Template: responsive-framework
 @import "burf-theme/calendar/calendar-archive";
 @import "burf-theme/profiles/profile-archive";
 
-// @import 'templates/archive';
-// @import 'templates/archive-news';
-// @import 'templates/archive-profile';
-// @import 'templates/archive-calendar';//
+// Single Templates
 
-// @import 'templates/single';
-// @import 'templates/single-profile';
-// @import 'templates/single-calendar';
+@import "burf-theme/news/single";
+@import "burf-theme/calendar/calendar-single";
+@import "burf-theme/profiles/profile-single";
