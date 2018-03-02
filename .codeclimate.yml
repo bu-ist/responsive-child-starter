@@ -1,22 +1,27 @@
 ---
 exclude_paths:
-- tests/
-- node_modules/
-- languages/
-- vendor/
 - bower_components/
 - js/vendor/
-- ".sass-cache/"
+- languages/
+- node_modules/
+- tests/
+- vendor/
+- "**.css"
 - "*.min.css"
 - "*.min.js"
-- "**.css"
+- "js/script.js"
+- ".sass-cache/"
 
 prepare:
   fetch:
   - url: "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/.scss-lint-r-2.x.yml"
     path: ".scss-lint.yml"
+  - url: "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/phpcs-themes.xml"
+    path: "phpcs.xml"
   - "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/.eslintrc"
   - "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/.eslintignore"
+  - "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/.mdlrc"
+  - "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/markdown.rb"
 
 engines:
   csslint:
@@ -27,6 +32,8 @@ engines:
       languages:
       - javascript
       - php
+    exclude_paths:
+      - "Gruntfile.js"
   eslint:
     enabled: true
     channel: eslint-3
@@ -38,7 +45,7 @@ engines:
     enabled: true
     config:
       file_extensions: php
-      standard: WordPress
+      standard: "phpcs.xml"
       ignore_warnings: false
       encoding: utf-8
   phpmd:
