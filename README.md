@@ -1,4 +1,3 @@
-
 # How to Use This Repository
 
 1. Download (don't clone!) the master branch of this repository to your `wp-content/themes`
