@@ -11,7 +11,7 @@
     - css-dev/style.scss
       - Theme Name: Responsive Child Starter (R)
       - Author: Boston University Interactive Design
-      - Website: http://www.bu.edu/interactive-design/
+      - Website: [http://www.bu.edu/interactive-design/](http://www.bu.edu/interactive-design/)
       - Version: 1.0.0
       - Description: Responsive theme for BU School of Education
       - Template: responsive-framework
