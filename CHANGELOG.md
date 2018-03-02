@@ -2,4 +2,4 @@
 
 ## Unreleased
 
-* Added `CONTRIBUTING.md` and `CHANGELOG.md` files.
+- Added `CONTRIBUTING.md` and `CHANGELOG.md` files.
