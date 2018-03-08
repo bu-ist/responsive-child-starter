@@ -1,0 +1,54 @@
+// =================================================================
+// Responsive Content Area Variables
+// =================================================================
+
+/// The number of columns you would like to use in your layout.
+/// This controls the width of the content area vs. the sidebar.
+/// By default, setting this to 3 will make the sidebar take up 1 column,
+/// and the content area 2 columns.
+/// If you were to set this to 4, the sidebar would take up 1/4 of the space,
+/// while the content area would take up 3/4 of the space.
+/// By default, the number of supported widgets in your footer will match this number.
+/// @group grid
+/// @access public
+/// @since 1.2.0
+
+// $number-columns:                            3;
+
+/// Sets the margin width for content and footbar widgets.
+/// @group grid
+/// @access public
+/// @since 1.2.0
+
+// $margin-width:                              5.2%;
+
+/// Controls the background color of the content.
+/// @group content
+/// @access public
+/// @since 1.0.0
+
+// $color-content-bg:                          $color-grayscale-f;
+
+/// The amount of padding to add to columns on mobile.
+/// @group grid
+/// @access public
+/// @since 1.2.0
+
+// $column-padding-bottom:                     10px;
+
+/// The amount of padding to add to columns on desktop.
+/// @group grid
+/// @access public
+/// @since 1.2.0
+
+// $column-padding-bottom-large-screen:        35px;
+
+// =================================================================
+// Responsive Content Area Import
+// =================================================================
+
+@import "burf-theme/layout/content-area";
+
+// =================================================================
+// Custom Content Area Styles
+// =================================================================

@@ -1,0 +1,29 @@
+// =================================================================
+// Responsive Profiles Format - Mini Variables
+// =================================================================
+
+/// Controls the color of the border on the mini profile format
+/// in the profiles shortcode.
+/// @group profiles
+/// @access public
+/// @since 1.0.0
+
+// $color-profile-mini-border:                 $color-grayscale-e;
+
+/// Controls the number of profiles in a row in the mini format.
+/// Kicks in at the small breakpoint.
+/// @group profiles
+/// @access public
+/// @since 2.0.0
+
+// $profiles-mini-cols-sm:			              2;
+
+// =================================================================
+// Responsive Profiles Format - Mini Import
+// =================================================================
+
+@import "burf-theme/profiles/profile-format-mini";
+
+// =================================================================
+// Custom Profiles Format - Mini Styles
+// =================================================================

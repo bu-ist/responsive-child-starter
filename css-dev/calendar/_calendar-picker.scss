@@ -1,0 +1,31 @@
+// =================================================================
+// Responsive Calendar Widget Variables
+// =================================================================
+
+// $font-family-calendar-month-caption:       $font-family-sans-serif;
+// $color-calendar-month-caption:             $color-grayscale-7;
+//
+// $color-calendar-month-th-bg:               $color-grayscale-e;
+// $color-calendar-month-th:                  $color-grayscale-0;
+//
+// $padding-calendar-month-cell:              0.25em;
+// $font-family-calendar-month-cell:          $font-family-sans-serif;
+//
+// $color-calendar-month-link:                $color-link;
+// $color-calendar-month-link-hover:          $color-link;
+//
+// $color-calendar-month-link-out-bg:         $color-grayscale-f5;
+// $color-calendar-month-link-out:            $color-grayscale-9;
+//
+// $color-calendar-month-link-today-bg:       $color-grayscale-e;
+// $color-calendar-month-link-today:          $color-grayscale-0;
+
+// =================================================================
+// Responsive Calendar Widget Import
+// =================================================================
+
+@import "burf-theme/calendar/calendar-picker";
+
+// =================================================================
+// Custom Calendar Widget Styles
+// =================================================================

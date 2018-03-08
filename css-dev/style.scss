@@ -7,14 +7,86 @@ Description: Enter child theme description here
 Template: responsive-framework
 */
 
-// Variables to override Responsive base styles in your custom theme.
-@import "starter-base";
+// It's highly recommended you work on partials in the order they are listed here.
+// Start with variables, if they are available. After setting all variables, override with Sass.
 
-// Import base foundation styles
-@import "burf-base";
+// A note on vendor stylesheets: it's best to set these up as bower dependencies, separate
+// from your custom code, where possible.
 
-// Variables to override Responsive theme styles in your custom theme.
-@import "starter-theme";
+// If you don't see a partial you need here, don't hesitate to add it! Think carefully about
+// how much of the site your new partial will effect. If it affects the whole site - it's
+// global, and it should go at the top. If it only affects a single template, it's probably
+// very specific, and should go at the bottom. If it's content that could show up on several
+// templates, it probably belongs somewhere in the middle. If you need to override something
+// that's already here, make sure your custom partial comes after the partial you want to override.
 
-// Import additional theme styles. Optional.
-@import "burf-theme";
+// =================================================================
+// Libraries and Dependencies
+// =================================================================
+
+// =================================================================
+// Global and Base Styles
+// =================================================================
+
+@import "global/config";
+@import "global/mixins";
+@import "global/fonts";
+@import "global/icons";
+@import "global/normalize";
+@import "global/grid";
+@import "global/typography";
+@import "global/tables";
+@import "global/forms";
+
+// =================================================================
+// Content and Shortcodes
+// =================================================================
+
+@import 'content/collapsibles';
+@import 'content/courses';
+@import 'content/galleries';
+@import 'content/slideshows';
+@import 'content/wordpress-editor';
+@import 'profiles/profile-format-default';
+@import 'profiles/profile-format-basic';
+@import 'profiles/profile-format-advanced';
+@import 'profiles/profile-format-mini';
+
+// =================================================================
+// Widgets
+// =================================================================
+
+@import 'widgets/widgets';
+@import 'calendar/widget-calendar';
+@import 'calendar/calendar-picker';
+@import 'widgets/widget-navigation';
+@import 'widgets/widget-posts';
+
+// =================================================================
+// Layout
+// =================================================================
+
+@import 'layout/branding';
+@import 'layout/navigation';
+@import 'layout/banner';
+@import 'layout/content-area';
+@import 'layout/footer';
+
+// =================================================================
+// Templates
+// =================================================================
+
+@import "burf-theme/news/base";
+@import "burf-theme/news/comments";
+
+// Archive Templates
+
+@import "burf-theme/news/archive";
+@import "burf-theme/calendar/calendar-archive";
+@import "burf-theme/profiles/profile-archive";
+
+// Single Templates
+
+@import "burf-theme/news/single";
+@import "burf-theme/calendar/calendar-single";
+@import "burf-theme/profiles/profile-single";

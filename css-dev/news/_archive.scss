@@ -1,0 +1,52 @@
+// =================================================================
+// Responsive Post Archive Variables
+// =================================================================
+
+/// Controls the shape used in "back" links, such as the links you
+/// see at the bottom of the page when viewing a single profile.
+/// By default, this is an arrow.
+/// @group content
+/// @access public
+/// @since 1.0.0
+
+// $back-link-before:                          "← ";
+
+/// Controls the color of the arrow in "back" links, such as the links you
+/// see at the bottom of the page when viewing a single profile.
+/// @group content
+/// @access public
+/// @since 1.0.0
+
+// $color-back-link-before:                    $color-grayscale-f;
+
+/// Controls the border style between posts on post listing templates.
+/// @group news
+/// @access public
+/// @since 1.0.0
+
+// $border-news-post:                          $border;
+
+/// Controls the color of the separators between metadata.
+/// @group news
+/// @access public
+/// @since 1.0.0
+
+// $color-news-meta-em:                        $color-grayscale-7;
+
+/// Controls the shape of the separators between metadata.
+/// By default, this is set to a dot.
+/// @group news
+/// @access public
+/// @since 1.0.0
+
+// $color-news-meta-before:                    $color-grayscale-a;
+
+// =================================================================
+// Responsive Post Archive Import
+// =================================================================
+
+@import "burf-theme/news/archive";
+
+// =================================================================
+// Custom Post Archive Styles
+// =================================================================

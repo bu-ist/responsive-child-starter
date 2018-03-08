@@ -1,0 +1,108 @@
+// =================================================================
+// Responsive Grid Variables
+// =================================================================
+
+/// The number of columns you would like in your grid.
+/// To use styles in burf-theme, you must set this to a number that
+/// is divisible by 2, 3, and 4.
+/// @group grid
+/// @access public
+/// @since 1.2.0
+
+// $grid-number-columns:                      12;
+
+/// The percentage you'd like a margin to take up on grid items, if you
+/// are using margins on grid items.
+/// By default, this will attempt to reproduce the default margin on a
+/// large screen in a full-width container. If you plan to use grids include
+/// a smaller container, you may need to adjust this.
+/// @group grid
+/// @access public
+/// @since 1.2.0
+
+// $grid-margin-width:                        ( $margin / $container-lg ) * 100;
+
+/// Choose which breakpoints you want grid classes to support.
+/// Small (sm) and medium (md) are required, everything else is optional.
+/// @group grid
+/// @access public
+/// @since 1.2.0
+
+$grid-breakpoints: (
+	xs: 		$xs, // optional
+	sm: 		$sm, // required for the framework
+	md: 		$md, // required for the framework
+	lg: 		$lg  // optional
+);
+
+/// Determines which classes to calculate and print for the theme.
+/// By default, all are on so clients can freely use these in custom CSS.
+/// However, you may choose to only support the ones you like in a custom theme.
+/// @group grid
+/// @access public
+/// @since 2.0.0
+
+$grid-supports: (
+	margin: 		true, // optional
+	push: 		true, // required for the framework
+	pull: 		true, // required for the framework
+	offset: 		true  // optional
+);
+
+/// Choose whether or not to print the numeric grid classes (.col-sm-5). Optional.
+/// Note that friendly placeholders (.col-quarter, .col-sm-quarter) will always print.
+/// You may wish to disable these on custom themes.
+/// @group grid
+/// @access public
+/// @since 1.2.0
+
+// $grid-classes:										 true;
+
+/// The amount of padding to put on the content container.
+/// @group grid
+/// @access public
+/// @since 1.0.0
+
+// $grid-container-padding:                   $padding-small;
+
+/// The amount of padding to put on the content container
+/// on desktop.
+/// @group grid
+/// @access public
+/// @since 1.0.0
+
+// $grid-container-padding-desktop:           $padding-large $padding;
+
+/// Controls the margin on rows in the grid.
+/// By default, this will attempt to "pull" grid items out
+/// by the same amount as their margin, Boostrap-style.
+/// @group grid
+/// @access public
+/// @since 1.0.0
+
+// $grid-row-margin:                          0 -#{$grid-container-padding};
+
+/// Controls the padding on child items of the grid.
+/// On non-margin classes, this will act like a "margin",
+/// putting space between grid items, Boostrap-style.
+/// If you need to use the padding for something else, like
+/// if you have a background color on your grid item,
+/// use the margin classes.
+/// @group grid
+/// @access public
+/// @since 1.0.0
+
+// $grid-column-padding:                      0 $padding;
+
+// =================================================================
+// Responsive Grid Import
+// =================================================================
+
+@import 'burf-base/grid/package';
+
+// =================================================================
+// Custom Grid Styles
+//
+// Note: You should never override the grid unless you have an
+// approved reason to.
+// =================================================================

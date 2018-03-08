@@ -1,0 +1,56 @@
+// =================================================================
+// Responsive Normalizing Variables
+// =================================================================
+
+/// Controls the default font used across the site.
+/// Affects body text and anything else that isn't
+/// specifically overridden.
+/// @group global
+/// @access public
+/// @since 1.0.0
+
+// $font-family-base:                          "TiemposText", Georgia, serif;
+
+/// Controls the default font size used across the site.
+/// Affects body text and anything else that isn't
+/// specifically overridden.
+/// @group global
+/// @access public
+/// @since 1.0.0
+
+// $font-size-base:                            18px;
+
+/// Controls the default line height used across the site.
+/// Affects body text and anything else that isn't
+/// specifically overridden.
+/// @group global
+/// @access public
+/// @since 1.0.0
+
+// $line-height-base:                          1.6;
+
+/// Controls the default color used for text across the site.
+/// Affects body text and anything else that isn't
+/// specifically overridden.
+/// @group global
+/// @access public
+/// @since 1.0.0
+
+// $color-base:                                $color-grayscale-5;
+
+/// Base margin for the section tag.
+/// @group global
+/// @access public
+/// @since 2.0.0
+
+// $margin-section:                            $margin-large 0 0;
+
+// =================================================================
+// Responsive Normalizing Styles
+// =================================================================
+
+@import 'burf-base/normalize';
+
+// =================================================================
+// Custom Normalizing Styles
+// =================================================================

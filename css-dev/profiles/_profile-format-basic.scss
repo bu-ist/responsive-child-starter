@@ -1,0 +1,20 @@
+// =================================================================
+// Responsive Profiles Format - Basic Variables
+// =================================================================
+
+/// Adjusts the size of the basic profile photo.
+/// @group profiles
+/// @access public
+/// @since 2.0.0
+
+// $profile-photo-basic-size:                  50px;
+
+// =================================================================
+// Responsive Profiles Format - Basic Import
+// =================================================================
+
+@import "burf-theme/profiles/profile-format-basic";
+
+// =================================================================
+// Custom Profiles Format - Basic Styles
+// =================================================================

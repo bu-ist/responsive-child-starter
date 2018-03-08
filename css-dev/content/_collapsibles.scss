@@ -1,0 +1,34 @@
+// =================================================================
+// Responsive Collapsibles Variables
+// =================================================================
+
+/// Controls the color of icons on collapsibles.
+/// @group content
+/// @access public
+/// @since 2.0.0
+
+// $color-collapsible-icon:                   $color-icons;
+
+/// Controls the color of icons on collapsibles when you hover.
+/// @group content
+/// @access public
+/// @since 2.0.0
+
+// $color-collapsible-icon-hover:             $color-link;
+
+/// Controls the border between collapsibles.
+/// @group content
+/// @access public
+/// @since 2.0.0
+
+// $border-collapsible:                       $border;
+
+// =================================================================
+// Responsive Collapsibles Import
+// =================================================================
+
+@import "burf-theme/content/collapsibles";
+
+// =================================================================
+// Custom Collapsibles Styles
+// =================================================================
