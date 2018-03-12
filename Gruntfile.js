@@ -79,7 +79,7 @@ module.exports = function(grunt) {
 			},
 			devl: {
 				options: {
-					style: 'expanded',
+					style: 'expanded'
 				},
 				files: {
 					'style.css': 'css-dev/style.scss',
