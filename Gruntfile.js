@@ -132,7 +132,7 @@ module.exports = function(grunt) {
 		},
         addtextdomain: {
             options: {
-                textdomain: 'responsive-child-starter' // @TODO: change to theme name, ex. r-hub, r-dining.
+                textdomain: 'responsive-child-starter'
             },
             update_all_domains: {
                 options: {
@@ -165,7 +165,7 @@ module.exports = function(grunt) {
             target: {
                 options: {
                     domainPath: '/languages',
-                    potFilename: 'responsive-child-starter.pot', // @TODO: change to file theme name, ex. r-hub,.pot r-dining.pot.
+                    potFilename: 'responsive-child-starter.pot',
                     mainFile: 'functions.php',
                     potHeaders: {
                         poedit: true,
