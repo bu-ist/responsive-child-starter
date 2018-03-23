@@ -130,13 +130,64 @@ module.exports = function(grunt) {
 				src : '**/*.php'
 			}
 		},
+        addtextdomain: {
+            options: {
+                textdomain: 'responsive-child-starter'
+            },
+            update_all_domains: {
+                options: {
+                    updateDomains: true
+                },
+                src: [
+                    '*.php',
+                    '**/*.php',
+                    '!\.git/**/*',
+                    '!bin/**/*',
+                    '!node_modules/**/*',
+                    '!tests/**/*',
+                    '!vendor/**/*'
+                ]
+            },
+            target: {
+                files: {
+                    src: [
+                        '**.php',
+                        '**/*.php',
+                        '!node_modules/**',
+                        '!bower_components/**',
+                        '!bin/**',
+                        '!vendor/**'
+                    ]
+                }
+            }
+        },
+        makepot: {
+            target: {
+                options: {
+                    domainPath: '/languages',
+                    potFilename: 'responsive-child-starter.pot',
+                    mainFile: 'functions.php',
+                    potHeaders: {
+                        poedit: true,
+                        'x-poedit-keywordslist': true
+                    },
+                    type: 'wp-theme',
+                    updateTimestamp: true
+                }
+            }
+        },
 		bower: {
 			install: {
 				options: {
 					targetDir: 'bower_components'
 				}
 			}
- 		}
+ 		},
+        clean: {
+            build: [
+                'languages/*'
+            ]
+        }
 	});
 
 	// 3. Where we tell Grunt we plan to use this plug-in.
@@ -149,12 +200,16 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-version' );
 	grunt.loadNpmTasks( 'grunt-phplint' );
 	grunt.loadNpmTasks( 'grunt-bower-task' );
+    grunt.loadNpmTasks( 'grunt-wp-i18n' );
+    grunt.loadNpmTasks( 'grunt-contrib-clean' );
+
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask( 'install',  [ 'copy:hooks', 'build' ] );
+    grunt.registerTask( 'i18n',     [ 'clean', 'addtextdomain', 'makepot' ] );
 	grunt.registerTask( 'styles',   [ 'sass' ] );
 	grunt.registerTask( 'scripts',  [ 'phplint', 'concat', 'uglify' ] );
-	grunt.registerTask( 'build',    [ 'bower:install', 'styles', 'scripts' ] );
+    grunt.registerTask( 'build',    [ 'bower:install', 'styles', 'scripts', 'i18n' ] );
 	grunt.registerTask( 'default',  [ 'bower:install', 'watch' ] );
 
 };
