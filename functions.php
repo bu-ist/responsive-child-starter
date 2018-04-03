@@ -7,7 +7,12 @@
  * @package Responsive_Child_Starter
  */
 
-define( 'RESPONSIVE_THEME_VERSION', '1.0.0' );
+/**
+ * Current theme version.
+ *
+ * Used to version theme assets (style.css, production.js, etc.).
+ */
+define( 'RESPONSIVE_CHILD_THEME_VERSION', '1.0.0' );
 
 // Layout selection
 // define( 'BU_RESPONSIVE_LAYOUT', 'default' );
