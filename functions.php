@@ -8,9 +8,12 @@
  */
 
 /**
- * Current theme version.
+ * Current theme's version.
  *
- * Used to version theme assets (style.css, production.js, etc.).
+ * This DOES NOT control the version of Responsive Framework.
+ *
+ * It represents the version of this child theme and is used to version theme
+ * assets (style.css, production.js, etc.) when loaded.
  */
 define( 'RESPONSIVE_CHILD_THEME_VERSION', '1.0.0' );
 
