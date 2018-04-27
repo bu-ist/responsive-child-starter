@@ -28,15 +28,15 @@ Template: responsive-framework-2-x
 // Global and Base Styles
 // =================================================================
 
-@import "global/config";
-@import "global/mixins";
-@import "global/fonts";
-@import "global/icons";
-@import "global/normalize";
-@import "global/grid";
-@import "global/typography";
-@import "global/tables";
-@import "global/forms";
+@import 'global/config';
+@import 'global/mixins';
+@import 'global/fonts';
+@import 'global/icons';
+@import 'global/normalize';
+@import 'global/grid';
+@import 'global/typography';
+@import 'global/tables';
+@import 'global/forms';
 
 // =================================================================
 // Content and Shortcodes
@@ -76,17 +76,17 @@ Template: responsive-framework-2-x
 // Templates
 // =================================================================
 
-@import "news/base";
-@import "news/comments";
+@import 'news/base';
+@import 'news/comments';
 
 // Archive Templates
 
-@import "news/archive";
-@import "calendar/calendar-archive";
-@import "profiles/profile-archive";
+@import 'news/archive';
+@import 'calendar/calendar-archive';
+@import 'profiles/profile-archive';
 
 // Single Templates
 
-@import "news/single";
-@import "calendar/calendar-single";
-@import "profiles/profile-single";
+@import 'news/single';
+@import 'calendar/calendar-single';
+@import 'profiles/profile-single';
