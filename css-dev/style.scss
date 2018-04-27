@@ -76,17 +76,17 @@ Template: responsive-framework
 // Templates
 // =================================================================
 
-@import "burf-theme/news/base";
-@import "burf-theme/news/comments";
+@import "news/base";
+@import "news/comments";
 
 // Archive Templates
 
-@import "burf-theme/news/archive";
-@import "burf-theme/calendar/calendar-archive";
-@import "burf-theme/profiles/profile-archive";
+@import "news/archive";
+@import "calendar/calendar-archive";
+@import "profiles/profile-archive";
 
 // Single Templates
 
-@import "burf-theme/news/single";
-@import "burf-theme/calendar/calendar-single";
-@import "burf-theme/profiles/profile-single";
+@import "news/single";
+@import "calendar/calendar-single";
+@import "profiles/profile-single";
