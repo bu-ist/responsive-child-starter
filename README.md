@@ -54,6 +54,8 @@ only need to be run once per theme.
  `description`, `contributors`, `repository`)?
 - [ ] Is your `css-dev/style.scss` filled out accurately (`Description`,
  `Version`)?
+- [ ] Update `potFilename` from `responsive-child-starter.pot` to `theme-name.pot` in `Gruntfile.js`.
+- [ ] Update `textdomain:` from `responsive-child-starter` to `theme-name` in `Gruntfile.js`.
 - [ ] Does your theme have a README.md file that summarizes what site it is
  for and what functionality it adds?
 - [ ] Does your theme have a `screenshot.png` that will help identify it under
