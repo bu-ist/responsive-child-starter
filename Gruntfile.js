@@ -203,12 +203,11 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
 
-
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask( 'install',  [ 'copy:hooks', 'build' ] );
 	grunt.registerTask( 'i18n',     [ 'clean', 'addtextdomain', 'makepot' ] );
-	grunt.registerTask( 'styles',   [ 'sass' ] );
-	grunt.registerTask( 'scripts',  [ 'phplint', 'concat', 'uglify' ] );
+	grunt.registerTask( 'styles',   [ 'version:styles', 'sass' ] );
+	grunt.registerTask( 'scripts',  [ 'version:functions', 'phplint', 'concat', 'uglify' ] );
 	grunt.registerTask( 'build',    [ 'bower:install', 'styles', 'scripts', 'i18n' ] );
 	grunt.registerTask( 'default',  [ 'bower:install', 'watch' ] );
 };
