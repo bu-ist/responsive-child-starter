@@ -1,7 +1,8 @@
 # How to Use This Repository
 
 1. Download (don't clone!) the master branch of this repository to your `wp-content/themes`
- directory
+ directory. 
+1. If you haven't already, make sure you request a Repository on Github from a developer. They can set one up, while you set up your theme.
 1. Replace all references to "responsive-child-starter" / "Responsive Child
  Starter" with your theme name.
     - package.json
@@ -24,30 +25,6 @@ Before your initial commit you should also replace this README.md with your own
 -- be sure to include what site the theme is for and summarize any additional
 functionality that your theme provides.
 
-## Installing Development Dependencies
-
-Before you begin, make sure [Node / Node Package Manager](http://nodejs.org/)
-are installed and the following dependencies are installed globally.
-
-```bash
-npm install -g grunt-cli bower
-sudo gem install bundler
-```
-
-This only needs to be done once.
-
-Fire up Terminal, change to your theme directory and run the following
-commands:
-
-```bash
-npm install
-bundle install
-bower install
-```
-
-This will install all of your local development dependencies. These commands
-only need to be run once per theme.
-
 ## Theme Meta Data Checklist
 
 - [ ] Is your `package.json` filled out accurately (`name`, `version`,
@@ -63,6 +40,42 @@ only need to be run once per theme.
 - [ ] Did you run `grunt build` to compile your Sass and Javascript files?
 - [ ] Make sure you're pulling in the newest version of Foundation. Use the
  [newest release](https://github.com/bu-ist/responsive-foundation/releases).
+
+
+## Installing Development Dependencies
+
+Before you begin, make sure [Node / Node Package Manager](http://nodejs.org/)
+are installed and the following dependencies are installed globally.
+
+###Fire up Terminal! 
+
+This step only needs to be done **One Time**, regardless of how many new child-themes you create. 
+
+```bash
+npm install -g grunt-cli bower
+sudo gem install bundler
+```
+
+This next step should be done **Everytime You Create a New Theme**. 
+ 
+1. Change your theme directory by typing `cd ` then adding a space after the letter 'd'. 
+
+1. Drag the Theme's folder from a Finder Window into Terminal and click the "Return" key. 
+
+It should look something like this:  `"theme-name" username$ `
+
+Run the following commands. 
+
+```bash
+bower install
+npm install
+bundle install
+```
+
+This will install all of your local development dependencies. Again, these commands
+only need to be run **once per theme**.
+
+
 
 ## Force CSS/JS to refresh
 
@@ -97,7 +110,27 @@ version available for download.
 
 This will make sure the version change propogates to `functions.php` and `css-dev/style.scss`.
 
-### Commit and push
 
-Last step: commit and push your changes! When you're ready to release it to the
-world, request a deploy.
+## Adding Theme to Repository
+If you've requested to have a new repository created, check with the developer so you know what to look for in Github/Tower.  
+
+1. Using Tower find and clone your new repository to your `wp-content/themes` directory (Same place as the responsive-child-starter theme). It should only contain a single ".git" folder.
+  
+1. Move all of your new theme files (responsive-child-starter) into the folder you've clone down from the new respository (r-example). Assuming you downloaded the inital responsive-child-starter theme and did not clone it, all should go well. If you did clone it accidently, you'll want to move all the files except, ".distignore" and ".git" to the new respository folder.
+
+### Commit and push 
+
+Tower will now recognize the additional files added to the folder. "Working Copy" should have a number next to it (roughly 20-70). When your ready to commit, click "Stage All" and type "Initial Commit" for your Commit Subject and click Commit. 
+
+Last step: Push your changes! When you're ready to release it to the world, request a deploy.
+
+
+## Adding Theme to NM/Sandbox via FTP
+When completed move your local files over to FTP **Except** the following folders:
+
+```bash
+bower_components
+node_modules
+``` 
+
+These folders contain alot of files that aren't needed remotely and will slow down the process of getting your new theme on the server. Once uploaded, you should now be able to access the theme in wordpress on your dashboard under Appearances---> Themes.
