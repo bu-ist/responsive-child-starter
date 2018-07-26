@@ -3,7 +3,7 @@
 Theme Name: Responsive Child Starter
 Author: Boston University Interactive Design
 Website: http://www.bu.edu/interactive-design/
-Version: 1.0.0
+Version: 0.0.1
 Description: Enter child theme description here
 Template: responsive-framework-2-x
 */
@@ -2956,12 +2956,12 @@ button,
 }
 
 button:focus,
-[type="button"]:focus,
-[type="reset"]:focus,
-[type="submit"]:focus, button:hover,
-[type="button"]:hover,
-[type="reset"]:hover,
-[type="submit"]:hover, .button:hover, .button-primary:hover,
+:focus[type="button"],
+:focus[type="reset"],
+:focus[type="submit"], button:hover,
+:hover[type="button"],
+:hover[type="reset"],
+:hover[type="submit"], .button:hover, .button-primary:hover,
 .button-selected:hover, .paging-navigation a:hover, .archive-link:hover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.1)));
   background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));
@@ -2973,9 +2973,9 @@ button:focus,
 }
 
 button:active,
-[type="button"]:active,
-[type="reset"]:active,
-[type="submit"]:active, .button:active, .button-primary:active,
+:active[type="button"],
+:active[type="reset"],
+:active[type="submit"], .button:active, .button-primary:active,
 .button-selected:active, .paging-navigation a:active, .archive-link:active {
   -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
   -moz-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15) inset, 0 0 6px rgba(0, 0, 0, 0.2) inset;
@@ -3002,9 +3002,9 @@ button,
 }
 
 button:focus,
-[type="button"]:focus,
-[type="reset"]:focus,
-[type="submit"]:focus {
+:focus[type="button"],
+:focus[type="reset"],
+:focus[type="submit"] {
   outline: 0;
 }
 
@@ -3749,7 +3749,10 @@ textarea {
   position: relative;
 }
 
-.responsive-video div, .responsive-video embed, .responsive-video object, .responsive-video iframe {
+.responsive-video div,
+.responsive-video embed,
+.responsive-video object,
+.responsive-video iframe {
   height: 100% !important;
   left: 0;
   position: absolute;
