@@ -1,0 +1,197 @@
+// =================================================================
+// Responsive Typography Variables
+// =================================================================
+
+///////////////////////// Base Typography //////////////////////////
+
+/// A sans-serif font to use sitewide.
+/// By default, this affects the site footer and label text in profiles.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $font-family-sans-serif:                    "Benton-Sans", "Helvetica", sans-serif;
+
+/// A serif font to use. This variable is not used by default.
+/// @group global
+/// @access public
+/// @since 1.0.0
+
+// $font-family-serif:                         "TiemposText", Georgia, serif;
+
+/// A monospace font to use sitewide.
+/// By default, this affects the `<code>` and `<pre>` elements.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $font-family-monospace:                     "Consolas", "Liberation Mono", Courier, monospace;
+
+/// The default font for body copy.
+/// @group global
+/// @access public
+/// @since 1.0.0
+
+// $font-family-base:                          $font-family-sans-serif;
+
+/// Base margin for HTML tags. Primarily affects `<p>`.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $font-margin-base:                          0 0 1.5em 0;
+
+///////////////////////// Heading Settings /////////////////////////
+
+/// A font to use for headings.
+/// Affects `<h1>`, `<h2>`, etc.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $font-family-heading:                       $font-family-sans-serif;
+
+/// A color to use for headings.
+/// Affects `<h1>`, `<h2>`, etc.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $color-heading:                             $color-grayscale-0;
+
+/// A font to use for small tags within headings.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $color-heading-small:                       $color-grayscale-9;
+// $min-size-headings:                         $font-size-base;
+// $max-size-headings:                         55px;
+// $max-size-headings-mobile:                  36px;
+// $min-line-height:                           1.15;
+// $max-line-height:                           $line-height-base;
+// $heading-growth-rate:                       3.5;
+
+/////////////////////////// Link Settings //////////////////////////
+
+/// Base color for links.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $color-link:                                #0f69d7;
+
+/// Base color for visited links.
+/// Must be different from `$color-link` for accessibility
+/// reasons.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $color-link-visited:                        #7337af;
+
+/// Base color for active links.
+/// Must be different from `$color-link` for accessibility
+/// reasons.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $color-link-active:                         $color-grayscale-0;
+
+/////////////////////////// Code Settings //////////////////////////
+
+/// Base padding for the `<code>` tag.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $font-padding-code:                         0.2em 0.4em;
+
+/// Base margin for the `<code>` tag.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $font-margin-code:                          $margin 0;
+
+/// Text color to use for the `<code>` tag.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $color-code:                                $color-grayscale-7;
+
+/// Background color to use for the `<code>` tag.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $color-code-bg:                             $color-grayscale-f5;
+
+/// Base border for the `<code>` tag.
+/// @group typography
+/// @access public
+/// @since 2.0.0
+
+// $border-code:                               $border;
+
+/////////////////////// Blockquote Settings ////////////////////////
+
+/// Base margin for the `<blockquote>` tag.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $font-margin-blockquote:                    1em $margin-large;
+
+/////////////////////////// List Settings //////////////////////////
+
+/// Base margin for `<ul>` and `<ol>` tags.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $font-margin-list:                          $font-margin-base;
+
+/// Base padding for `<ul>` and `<ol>` tags.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $font-padding-list:                         0 0 0 40px;
+
+/// Base margin for `<dd>` tags.
+/// @group typography
+/// @access public
+/// @since 1.0.0
+
+// $font-margin-dd:                            0 0 0 $margin;
+
+// =================================================================
+// Responsive Typography Import
+// =================================================================
+
+@import 'burf-base/typography';
+
+// =================================================================
+// Custom Typography Styles
+// =================================================================
+
+/// Overrides invidividual font size values and allows you to create your
+/// own custom values and placeholders by redeclaring values you want
+/// to override and adding new values here.
+/// For exmaple, uncommenting the snippet below would create %font-size-caption.
+/// Defaults include `font-size-1` for `<h1>`, `font-size-2` for
+/// `<h2>`, etc through `<h6>`, `font-size-secondary`, and `font-size-minimum`.
+/// @group typography
+/// @access public
+/// @since 2.0.0
+
+// $font-styles-theme: (
+// 	font-size-caption: (
+// 	  	font-size-mobile: 14px,
+// 	  	font-size-desktop: 18px,
+// 		line-height: 1.3,
+// 	),
+// );

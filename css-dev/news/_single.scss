@@ -1,0 +1,104 @@
+// =================================================================
+// Responsive Single Post Variables
+// =================================================================
+
+/// The style of the border on comments and items using the card styles.
+/// @group comments
+/// @access public
+/// @since 1.0.0
+
+// $border-message:                            $border;
+
+/// The width of the border on comments and items using the card styles.
+/// @group comments
+/// @access public
+/// @since 1.0.0
+
+// $border-width-message:                      1px 1px 1px 5px;
+
+/// The amount of rounding (border radius) to apply to the corners
+/// of comments.
+/// @group comments
+/// @access public
+/// @since 1.0.0
+
+// $border-radius-message:                     3px;
+
+/// The amount of padding to apply to comments.
+/// @group comments
+/// @access public
+/// @since 1.0.0
+
+// $padding-message:                           20px;
+
+/// The background of comments.
+/// @group comments
+/// @access public
+/// @since 1.0.0
+
+// $color-message-bg:                          $color-grayscale-f0;
+
+/// The left border color of comments.
+/// @group comments
+/// @access public
+/// @since 1.0.0
+
+// $color-message-border-left:                 $color-grayscale-0;
+
+/// Controls the padding of the metadata card at the bottom of news posts
+/// on the single post template.
+/// @group news
+/// @access public
+/// @since 1.0.0
+
+// $padding-single-meta:                       20px;
+
+/// Controls the border style on the metadata card at the bottom of news posts
+/// on the single post template.
+/// @group news
+/// @access public
+/// @since 1.0.0
+
+// $border-single-meta:                        $border-message;
+
+/// Controls the border width on the metadata card at the bottom of news posts
+/// on the single post template.
+/// @group news
+/// @access public
+/// @since 1.0.0
+
+// $border-width-single-meta:                  $border-width-message;
+
+/// Controls the amount of rounding applied to corners of the metadata card
+/// at the bottom of the single post template.
+/// @group news
+/// @access public
+/// @since 1.0.0
+
+// $border-radius-single-meta:                 $border-radius-message;
+
+/// Controls the background of the metadata card at the bottom of the single
+/// post template.
+/// @group news
+/// @access public
+/// @since 1.0.0
+
+// $color-single-meta-bg:                      $color-grayscale-f0;
+
+/// Controls the color of the left border in the metadata card
+/// at the bottom of the single post template.
+/// @group news
+/// @access public
+/// @since 1.0.0
+
+// $color-single-meta-border-left:             $color-message-border-left;
+
+// =================================================================
+// Responsive Single Post Import
+// =================================================================
+
+@import "burf-theme/news/single";
+
+// =================================================================
+// Custom Single Post Styles
+// =================================================================

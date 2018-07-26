@@ -1,0 +1,69 @@
+// =================================================================
+// Responsive Tables Variables
+// =================================================================
+
+/// Base margin for the table tag.
+/// @group content
+/// @access public
+/// @since 1.0.0
+
+// $table-margin:                              $margin 0;
+
+/// Base padding for the table.
+/// @group content
+/// @access public
+/// @since 1.0.0
+
+// $table-padding:                             0.5em 1em;
+
+/// Default border for tables.
+/// @group content
+/// @access public
+/// @since 1.0.0
+
+// $table-border:                              $border;
+
+/// Default color for table headings.
+/// @group content
+/// @access public
+/// @since 1.0.0
+
+// $color-table-head:                          $color-heading;
+
+/// Default background for table headings.
+/// @group content
+/// @access public
+/// @since 1.0.0
+
+// $table-head-bg:                             $color-grayscale-e;
+
+/// Default padding for table captions.
+/// @group content
+/// @access public
+/// @since 1.0.0
+
+// $table-caption-padding:                     0 0 10px;
+
+/// Default color for table captions.
+/// @group content
+/// @access public
+/// @since 1.0.0
+
+// $color-table-caption:                       $color-grayscale-9;
+
+/// Default background for striped table backgrounds.
+/// @group content
+/// @access public
+/// @since 1.0.0
+
+// $table-stripes:                             $color-grayscale-f5;
+
+// =================================================================
+// Responsive Tables Import
+// =================================================================
+
+@import 'burf-base/tables';
+
+// =================================================================
+// Custom Tables Styles
+// =================================================================

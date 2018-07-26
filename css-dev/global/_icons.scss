@@ -1,0 +1,47 @@
+// =================================================================
+// Responsive Icon Variables
+// =================================================================
+
+/// The font family to use for icons across the site.
+/// Most standard characters will easily map to a new icon font.
+/// Characters in the private use area probably won't.
+/// Change with caution.
+/// @group global
+/// @access public
+/// @since 2.0.0
+
+// $font-family-icons:                     	 "bu-default-icons";
+
+/// The font size to use for icons across the site.
+/// @group global
+/// @access public
+/// @since 2.0.0
+
+// $font-size-icon:                           21px;
+
+/// The color to use for icons across the site.
+/// By default, this will inherit the color of the text in the container the icon lives in.
+/// Setting this will keep the color of the icons consistent everywhere.
+/// @group global
+/// @access public
+/// @since 1.0.0
+
+// $color-icons:                              unset;
+
+// =================================================================
+// Responsive Icons
+//
+// If you don't need the full icons package, you can choose to
+// only import what's required by Responsive and add your own:
+//
+// @import "burf-base/icons/base";
+// @import "burf-base/icons/social";
+// @import "burf-base/icons/actions";
+//
+// =================================================================
+
+@import 'burf-base/icons/package';
+
+// =================================================================
+// Custom Icons & Variables
+// =================================================================

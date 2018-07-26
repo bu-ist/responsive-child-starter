@@ -1,0 +1,105 @@
+// =================================================================
+// Responsive Branding Variables
+// =================================================================
+
+/// The font to use for branding.
+/// You may not change this unless you have permission from Marketing &amp; Communications.
+/// @group branding
+/// @access public
+/// @since 1.0.0
+
+// $font-family-brand:                         "Whitney SSm A", "Whitney SSm B", $font-family-sans-serif;
+
+/// The font family to use for the sponsored branding type.
+/// @group branding
+/// @access public
+/// @since 1.0.0
+
+// $font-family-brand-sponsored:               $font-family-brand;
+
+/// The font family to use for the unbranded branding type.
+/// You may change this freely.
+/// @group branding
+/// @access public
+/// @since 1.0.0
+
+// $font-family-brand-unbranded:               $font-family-sans-serif;
+
+/// The color used for the site name when a site is using BU branding.
+/// @group branding
+/// @access public
+/// @since 1.0.0
+
+// $color-brand:                               $color-grayscale-0;
+
+/// The color used for the site name when a site is not using BU branding.
+/// @group branding
+/// @access public
+/// @since 1.0.0
+
+// $color-unbranded:                           #c00;
+
+/// The height of the branding area.
+/// @group branding
+/// @access public
+/// @since 1.0.0
+
+// $height-brand:                              120px;
+
+/// The image used for the BU Masterplate.
+/// Do not change this without permission from Marketing &amp; Communications.
+/// @group branding
+/// @access public
+/// @since 1.0.0
+
+// $image-masterplate:                         "https://www.bu.edu/cdn/images/logos/masterplate112x50.png";
+
+/// The image used for the BU Masterplate on retina devices.
+/// Do not change this without permission from Marketing &amp; Communications.
+/// @group branding
+/// @access public
+/// @since 1.0.0
+
+// $image-masterplate-retina:                  "https://www.bu.edu/cdn/images/logos/masterplate112x50-retina.png";
+
+/// The image used for the BU plate in the Signature style.
+/// Do not change this without permission from Marketing &amp; Communications.
+/// @group branding
+/// @access public
+/// @since 1.0.0
+
+// $image-subbrand:                            "https://www.bu.edu/cdn/images/logos/subbrand49x35.png";
+
+/// The image used for the BU plate in the Signature style on retina devices.
+/// Do not change this without permission from Marketing &amp; Communications.
+/// @group branding
+/// @access public
+/// @since 1.0.0
+
+// $image-subbrand-retina:                     "https://www.bu.edu/cdn/images/logos/subbrand49x35-retina.png";
+
+/// The image used for the BUMC logo.
+/// Do not change this without permission from Marketing &amp; Communications.
+/// @group branding
+/// @access public
+/// @since 1.0.0
+
+// $image-bumclogo:                            "https://www.bu.edu/cdn/images/logos/bumclogo96x40.png";
+
+/// The image used for the BUMC logo on retina devices.
+/// Do not change this without permission from Marketing &amp; Communications.
+/// @group branding
+/// @access public
+/// @since 1.0.0
+
+// $image-bumclogo-retina:                     "https://www.bu.edu/cdn/images/logos/bumclogo96x40-retina.png";
+
+// =================================================================
+// Responsive Branding Import
+// =================================================================
+
+@import "burf-theme/layout/branding";
+
+// =================================================================
+// Custom Branding Styles
+// =================================================================

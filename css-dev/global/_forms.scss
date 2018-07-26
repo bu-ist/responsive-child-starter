@@ -1,0 +1,183 @@
+// =================================================================
+// Responsive Forms Variables
+// =================================================================
+
+///////////////////////// Standard Buttons /////////////////////////
+
+// $font-family-button:                        $font-family-sans-serif;
+// $font-size-button:                          inherit;
+// $color-button-bg:                           $color-grayscale-e;
+// $color-button-text:                         $color-grayscale-4;
+// $margin-button:                             0 $margin-small $margin-small 0;
+// $padding-button:                            0.5em 1em;
+// $border-button:                             0;
+// $border-radius-button:                      2px;
+
+///////////////////////// Primary Buttons //////////////////////////
+
+// $color-button-primary-bg:                   #0078e7;
+// $color-button-primary-text:                 $color-grayscale-f;
+
+////////////////////////////// Forms ///////////////////////////////
+
+/// Controls the font family used in forms.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $font-family-form:                          $font-family-sans-serif;
+
+/// Controls the border on the legend in forms.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $form-legend-border:                        $border;
+
+/// Controls the margin on the legend in forms.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $form-legend-margin:                        0 0 $margin;
+
+/// Controls the padding on the legend in forms.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $form-legend-padding:                       0 0 0.5em;
+
+/// Controls the border on fieldsets in forms.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $form-fieldset-border:                      0;
+
+/// Controls the margin on the fieldset in forms.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $form-fieldset-margin:                      $margin 0;
+
+/// Controls the padding on the fieldset in forms.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $form-fieldset-padding:                     0;
+
+/// Controls the margin on labels in forms.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $form-label-margin:                         0.5em 0;
+
+/// Controls the margin on rows in forms.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $form-row-margin:                           0 0 $margin-small;
+
+/// Controls the margin on inputs in forms.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $form-input-margin:                         0 0 $margin-small;
+
+/// Controls the padding on inputs in forms.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $form-input-padding:                        0.5em;
+
+/// Controls the border on inputs in forms.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $form-input-border:                         $border;
+
+/// Controls the inner shadow on inputs in forms.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $form-input-shadow:                         inset 0 1px 3px $color-grayscale-e;
+
+/// Controls the border radius on inputs in forms.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $form-input-border-radius:                  0;
+
+/// Controls the shadow on focused inputs.
+/// This is important for accessibility. Always
+/// test with a keyboard if you change this style
+/// to ensure it is still clear which item is keyboard
+/// focused afterwards.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $form-input-focus-shadow:                   0 0 4px 0 rgba( 18, 159, 234, 0.2 );
+
+/// Controls the border on focused inputs.
+/// This is important for accessibility. Always
+/// test with a keyboard if you change this style
+/// to ensure it is still clear which item is keyboard
+/// focused afterwards.
+/// Note: this style may not apply to Gravity Forms
+/// due to overly specific plugin CSS.
+/// @group config
+/// @access public
+/// @since 1.0.0
+
+// $color-input-focus-border:                  #129fea;
+
+// =================================================================
+// Responsive Forms Import
+// =================================================================
+
+@import 'burf-base/forms';
+
+// =================================================================
+// Custom Forms Styles
+// =================================================================

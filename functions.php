@@ -3,32 +3,49 @@
  * Theme functions
  *
  * @see  https://github.com/bu-ist/responsive-framework/wiki/Starting-a-new-Child-Theme
+ *
+ * @package Responsive_Child_Starter
  */
 
-// Your child theme version. Used for cache busting.
-// This is NOT the version of Responsive you are using. This is the version
-// of your theme.
-// See these best practices for release numbers: http://semver.org/
-// 1.0.0 should be reserved for the first time your site goes live.
-define( 'RESPONSIVE_THEME_VERSION', '0.1.0' );
+/**
+ * Current theme's version.
+ *
+ * This DOES NOT control the version of Responsive Framework.
+ *
+ * It represents the version of this child theme and is used to version theme
+ * assets (style.css, production.js, etc.) when loaded.
+ * 1.0.0 should be reserved for the official site launch.
+ * @link https://semver.org/
+ */
+define( 'RESPONSIVE_CHILD_THEME_VERSION', '0.0.1' );
 
-// Layout selection
-// Accepts default, topNav, sideNav, noNav.
-// define( 'BU_RESPONSIVE_LAYOUT', 'default' );
+/**
+ * Specifies the responsive layout for the theme. Disables the option in the
+ * Customizer.
+ *
+ * Removing this allows the layout to be changed in the Customizer.
+ *
+ * Available values: `default`, `top-nav`, `side-nav`, `no-nav`.
+ *
+ * @link https://github.com/bu-ist/responsive-framework-documentation/blob/2x-documentation/code-examples/Changing-Available-Layouts-And-Default-Layout.md
+ */
+define( 'BU_RESPONSIVE_LAYOUT', 'default' );
 
-// Branding type
-// You may also force branding parent and title.
-// See https://github.com/bu-ist/responsive-framework/wiki/PHP-Constants#bu_branding_parent
-// define( 'BU_BRANDING_TYPE', 'logotype' );
+/**
+ * Specifies the site's branding type. Disables the option in the Customizer.
+ *
+ * Removing this allows the branding type to be changed in the Customizer.
+ *
+ * Available values: `logotype`, `signature`, `unbranded`.
+ */
+define( 'BU_BRANDING_TYPE', 'logotype' );
 
-// Sidebar position
-// Accepts left, right, and bottom. Default is right
-// define( 'BU_RESPONSIVE_SIDEBAR_POSITION', 'right' );
-
-// Sidebar position on single post pages
-// Keeps the sidebar at the bottom of the page on post pages. Default is true
-// define( 'BU_RESPONSIVE_POSTS_SIDEBAR_SHOW_BOTTOM', 'true' );
-
-// Enable or disable script debugging and unminified assets for easier dev.
-// This should be set to false for launch.
-// define( 'SCRIPT_DEBUG', true );
+/**
+ * Defines a sidebar position for the theme. Disables the option in the
+ * Customizer.
+ *
+ * Removing this allows the layout to be changed in the Customizer.
+ *
+ * Available values: `right`, `left`, `bottom`.
+ */
+define( 'BU_RESPONSIVE_SIDEBAR_POSITION', 'right' );

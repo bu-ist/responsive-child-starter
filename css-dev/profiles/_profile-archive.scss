@@ -1,0 +1,37 @@
+// =================================================================
+// Responsive Profile Archive Variables
+// =================================================================
+
+/// Controls the shape of the profile photo.
+/// By default, this is set to a circle.
+/// @group profiles
+/// @access public
+/// @since 1.0.0
+
+// $border-radius-profile-figure:              50%;
+
+/// Controls the color used for profile names in the profile
+/// listing template.
+/// @group profiles
+/// @access public
+/// @since 1.0.0
+
+// $color-profile-name:                        $color-link;
+
+/// Controls the color used for profile titles in the profile
+/// listing template.
+/// @group profiles
+/// @access public
+/// @since 1.0.0
+
+// $color-profile-title:                       $color-base;
+
+// =================================================================
+// Responsive Profile Archive Import
+// =================================================================
+
+@import "burf-theme/profiles/profile-archive";
+
+// =================================================================
+// Custom Profile Archive Styles
+// =================================================================
