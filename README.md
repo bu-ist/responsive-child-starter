@@ -101,3 +101,28 @@ This will make sure the version change propogates to `functions.php` and `css-de
 
 Last step: commit and push your changes! When you're ready to release it to the
 world, request a deploy.
+
+### Using PHP-DEV templates
+
+This theme has been setup with two dev page templates, a section for every 
+action hook, and a filter to activate every action hook in responsive-framework.
+The intent is to provide a quick and easy way for designers to add HTML and CSS 
+code as it will appear as close as possible on the live site. 
+
+These templates are meant for use for rapid HTML and SCSS development only. Any
+code added to these templates must be moved to production ready templates by a
+developer prior to launch.
+
+The `dev_sections()` function and the related filters must be deleted before
+going live. Everything in the PHP-DEV folder must be deleted before going live.
+
+To add a specific section to a given hook, find the corresponding filter in the 
+`dev_sections()` function in the `functions.php` file and uncomment it. Add
+HTML sample code to the corresponding section in the `php-dev` folder.
+
+To use a specific dev page template, create a new page and add the title 
+matching the name of the dev page template. Select the dev page template.
+
+When deleting these templates, please make note of the commit ID in the child 
+themes updated readme file. This creates an easy reference to the original
+design HTML Markups.
