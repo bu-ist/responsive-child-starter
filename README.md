@@ -116,7 +116,7 @@ developer prior to launch.
 The `dev_sections()` function and the related filters must be deleted before
 going live. Everything in the PHP-DEV folder must be deleted before going live.
 
-To add a specific section to a given hook, find the corresponding filter in the 
+To add a specific section to a given hook, find the corresponding filter in the
 `dev_sections()` function in the `functions.php` file and uncomment it. Add
 HTML sample code to the corresponding section in the `php-dev` folder.
 

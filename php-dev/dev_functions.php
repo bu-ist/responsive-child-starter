@@ -5,7 +5,8 @@
  * TODO: Delete this function and related templates before going live.
  *
  * @package responsive-child-starter
-*/
+ */
+
 function dev_sections() {
 
 	// Branding.
