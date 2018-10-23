@@ -53,5 +53,5 @@ define( 'BU_RESPONSIVE_SIDEBAR_POSITION', 'right' );
 // These lines include the php-dev templates development hooks for use in
 // designing sections rapidly.
 // TODO: Delete these lines and the php-dev folder before going live.
-include_once "php-dev/dev_functions.php";
+require_once "php-dev/dev_functions.php";
 add_filter( 'after_setup_theme', 'dev_sections' );
