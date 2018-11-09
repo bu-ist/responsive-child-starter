@@ -123,7 +123,7 @@ module.exports = function(grunt) {
 		phplint: {
 			options : {
 				phpArgs : {
-					'-lf': null
+					'-l -f': null
 				}
 			},
 			all : {
