@@ -176,13 +176,6 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		bower: {
-			install: {
-				options: {
-					targetDir: 'bower_components'
-				}
-			}
-		},
 		clean: {
 			build: [
 				'languages/*'
@@ -199,7 +192,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-notify' );
 	grunt.loadNpmTasks( 'grunt-version' );
 	grunt.loadNpmTasks( 'grunt-phplint' );
-	grunt.loadNpmTasks( 'grunt-bower-task' );
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
 
@@ -208,6 +200,6 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'i18n',     [ 'clean', 'addtextdomain', 'makepot' ] );
 	grunt.registerTask( 'styles',   [ 'version:styles', 'sass' ] );
 	grunt.registerTask( 'scripts',  [ 'version:functions', 'phplint', 'concat', 'uglify' ] );
-	grunt.registerTask( 'build',    [ 'bower:install', 'styles', 'scripts', 'i18n' ] );
-	grunt.registerTask( 'default',  [ 'bower:install', 'watch' ] );
+	grunt.registerTask( 'build',	[ 'sass', 'scripts', 'i18n' ] );
+	grunt.registerTask( 'default',  [ 'watch' ] );
 };
