@@ -13,7 +13,7 @@ module.exports = function(grunt) {
 			},
 			scripts: {
 				files: [
-					'bower_components/responsive-foundation/js-dev/*.js',
+					'node_modules/responsive-foundation/js-dev/*.js',
 					'js-dev/**/*.js',
 					'js/**/*.js'
 				],
@@ -24,7 +24,7 @@ module.exports = function(grunt) {
 			},
 			styles: {
 				files: [
-					'bower_components/responsive-foundation/css-dev/**/*.scss',
+					'node_modules/responsive-foundation/css-dev/**/*.scss',
 					'css-dev/**/*.scss'
 				],
 				tasks: [ 'styles' ],
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
 		concat: {
 			scripts: {
 				src: [
-					'bower_components/responsive-foundation/js-dev/**/*.js',
+					'node_modules/responsive-foundation/js-dev/**/*.js',
 					'js-dev/**/*.js'
 				],
 				dest: 'js/script.js'
@@ -75,9 +75,9 @@ module.exports = function(grunt) {
 				indentWidth: 2,
 				precision: '5',
 				includePaths: [
-					'bower_components/normalize.scss/sass',
-					'bower_components/mathsass/dist/',
-					'bower_components/responsive-foundation/css-dev'
+					'node_modules/normalize-scss/sass',
+					'node_modules/mathsass/dist/',
+					'node_modules/responsive-foundation/css-dev'
 				],
 				bundleExec: true
 			},
@@ -154,7 +154,7 @@ module.exports = function(grunt) {
 						'**.php',
 						'**/*.php',
 						'!node_modules/**',
-						'!bower_components/**',
+						'!node_modules/**',
 						'!bin/**',
 						'!vendor/**'
 					]

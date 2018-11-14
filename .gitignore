@@ -3,7 +3,6 @@ sftp-config.json
 .sass-cache
 node_modules
 npm-debug.log
-bower_components
 .eslintignore
 .eslintrc
 .sass-lint.yml
