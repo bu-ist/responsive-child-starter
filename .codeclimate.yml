@@ -1,6 +1,5 @@
 ---
 exclude_paths:
-- bower_components/
 - Gemfile
 - Gemfile.lock
 - node_modules/
