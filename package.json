@@ -15,9 +15,10 @@
     "grunt-contrib-watch": "^0.6.1",
     "grunt-notify": "^0.4.1",
     "grunt-phplint": "^0.1.0",
-    "grunt-sass": "^2.0.0",
+    "grunt-sass": "^3.0.2",
     "grunt-version": "^1.0.0",
     "grunt-wp-i18n": "^1.0.2",
+    "node-sass": "^4.10.0",
     "responsive-foundation": "git+ssh://git@github.com:bu-ist/responsive-foundation#3.0.0"
   },
   "scripts": {
