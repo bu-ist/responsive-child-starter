@@ -7,16 +7,16 @@
     "Your Name <you@bu.edu>"
   ],
   "devDependencies": {
-    "grunt": "~0.4.5",
+    "grunt": "^1.0.3",
     "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-contrib-uglify": "^0.9.1",
-    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-notify": "^0.4.1",
     "grunt-phplint": "^0.1.0",
     "grunt-sass": "^3.0.2",
-    "grunt-version": "^1.0.0",
+    "grunt-version": "^1.2.1",
     "grunt-wp-i18n": "^1.0.2",
     "node-sass": "^4.10.0",
     "responsive-foundation": "git+ssh://git@github.com:bu-ist/responsive-foundation#3.0.0"
