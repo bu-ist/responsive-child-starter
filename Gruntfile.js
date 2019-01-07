@@ -1,5 +1,8 @@
 module.exports = function(grunt) {
 
+	// Require external packages.
+	var sass = require('node-sass');
+
 	// 1. All configuration goes here
 	grunt.initConfig({
 
@@ -70,6 +73,7 @@ module.exports = function(grunt) {
 		sass: {
 			options: {
 				outputStyle: 'compressed',
+				implementation: sass,
 				sourceMap: true,
 				indentType: 'space',
 				indentWidth: 2,

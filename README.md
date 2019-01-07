@@ -30,7 +30,6 @@ are installed and the following dependencies are installed globally.
 
 ```bash
 npm install -g grunt-cli
-sudo gem install bundler
 ```
 
 This only needs to be done once.
@@ -40,7 +39,6 @@ commands:
 
 ```bash
 npm install
-bundle install
 ```
 
 This will install all of your local development dependencies. These commands
