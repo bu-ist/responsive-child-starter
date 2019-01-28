@@ -18,7 +18,6 @@ module.exports = function(grunt) {
 				files: [
 					//'node_modules/responsive-foundation/js-dev/*.js',
 					'js-dev/**/*.js',
-					'js/**/*.js'
 				],
 				tasks: [ 'scripts' ],
 				options: {
@@ -43,31 +42,39 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		concat: {
-			scripts: {
-				src: [
-					//'node_modules/responsive-foundation/js-dev/**/*.js',
-					'js-dev/**/*.js'
-				],
-				dest: 'js/script.js'
+		browserify: {
+			options: {
+				watch: true,
+			},
+			dist: {
+				files: [
+					{
+						expand: true, // Enable dynamic expansion.
+						cwd: "js-dev/", // Src matches are relative to this path.
+						src: ["*.js"], // Actual pattern(s) to match. Targets root JS files.
+						dest: "js/" // Destination path prefix.
+					}
+				]
 			}
 		},
 		uglify: {
 			scripts: {
+				options: {
+					sourceMap: true,
+				},
 				expand: true,
-				cwd: 'js',
-				src: [ '*.js', '!*.min.js' ],
-				dest: 'js',
-				ext: '.min.js',
-				extDot: 'last'
+				cwd: 'js/',
+				src: [ '*.js' ],
+				dest: 'js/',
 			},
 			vendor: {
+				options: {
+					sourceMap: true,
+				},
 				expand: true,
 				cwd: 'js/vendor',
-				src: [ '**/*.js', '!**/*.min.js' ],
+				src: [ '*.js', '!*.min.js' ],
 				dest: 'js/vendor',
-				ext: '.min.js',
-				extDot: 'last'
 			}
 		},
 		sass: {
@@ -188,6 +195,7 @@ module.exports = function(grunt) {
 	});
 
 	// 3. Where we tell Grunt we plan to use this plug-in.
+	grunt.loadNpmTasks( 'grunt-browserify' );
 	grunt.loadNpmTasks( 'grunt-contrib-watch' );
 	grunt.loadNpmTasks( 'grunt-contrib-concat' );
 	grunt.loadNpmTasks( 'grunt-contrib-copy' );
@@ -203,7 +211,7 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'install',  [ 'copy:hooks', 'build' ] );
 	grunt.registerTask( 'i18n',     [ 'clean', 'addtextdomain', 'makepot' ] );
 	grunt.registerTask( 'styles',   [ 'version:styles', 'sass' ] );
-	grunt.registerTask( 'scripts',  [ 'version:functions', 'phplint', 'concat', 'uglify' ] );
-	grunt.registerTask( 'build',	[ 'sass', 'scripts', 'i18n' ] );
+	grunt.registerTask( 'scripts',  [ 'version:functions', 'browserify', 'uglify' ] );
+	grunt.registerTask( 'build',	[ 'sass', 'phplint', 'scripts', 'i18n' ] );
 	grunt.registerTask( 'default',  [ 'watch' ] );
 };
