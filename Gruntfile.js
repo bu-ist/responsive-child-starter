@@ -45,6 +45,10 @@ module.exports = function(grunt) {
 		browserify: {
 			options: {
 				watch: true,
+				browserifyOptions: {
+					debug: false,
+					transform: [ [ 'babelify' ] ],
+				},
 			},
 			dist: {
 				files: [
