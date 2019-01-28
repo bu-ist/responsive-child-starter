@@ -11,11 +11,20 @@
     "last 2 versions",
     "not dead"
   ],
+  "browserify-shim": {
+    "jQuery": "global:jQuery"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
   "devDependencies": {
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "@wordpress/babel-preset-default": "^3.0.2",
     "babelify": "^10.0.0",
+    "browserify-shim": "^3.8.14",
     "grunt": "^1.0.3",
     "grunt-browserify": "^5.3.0",
     "grunt-contrib-clean": "^1.1.0",
