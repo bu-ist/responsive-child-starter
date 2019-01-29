@@ -1,18 +1,16 @@
-module.exports = function(grunt) {
-
+module.exports = function( grunt ) {
 	// Require external packages.
-	var sass = require('node-sass');
+	const sass = require( 'node-sass' );
 
 	// 1. All configuration goes here
-	grunt.initConfig({
-
+	grunt.initConfig( {
 		// 2. All functions go here.
 		watch: {
 			grunt: {
 				files: [ 'Gruntfile.js' ],
 				options: {
-					reload: true
-				}
+					reload: true,
+				},
 			},
 			scripts: {
 				files: [
@@ -21,26 +19,26 @@ module.exports = function(grunt) {
 				],
 				tasks: [ 'scripts' ],
 				options: {
-					spawn: false
-				}
+					spawn: false,
+				},
 			},
 			styles: {
 				files: [
 					'node_modules/responsive-foundation/css-dev/**/*.scss',
-					'css-dev/**/*.scss'
+					'css-dev/**/*.scss',
 				],
 				tasks: [ 'styles' ],
 				options: {
-					spawn: false
-				}
+					spawn: false,
+				},
 			},
-			phplint : {
-				files : [ '**/*.php' ],
-				tasks : [ 'phplint' ],
-				options : {
-					spawn : false
-				}
-			}
+			phplint: {
+				files: [ '**/*.php' ],
+				tasks: [ 'phplint' ],
+				options: {
+					spawn: false,
+				},
+			},
 		},
 		browserify: {
 			options: {
@@ -54,12 +52,12 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true, // Enable dynamic expansion.
-						cwd: "js-dev/", // Src matches are relative to this path.
-						src: ["*.js"], // Actual pattern(s) to match. Targets root JS files.
-						dest: "js/" // Destination path prefix.
-					}
-				]
-			}
+						cwd: 'js-dev/', // Src matches are relative to this path.
+						src: [ '*.js' ], // Actual pattern(s) to match. Targets root JS files.
+						dest: 'js/', // Destination path prefix.
+					},
+				],
+			},
 		},
 		uglify: {
 			scripts: {
@@ -79,7 +77,7 @@ module.exports = function(grunt) {
 				cwd: 'js/vendor',
 				src: [ '*.js', '!*.min.js' ],
 				dest: 'js/vendor',
-			}
+			},
 		},
 		sass: {
 			options: {
@@ -92,76 +90,76 @@ module.exports = function(grunt) {
 				includePaths: [
 					'node_modules/normalize-scss/sass',
 					'node_modules/mathsass/dist/',
-					'node_modules/responsive-foundation/css-dev'
+					'node_modules/responsive-foundation/css-dev',
 				],
-				bundleExec: true
+				bundleExec: true,
 			},
 			devl: {
 				options: {
-					outputStyle: 'expanded'
+					outputStyle: 'expanded',
 				},
 				files: {
 					'style.css': 'css-dev/style.scss',
-					'ie.css': 'css-dev/ie.scss'
-				}
+					'ie.css': 'css-dev/ie.scss',
+				},
 			},
 			prod: {
 				files: {
 					'style.min.css': 'css-dev/style.scss',
-					'ie.min.css': 'css-dev/ie.scss'
-				}
-			}
+					'ie.min.css': 'css-dev/ie.scss',
+				},
+			},
 		},
 		version: {
 			functions: {
 				options: {
-					prefix: '[\'"]RESPONSIVE_\\w*_VERSION[\'"],\\s*\''
+					prefix: "['\"]RESPONSIVE_\\w*_VERSION['\"],\\s*'",
 				},
-				src: [ 'functions.php' ]
+				src: [ 'functions.php' ],
 			},
 			styles: {
 				options: {
-					prefix: 'Version:\\s*'
+					prefix: 'Version:\\s*',
 				},
-				src: [ 'css-dev/style.scss' ]
-			}
+				src: [ 'css-dev/style.scss' ],
+			},
 		},
 		copy: {
 			hooks: {
 				options: {
-					mode: true
+					mode: true,
 				},
 				src: 'hooks/post-merge',
-				dest: '.git/hooks/post-merge'
-			}
+				dest: '.git/hooks/post-merge',
+			},
 		},
 		phplint: {
-			options : {
-				phpArgs : {
-					'-l -f': null
-				}
+			options: {
+				phpArgs: {
+					'-l -f': null,
+				},
 			},
-			all : {
-				src : '**/*.php'
-			}
+			all: {
+				src: '**/*.php',
+			},
 		},
 		addtextdomain: {
 			options: {
-				textdomain: 'responsive-child-starter'
+				textdomain: 'responsive-child-starter',
 			},
 			update_all_domains: {
 				options: {
-					updateDomains: true
+					updateDomains: true,
 				},
 				src: [
 					'*.php',
 					'**/*.php',
-					'!\.git/**/*',
+					'!.git/**/*',
 					'!bin/**/*',
 					'!node_modules/**/*',
 					'!tests/**/*',
-					'!vendor/**/*'
-				]
+					'!vendor/**/*',
+				],
 			},
 			target: {
 				files: {
@@ -171,10 +169,10 @@ module.exports = function(grunt) {
 						'!node_modules/**',
 						'!node_modules/**',
 						'!bin/**',
-						'!vendor/**'
-					]
-				}
-			}
+						'!vendor/**',
+					],
+				},
+			},
 		},
 		makepot: {
 			target: {
@@ -184,19 +182,17 @@ module.exports = function(grunt) {
 					mainFile: 'functions.php',
 					potHeaders: {
 						poedit: true,
-						'x-poedit-keywordslist': true
+						'x-poedit-keywordslist': true,
 					},
 					type: 'wp-theme',
-					updateTimestamp: true
-				}
-			}
+					updateTimestamp: true,
+				},
+			},
 		},
 		clean: {
-			build: [
-				'languages/*'
-			]
-		}
-	});
+			build: [ 'languages/*' ],
+		},
+	} );
 
 	// 3. Where we tell Grunt we plan to use this plug-in.
 	grunt.loadNpmTasks( 'grunt-browserify' );
@@ -212,10 +208,14 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-	grunt.registerTask( 'install',  [ 'copy:hooks', 'build' ] );
-	grunt.registerTask( 'i18n',     [ 'clean', 'addtextdomain', 'makepot' ] );
-	grunt.registerTask( 'styles',   [ 'version:styles', 'sass' ] );
-	grunt.registerTask( 'scripts',  [ 'version:functions', 'browserify', 'uglify' ] );
-	grunt.registerTask( 'build',	[ 'sass', 'phplint', 'scripts', 'i18n' ] );
-	grunt.registerTask( 'default',  [ 'watch' ] );
+	grunt.registerTask( 'install', [ 'copy:hooks', 'build' ] );
+	grunt.registerTask( 'i18n', [ 'clean', 'addtextdomain', 'makepot' ] );
+	grunt.registerTask( 'styles', [ 'version:styles', 'sass' ] );
+	grunt.registerTask( 'scripts', [
+		'version:functions',
+		'browserify',
+		'uglify',
+	] );
+	grunt.registerTask( 'build', [ 'sass', 'phplint', 'scripts', 'i18n' ] );
+	grunt.registerTask( 'default', [ 'watch' ] );
 };
