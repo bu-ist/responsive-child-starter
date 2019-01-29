@@ -62,7 +62,7 @@ engines:
     config:
       file_extensions: php
       rulesets: codesize,naming,unusedcode
-  scss-lint:
+  sass-lint:
     enabled: true
 ratings:
   paths:

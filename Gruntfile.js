@@ -193,6 +193,10 @@ module.exports = function( grunt ) {
 			languages: [ 'languages/*' ],
 			js: [ 'js/**/*.js', 'js/**/*.map' ],
 		},
+		sasslint: {
+			target: 'css-dev/**/*.scss',
+			// see .sasslintrc for options.
+		},
 	} );
 
 	// 3. Where we tell Grunt we plan to use this plug-in.
@@ -207,6 +211,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-phplint' );
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
+	grunt.loadNpmTasks( 'grunt-sass-lint' );
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask( 'install', [ 'copy:hooks', 'build' ] );
