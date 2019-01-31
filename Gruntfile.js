@@ -1,5 +1,8 @@
 module.exports = function(grunt) {
 
+	// Require external packages.
+	var sass = require('node-sass');
+
 	// 1. All configuration goes here
 	grunt.initConfig({
 
@@ -13,7 +16,7 @@ module.exports = function(grunt) {
 			},
 			scripts: {
 				files: [
-					'bower_components/responsive-foundation/js-dev/*.js',
+					'node_modules/responsive-foundation/js-dev/*.js',
 					'js-dev/**/*.js',
 					'js/**/*.js'
 				],
@@ -24,7 +27,7 @@ module.exports = function(grunt) {
 			},
 			styles: {
 				files: [
-					'bower_components/responsive-foundation/css-dev/**/*.scss',
+					'node_modules/responsive-foundation/css-dev/**/*.scss',
 					'css-dev/**/*.scss'
 				],
 				tasks: [ 'styles' ],
@@ -43,7 +46,7 @@ module.exports = function(grunt) {
 		concat: {
 			scripts: {
 				src: [
-					'bower_components/responsive-foundation/js-dev/**/*.js',
+					'node_modules/responsive-foundation/js-dev/**/*.js',
 					'js-dev/**/*.js'
 				],
 				dest: 'js/script.js'
@@ -70,14 +73,15 @@ module.exports = function(grunt) {
 		sass: {
 			options: {
 				outputStyle: 'compressed',
+				implementation: sass,
 				sourceMap: true,
 				indentType: 'space',
 				indentWidth: 2,
 				precision: '5',
 				includePaths: [
-					'bower_components/normalize.scss/sass',
-					'bower_components/mathsass/dist/',
-					'bower_components/responsive-foundation/css-dev'
+					'node_modules/normalize-scss/sass',
+					'node_modules/mathsass/dist/',
+					'node_modules/responsive-foundation/css-dev'
 				],
 				bundleExec: true
 			},
@@ -154,7 +158,7 @@ module.exports = function(grunt) {
 						'**.php',
 						'**/*.php',
 						'!node_modules/**',
-						'!bower_components/**',
+						'!node_modules/**',
 						'!bin/**',
 						'!vendor/**'
 					]
@@ -176,13 +180,6 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		bower: {
-			install: {
-				options: {
-					targetDir: 'bower_components'
-				}
-			}
-		},
 		clean: {
 			build: [
 				'languages/*'
@@ -199,7 +196,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks( 'grunt-notify' );
 	grunt.loadNpmTasks( 'grunt-version' );
 	grunt.loadNpmTasks( 'grunt-phplint' );
-	grunt.loadNpmTasks( 'grunt-bower-task' );
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
 
@@ -208,6 +204,6 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'i18n',     [ 'clean', 'addtextdomain', 'makepot' ] );
 	grunt.registerTask( 'styles',   [ 'version:styles', 'sass' ] );
 	grunt.registerTask( 'scripts',  [ 'version:functions', 'phplint', 'concat', 'uglify' ] );
-	grunt.registerTask( 'build',    [ 'bower:install', 'styles', 'scripts', 'i18n' ] );
-	grunt.registerTask( 'default',  [ 'bower:install', 'watch' ] );
+	grunt.registerTask( 'build',	[ 'sass', 'scripts', 'i18n' ] );
+	grunt.registerTask( 'default',  [ 'watch' ] );
 };

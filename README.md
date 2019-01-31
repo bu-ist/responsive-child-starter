@@ -5,7 +5,6 @@
 1. Replace all references to "responsive-child-starter" / "Responsive Child
  Starter" with your theme name.
     - package.json
-    - bower.json
     - functions.php
     - css-dev/style.scss
       - Theme Name: Responsive Child Starter (R)
@@ -30,8 +29,7 @@ Before you begin, make sure [Node / Node Package Manager](http://nodejs.org/)
 are installed and the following dependencies are installed globally.
 
 ```bash
-npm install -g grunt-cli bower
-sudo gem install bundler
+npm install -g grunt-cli
 ```
 
 This only needs to be done once.
@@ -41,8 +39,6 @@ commands:
 
 ```bash
 npm install
-bundle install
-bower install
 ```
 
 This will install all of your local development dependencies. These commands
