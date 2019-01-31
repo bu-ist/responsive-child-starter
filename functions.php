@@ -51,8 +51,10 @@ define( 'BU_BRANDING_TYPE', 'logotype' );
  */
 define( 'BU_RESPONSIVE_SIDEBAR_POSITION', 'right' );
 
-// These lines include the php-dev templates development hooks for use in
-// designing sections rapidly.
-// TODO: Delete these lines and the php-dev folder before going live.
+/**
+ * TODO: Delete the following two lines and the php-dev folder before going live.
+ * These lines include the php-dev templates development hooks for use in
+ * designing sections rapidly.
+ */
 require_once 'php-dev/dev-functions.php';
 add_filter( 'after_setup_theme', 'dev_sections' );

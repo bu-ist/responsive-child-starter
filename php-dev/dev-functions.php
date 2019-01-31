@@ -107,14 +107,350 @@ function dev_sections() {
 
 	foreach ( $hooks as $hook => $include ) {
 		if ( $include ) {
-			global $file_path; // GLOBAL use OK as this will only be used in development.
-			$file_path = $hook . '.php';
-			add_action(
-				$hook, function () {
-					global $file_path; // GLOBAL use OK as this will only be used in development.
-					require $file_path;
-				}
-			);
+			add_action( $hook, $hook );
 		}
 	}
+
+}
+
+// https://github.com/bu-ist/responsive-framework/search?q=r_before_closing_body_tag.
+// Branding hooks.
+/**
+ * Action hook for indicated hook.
+ */
+function r_before_branding_masterplate() {
+	include_once 'r_before_branding_masterplate.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_after_branding_masterplate() {
+	include_once 'r_after_branding_masterplate.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_before_bumc_branding_logo() {
+	include_once 'r_before_bumc_branding_logo.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_after_bumc_branding_logo() {
+	include_once 'r_after_bumc_branding_logo.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_before_branding_disclaimer() {
+	include_once 'r_before_branding_disclaimer.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_after_branding_disclaimer() {
+	include_once 'r_after_branding_disclaimer.php';
+}
+
+// Header Hooks.
+/**
+ * Action hook for indicated hook.
+ */
+function r_after_opening_body_tag() {
+	include_once 'r_after_opening_body_tag.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_before_masthead() {
+	include_once 'r_before_masthead.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_after_masthead() {
+	include_once 'r_after_masthead.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_before_opening_wrapper() {
+	include_once 'r_before_opening_wrapper.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_after_opening_wrapper() {
+	include_once 'r_after_opening_wrapper.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_before_opening_container_outer() {
+	include_once 'r_before_opening_container_outer.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_after_opening_container_outer() {
+	include_once 'r_after_opening_container_outer.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_before_opening_container_inner() {
+	include_once 'r_before_opening_container_inner.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_after_opening_container_inner() {
+	include_once 'r_after_opening_container_inner.php';
+}
+
+// Content Hooks.
+// Sidebar hooks.
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_opening_before() {
+	include_once 'r_sidebar_opening_before.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_opening_after() {
+	include_once 'r_sidebar_opening_after.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_closing_before() {
+	include_once 'r_sidebar_closing_before.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_closing_after() {
+	include_once 'r_sidebar_closing_after.php';
+}
+
+// Sidebar Bottom.
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_footbar_opening_before() {
+	include_once 'r_sidebar_footbar_opening_before.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_footbar_opening_after() {
+	include_once 'r_sidebar_footbar_opening_after.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_footbar_closing_before() {
+	include_once 'r_sidebar_footbar_closing_before.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_footbar_closing_after() {
+	include_once 'r_sidebar_footbar_closing_after.php';
+}
+
+
+// Sidebar Calendar hooks.
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_calendar_opening_before() {
+	include_once 'r_sidebar_calendar_opening_before.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_calendar_opening_after() {
+	include_once 'r_sidebar_calendar_opening_after.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_calendar_closing_before() {
+	include_once 'r_sidebar_calendar_closing_before.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_calendar_closing_after() {
+	include_once 'r_sidebar_calendar_closing_after.php';
+}
+
+
+// Sidebar posts hooks.
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_posts_opening_before() {
+	include_once 'r_sidebar_posts_opening_before.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_posts_opening_after() {
+	include_once 'r_sidebar_posts_opening_after.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_posts_closing_before() {
+	include_once 'r_sidebar_posts_closing_before.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_posts_closing_after() {
+	include_once 'r_sidebar_posts_closing_after.php';
+}
+
+// Sidebar profiles hooks.
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_profiles_opening_before() {
+	include_once 'r_sidebar_profiles_opening_before.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_profiles_opening_after() {
+	include_once 'r_sidebar_profiles_opening_after.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_profiles_closing_before() {
+	include_once 'r_sidebar_profiles_closing_before.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_sidebar_profiles_closing_after() {
+	include_once 'r_sidebar_profiles_closing_after.php';
+}
+
+// Comment hooks.
+/**
+ * Action hook for indicated hook.
+ */
+function comment_form_hook() {
+	include_once 'comment_form.php';
+}
+
+// Footer hooks.
+/**
+ * Action hook for indicated hook.
+ */
+function r_before_closing_container_inner() {
+	include_once 'r_before_closing_container_inner.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_after_closing_container_inner() {
+	include_once 'r_after_closing_container_inner.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_before_closing_container_outer() {
+	include_once 'r_before_closing_container_outer.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_after_closing_container_outer() {
+	include_once 'r_before_closing_container_outer.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_before_closing_wrapper() {
+	include_once 'r_before_closing_wrapper.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_after_closing_wrapper() {
+	include_once 'r_after_closing_wrapper.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_before_footer_brand_assets() {
+	include_once 'r_before_footer_brand_assets.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_after_footer_brand_assets() {
+	include_once 'r_after_footer_brand_assets.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_before_footer_menus() {
+	include_once 'r_sidebar_footbar_closing_after.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_after_footer_menus() {
+	include_once 'r_after_footer_menus.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function r_before_closing_body_tag() {
+	include_once 'r_before_closing_body_tag.php';
 }
