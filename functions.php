@@ -15,6 +15,7 @@
  * It represents the version of this child theme and is used to version theme
  * assets (style.css, production.js, etc.) when loaded.
  * 1.0.0 should be reserved for the official site launch.
+ *
  * @link https://semver.org/
  */
 define( 'RESPONSIVE_CHILD_THEME_VERSION', '0.0.1' );
@@ -53,5 +54,5 @@ define( 'BU_RESPONSIVE_SIDEBAR_POSITION', 'right' );
 // These lines include the php-dev templates development hooks for use in
 // designing sections rapidly.
 // TODO: Delete these lines and the php-dev folder before going live.
-require_once 'php-dev/dev_functions.php';
+require_once 'php-dev/dev-functions.php';
 add_filter( 'after_setup_theme', 'dev_sections' );
