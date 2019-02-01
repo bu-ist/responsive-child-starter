@@ -9,8 +9,6 @@
  * @package responsive-child-starter
  */
 
-global $hook_messages; // Global OK will only be used in development stage.
-
 /**
  * This function adds an anonymous function for each action hook that will include
  * the corresponding file in this directory on the output of the website.
@@ -105,13 +103,12 @@ function dev_sections() {
 		'r_before_closing_body_tag'         => true,
 	);
 
+	global $hook_messages; // Global OK will only be used in development stage.
 	foreach ( $hooks as $hook => $include ) {
 		$git_url                = 'https://github.com/bu-ist/responsive-framework/search?q=' . $hook;
 		$message                = '<p>';
 		$message               .= 'This is the location for the ';
 		$message               .= '<a href="' . esc_url( $git_url ) . '" class="button">' . $hook . ' hook.</a>';
-		$message               .= '';
-		$message               .= '';
 		$message               .= '</p>';
 		$hook_messages[ $hook ] = $message;
 	}
