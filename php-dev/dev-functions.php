@@ -108,7 +108,7 @@ function dev_sections() {
 		$git_url                = 'https://github.com/bu-ist/responsive-framework/search?q=' . $hook;
 		$message                = '<p>';
 		$message               .= 'This is the location for the ';
-		$message               .= '<a href="' . esc_url( $git_url ) . '" class="button">' . $hook . ' hook.</a>';
+		$message               .= '<a href="' . esc_url( $git_url ) . '">' . $hook . ' hook.</a>';
 		$message               .= '</p>';
 		$hook_messages[ $hook ] = $message;
 	}
