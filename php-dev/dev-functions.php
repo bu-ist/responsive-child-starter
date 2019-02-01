@@ -9,7 +9,7 @@
  * @package responsive-child-starter
  */
 
-global $file_path; // GLOBAL use OK as this will only be used in development.
+global $hook_messages; // Global OK will only be used in development stage.
 
 /**
  * This function adds an anonymous function for each action hook that will include
@@ -106,55 +106,66 @@ function dev_sections() {
 	);
 
 	foreach ( $hooks as $hook => $include ) {
+		$git_url                = 'https://github.com/bu-ist/responsive-framework/search?q=' . $hook;
+		$message                = '<p>';
+		$message               .= 'This is the location for the ';
+		$message               .= '<a href="' . esc_url( $git_url ) . '" class="button">' . $hook . ' hook.</a>';
+		$message               .= '';
+		$message               .= '';
+		$message               .= '</p>';
+		$hook_messages[ $hook ] = $message;
+	}
+
+	foreach ( $hooks as $hook => $include ) {
+		global $r_git_text_link;
+		$r_git_text_link = $hook;
 		if ( $include ) {
 			add_action( $hook, $hook );
 		}
 	}
-
 }
 
-// https://github.com/bu-ist/responsive-framework/search?q=r_before_closing_body_tag.
 // Branding hooks.
 /**
  * Action hook for indicated hook.
  */
 function r_before_branding_masterplate() {
-	include_once 'r_before_branding_masterplate.php';
+	include_once 'r-before-branding-masterplate.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_after_branding_masterplate() {
-	include_once 'r_after_branding_masterplate.php';
+	include_once 'r-after-branding-masterplate.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_before_bumc_branding_logo() {
-	include_once 'r_before_bumc_branding_logo.php';
+	include_once 'r-before-bumc-branding-logo.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_after_bumc_branding_logo() {
-	include_once 'r_after_bumc_branding_logo.php';
+	include_once 'r-after-bumc-branding-logo.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_before_branding_disclaimer() {
-	include_once 'r_before_branding_disclaimer.php';
+	include_once 'r-before-branding-disclaimer.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_after_branding_disclaimer() {
-	include_once 'r_after_branding_disclaimer.php';
+	include_once 'r-after-branding-disclaimer.php';
 }
 
 // Header Hooks.
@@ -162,63 +173,63 @@ function r_after_branding_disclaimer() {
  * Action hook for indicated hook.
  */
 function r_after_opening_body_tag() {
-	include_once 'r_after_opening_body_tag.php';
+	include_once 'r-after-opening-body-tag.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_before_masthead() {
-	include_once 'r_before_masthead.php';
+	include_once 'r-before-masthead.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_after_masthead() {
-	include_once 'r_after_masthead.php';
+	include_once 'r-after-masthead.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_before_opening_wrapper() {
-	include_once 'r_before_opening_wrapper.php';
+	include_once 'r-before-opening-wrapper.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_after_opening_wrapper() {
-	include_once 'r_after_opening_wrapper.php';
+	include_once 'r-after-opening-wrapper.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_before_opening_container_outer() {
-	include_once 'r_before_opening_container_outer.php';
+	include_once 'r-before-opening-container-outer.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_after_opening_container_outer() {
-	include_once 'r_after_opening_container_outer.php';
+	include_once 'r-after-opening-container-outer.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_before_opening_container_inner() {
-	include_once 'r_before_opening_container_inner.php';
+	include_once 'r-before-opening-container-inner.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_after_opening_container_inner() {
-	include_once 'r_after_opening_container_inner.php';
+	include_once 'r-after-opening-container-inner.php';
 }
 
 // Content Hooks.
@@ -227,28 +238,28 @@ function r_after_opening_container_inner() {
  * Action hook for indicated hook.
  */
 function r_sidebar_opening_before() {
-	include_once 'r_sidebar_opening_before.php';
+	include_once 'r-sidebar-opening-before.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_opening_after() {
-	include_once 'r_sidebar_opening_after.php';
+	include_once 'r-sidebar-opening-after.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_closing_before() {
-	include_once 'r_sidebar_closing_before.php';
+	include_once 'r-sidebar-closing-before.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_closing_after() {
-	include_once 'r_sidebar_closing_after.php';
+	include_once 'r-sidebar-closing-after.php';
 }
 
 // Sidebar Bottom.
@@ -256,28 +267,28 @@ function r_sidebar_closing_after() {
  * Action hook for indicated hook.
  */
 function r_sidebar_footbar_opening_before() {
-	include_once 'r_sidebar_footbar_opening_before.php';
+	include_once 'r-sidebar-footbar-opening-before.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_footbar_opening_after() {
-	include_once 'r_sidebar_footbar_opening_after.php';
+	include_once 'r-sidebar-footbar-opening-after.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_footbar_closing_before() {
-	include_once 'r_sidebar_footbar_closing_before.php';
+	include_once 'r-sidebar-footbar-closing-before.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_footbar_closing_after() {
-	include_once 'r_sidebar_footbar_closing_after.php';
+	include_once 'r-sidebar-footbar-closing-after.php';
 }
 
 
@@ -286,28 +297,28 @@ function r_sidebar_footbar_closing_after() {
  * Action hook for indicated hook.
  */
 function r_sidebar_calendar_opening_before() {
-	include_once 'r_sidebar_calendar_opening_before.php';
+	include_once 'r-sidebar-calendar-opening-before.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_calendar_opening_after() {
-	include_once 'r_sidebar_calendar_opening_after.php';
+	include_once 'r-sidebar-calendar-opening-after.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_calendar_closing_before() {
-	include_once 'r_sidebar_calendar_closing_before.php';
+	include_once 'r-sidebar-calendar-closing-before.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_calendar_closing_after() {
-	include_once 'r_sidebar_calendar_closing_after.php';
+	include_once 'r-sidebar-calendar-closing-after.php';
 }
 
 
@@ -316,28 +327,28 @@ function r_sidebar_calendar_closing_after() {
  * Action hook for indicated hook.
  */
 function r_sidebar_posts_opening_before() {
-	include_once 'r_sidebar_posts_opening_before.php';
+	include_once 'r-sidebar-posts-opening-before.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_posts_opening_after() {
-	include_once 'r_sidebar_posts_opening_after.php';
+	include_once 'r-sidebar-posts-opening-after.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_posts_closing_before() {
-	include_once 'r_sidebar_posts_closing_before.php';
+	include_once 'r-sidebar-posts-closing-before.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_posts_closing_after() {
-	include_once 'r_sidebar_posts_closing_after.php';
+	include_once 'r-sidebar-posts-closing-after.php';
 }
 
 // Sidebar profiles hooks.
@@ -345,28 +356,28 @@ function r_sidebar_posts_closing_after() {
  * Action hook for indicated hook.
  */
 function r_sidebar_profiles_opening_before() {
-	include_once 'r_sidebar_profiles_opening_before.php';
+	include_once 'r-sidebar-profiles-opening-before.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_profiles_opening_after() {
-	include_once 'r_sidebar_profiles_opening_after.php';
+	include_once 'r-sidebar-profiles-opening-after.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_profiles_closing_before() {
-	include_once 'r_sidebar_profiles_closing_before.php';
+	include_once 'r-sidebar-profiles-closing-before.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_sidebar_profiles_closing_after() {
-	include_once 'r_sidebar_profiles_closing_after.php';
+	include_once 'r-sidebar-profiles-closing-after.php';
 }
 
 // Comment hooks.
@@ -374,7 +385,7 @@ function r_sidebar_profiles_closing_after() {
  * Action hook for indicated hook.
  */
 function comment_form_hook() {
-	include_once 'comment_form.php';
+	include_once 'comment-form.php';
 }
 
 // Footer hooks.
@@ -382,75 +393,75 @@ function comment_form_hook() {
  * Action hook for indicated hook.
  */
 function r_before_closing_container_inner() {
-	include_once 'r_before_closing_container_inner.php';
+	include_once 'r-before-closing-container-inner.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_after_closing_container_inner() {
-	include_once 'r_after_closing_container_inner.php';
+	include_once 'r-after-closing-container-inner.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_before_closing_container_outer() {
-	include_once 'r_before_closing_container_outer.php';
+	include_once 'r-before-closing-container-outer.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_after_closing_container_outer() {
-	include_once 'r_before_closing_container_outer.php';
+	include_once 'r-before-closing-container-outer.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_before_closing_wrapper() {
-	include_once 'r_before_closing_wrapper.php';
+	include_once 'r-before-closing-wrapper.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_after_closing_wrapper() {
-	include_once 'r_after_closing_wrapper.php';
+	include_once 'r-after-closing-wrapper.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_before_footer_brand_assets() {
-	include_once 'r_before_footer_brand_assets.php';
+	include_once 'r-before-footer-brand-assets.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_after_footer_brand_assets() {
-	include_once 'r_after_footer_brand_assets.php';
+	include_once 'r-after-footer-brand-assets.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_before_footer_menus() {
-	include_once 'r_sidebar_footbar_closing_after.php';
+	include_once 'r-sidebar-footbar-closing-after.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_after_footer_menus() {
-	include_once 'r_after_footer_menus.php';
+	include_once 'r-after-footer-menus.php';
 }
 
 /**
  * Action hook for indicated hook.
  */
 function r_before_closing_body_tag() {
-	include_once 'r_before_closing_body_tag.php';
+	include_once 'r-before-closing-body-tag.php';
 }
