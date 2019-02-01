@@ -34,10 +34,22 @@
  *
  * Note: These sections will appear on all pages! The back end developer will limit
  * the output to appropriate page templates when finalizing the code.
+ *
+ * Note: If you notice any hooks missing please add them to the $hooks array, create
+ * a new section file, and add a new function.
  */
 function dev_sections() {
 
 	$hooks = array(
+
+		// Navigation hooks.
+		'responsive_primary_nav_before'     => true,
+		'responsive_primary_nav_after'      => true,
+		'responsive_utility_nav_before'     => true,
+		'responsive_utility_nav_after'      => true,
+		'responsive_before_mega_nav'        => true,
+		'responsive_after_mega_nav'         => true,
+
 		// Branding hooks.
 		'r_before_branding_masterplate'     => true,
 		'r_after_branding_masterplate'      => true,
@@ -120,6 +132,49 @@ function dev_sections() {
 			add_action( $hook, $hook );
 		}
 	}
+}
+
+// Menu hooks.
+/**
+ * Action hook for indicated hook.
+ */
+function responsive_primary_nav_before() {
+	include_once 'responsive-primary-nav-before.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function responsive_primary_nav_after() {
+	include_once 'responsive-primary-nav-after.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function responsive_utility_nav_before() {
+	include_once 'responsive-utility-nav-before.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function responsive_utility_nav_after() {
+	include_once 'responsive-utility-nav-after.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function responsive_before_mega_nav() {
+	include_once 'responsive-before-mega-nav.php';
+}
+
+/**
+ * Action hook for indicated hook.
+ */
+function responsive_after_mega_nav() {
+	include_once 'responsive-after-mega-nav.php';
 }
 
 // Branding hooks.
