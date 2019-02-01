@@ -9,11 +9,5 @@
  * @package responsive-child-starter
  */
 
-?>
-
-<section>
-	<?php
-	global $hook_messages; // Global OK will only be used in development stage.
-	echo wp_kses_post( $hook_messages['r_sidebar_closing_after'] );
-	?>
-</section>
+global $hook_messages; // Global OK will only be used in development stage.
+echo wp_kses_post( $hook_messages['r_sidebar_closing_after'] );
