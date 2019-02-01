@@ -1,4 +1,3 @@
-
 <?php
 /**
  * This is a file stub for rapid development.
