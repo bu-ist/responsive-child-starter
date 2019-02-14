@@ -10,4 +10,4 @@
  */
 
 global $hook_messages; // Global OK will only be used in development stage.
-echo wp_kses_post( $hook_messages['r_after_opening_container_outer'] );
+echo wp_kses_post( $hook_messages['r_before_opening_container_outer'] );
