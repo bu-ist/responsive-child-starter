@@ -111,10 +111,10 @@ developer prior to launch.
 
 The following must be deleted before going live:
 
-- In the theme `functions.php` file
-  - require_once 'php-dev/dev-functions.php';
-  - add_filter( 'after_setup_theme', 'dev_sections' );
-- The entire `php-dev` folder.
+* In the theme `functions.php` file
+  * require_once 'php-dev/dev-functions.php';
+  * add_filter( 'after_setup_theme', 'dev_sections' );
+* The entire `php-dev` folder.
 
 To add HTML to a specific hook find the corresponding hook name in the $hooks
 array and change it's value to `true`. Add HTML sample code to the corresponding
