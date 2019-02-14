@@ -19,7 +19,7 @@
     "grunt-version": "^1.2.1",
     "grunt-wp-i18n": "^1.0.2",
     "node-sass": "^4.10.0",
-    "responsive-foundation": "git+ssh://git@github.com:bu-ist/responsive-foundation#3.1.0"
+    "responsive-foundation": "git+ssh://git@github.com:bu-ist/responsive-foundation#3.1.01"
   },
   "scripts": {
     "postinstall": "grunt install"

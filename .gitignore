@@ -10,3 +10,4 @@ npm-debug.log
 .mdlrc
 markdown.rb
 phpcs.xml
+.DS-Store

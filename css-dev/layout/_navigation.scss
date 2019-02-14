@@ -237,6 +237,58 @@
 
 // $width-side-nav:                            240px;
 
+///////////////////////////// Mega Nav /////////////////////////////
+
+/// The background color of the mega nav menu toggle.
+/// @group navigation
+/// @access public
+/// @since 3.0.2
+
+// $color-mega-nav-toggle-bg:                   $color-button-bg;
+
+/// The text color of the mega nav menu toggle.
+/// @group navigation
+/// @access public
+/// @since 3.0.2
+
+// $color-mega-nav-toggle-text:                 $color-button-text;
+
+/// The number of columns to use in the mega navigation
+/// menu. If there are fewer nav items than this number
+/// in the first row, they will stretch
+/// @group navigation
+/// @access public
+/// @since 3.0.2
+
+// $mega-nav-columns:                           3;
+
+/// The number of columns to use in the mega navigation
+/// menu on desktop. If there are fewer nav items than this
+/// in the first row, they will stretch
+/// @group navigation
+/// @access public
+/// @since 3.0.2
+
+// $mega-nav-columns-desktop:                   5;
+
+/// The point at which the mega navigation switches from
+/// showing the icon to the full menu and short menu combo.
+/// Accepts a breakpoint or pixel value.
+/// @group navigation
+/// @access public
+/// @since 3.0.2
+
+// $mega-nav-show-full-menu:                    $sm;
+
+/// The point at which the mega navigation switches from
+/// mobile to desktop layout. Accepts a breakpoint or pixel
+/// value.
+/// @group navigation
+/// @access public
+/// @since 3.0.2
+
+// $mega-nav-desktop-layout:                    $md;
+
 // =================================================================
 // Responsive Navigation Import
 // =================================================================
