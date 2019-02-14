@@ -8,4 +8,4 @@ before going live with the theme.
 
 This folder needs to be deleted before going live.
 
-See more in the root level README.md file. 
+See more in the root level README.md file.

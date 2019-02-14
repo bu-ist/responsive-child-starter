@@ -100,7 +100,7 @@ world, request a deploy.
 
 ### Using PHP-DEV templates
 
-This starter theme has been setup with a section for every action hook, and an 
+This starter theme has been setup with a section for every action hook, and an
 add_action to activate every action hook in responsive-framework.
 The intent is to provide a quick and easy way for designers to add HTML and CSS
 code as it will appear on the eventual live site.
@@ -110,16 +110,18 @@ code added to these templates must be moved to production ready templates by a
 developer prior to launch.
 
 The following must be deleted before going live:
+
 - In the theme `functions.php` file
   - require_once 'php-dev/dev-functions.php';
   - add_filter( 'after_setup_theme', 'dev_sections' );
 - The entire `php-dev` folder.
 
-To add HTML to a specific hook find the corresponding hook name in the $hooks array 
-and change it's value to `true`. Add HTML sample code to the corresponding 
+To add HTML to a specific hook find the corresponding hook name in the $hooks
+array and change it's value to `true`. Add HTML sample code to the corresponding
 file in the `php-dev` folder.
 
 Note: The hooks use `_` underscores and the filenames use `-`, and are otherwise
 identical.
 
-Note: To see all current hooks visit https://github.com/bu-ist/responsive-framework
+Note: To see all current hooks visit
+[Responsive Framework](https://github.com/bu-ist/responsive-framework)
