@@ -6,9 +6,30 @@
   "contributors": [
     "Your Name <you@bu.edu>"
   ],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "browserify-shim": {
+    "jQuery": "global:jQuery"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@wordpress/babel-preset-default": "^3.0.2",
+    "@wordpress/eslint-plugin": "^1.0.1",
+    "babelify": "^10.0.0",
+    "browserify-shim": "^3.8.14",
+    "eslint": "^5.12.1",
     "grunt": "^1.0.3",
-    "grunt-contrib-clean": "^1.1.0",
+    "grunt-browserify": "^5.3.0",
+    "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "^1.0.0",
     "grunt-contrib-uglify": "^3.3.0",
@@ -16,10 +37,13 @@
     "grunt-notify": "^0.4.1",
     "grunt-phplint": "^0.1.0",
     "grunt-sass": "^3.0.2",
+    "grunt-sass-lint": "^0.2.4",
     "grunt-version": "^1.2.1",
     "grunt-wp-i18n": "^1.0.2",
-    "node-sass": "^4.10.0",
-    "responsive-foundation": "git+ssh://git@github.com:bu-ist/responsive-foundation#3.1.01"
+    "node-sass": "^4.10.0"
+  },
+  "dependencies": {
+    "responsive-foundation": "git+ssh://git@github.com:bu-ist/responsive-foundation#feature/use-as-js-component-library"
   },
   "scripts": {
     "postinstall": "grunt install"
