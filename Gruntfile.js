@@ -231,6 +231,6 @@ module.exports = function(grunt) {
 	grunt.registerTask( 'i18n',     [ 'clean', 'addtextdomain', 'makepot' ] );
 	grunt.registerTask( 'styles',   [ 'version:styles', 'sass', 'postcss' ] );
 	grunt.registerTask( 'scripts',  [ 'version:functions', 'phplint', 'concat', 'uglify' ] );
-	grunt.registerTask( 'build',	[ 'sass', 'scripts', 'i18n' ] );
+	grunt.registerTask( 'build',	[ 'styles', 'scripts', 'i18n' ] );
 	grunt.registerTask( 'default',  [ 'watch' ] );
 };
