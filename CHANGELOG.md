@@ -1,6 +1,10 @@
 # Changelog
 
 ## Unreleased
+
+- Add autoprefixer support with grunt-postcss plugin.
+- Add browserslist support in package.json for front-end tools like
+  autoprefixer.
 - Add es6 functionality via a variety of npm packages and Gruntfile
   modifications:
     - `grunt-browserify`: A bundler that allows for easier dependency management
@@ -26,7 +30,7 @@
       irrelevant files don't stick around.
 - Adds `grunt-sass-lint` for separate `grunt sasslint` task.
 - Adds `browserslist` to package.json so front-end tooling packages like `babel`
-  and `autoprefixer` (not yet in Framework) can share the same configurations
+  and `autoprefixer` can share the same configurations
   for browser support.
 - Adds `.babelrc` configuration file for es6 configs.
 - Adds `.eslintrc.json` configuration file for eslint configs.

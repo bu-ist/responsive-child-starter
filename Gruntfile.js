@@ -1,5 +1,6 @@
 module.exports = function( grunt ) {
 	// Require external packages.
+	const autoprefixer = require( 'autoprefixer' );
 	const sass = require( 'node-sass' );
 
 	// 1. All configuration goes here
@@ -110,6 +111,31 @@ module.exports = function( grunt ) {
 				},
 			},
 		},
+		postcss: {
+			defaults: {
+				options: {
+					map: {
+						inline: false, // Save all sourcemaps as separate files.
+					},
+					processors: [
+						autoprefixer, // add vendor prefixes.
+					],
+				},
+				src: ['style.css', 'style.min.css'],
+			},
+			admin: {
+				options: {
+					map: {
+						inline: false, // Save all sourcemaps as separate files.
+						annotation: 'admin/', // Save to this specified directory.
+					},
+					processors: [
+						autoprefixer, // add vendor prefixes.
+					],
+				},
+				src: ['admin/admin.css'],
+			},
+		},
 		version: {
 			functions: {
 				options: {
@@ -205,6 +231,7 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-contrib-concat' );
 	grunt.loadNpmTasks( 'grunt-contrib-copy' );
 	grunt.loadNpmTasks( 'grunt-contrib-uglify' );
+	grunt.loadNpmTasks( 'grunt-postcss' );
 	grunt.loadNpmTasks( 'grunt-sass' );
 	grunt.loadNpmTasks( 'grunt-notify' );
 	grunt.loadNpmTasks( 'grunt-version' );
@@ -216,13 +243,13 @@ module.exports = function( grunt ) {
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask( 'install', [ 'copy:hooks', 'build' ] );
 	grunt.registerTask( 'i18n', [ 'clean:languages', 'addtextdomain', 'makepot' ] );
-	grunt.registerTask( 'styles', [ 'version:styles', 'sass' ] );
+	grunt.registerTask( 'styles', [ 'version:styles', 'sass', 'postcss' ] );
 	grunt.registerTask( 'scripts', [
 		'version:functions',
 		'clean:js',
 		'browserify',
 		'uglify',
 	] );
-	grunt.registerTask( 'build', [ 'sass', 'phplint', 'scripts', 'i18n' ] );
+	grunt.registerTask( 'build', [ 'styles', 'phplint', 'scripts', 'i18n' ] );
 	grunt.registerTask( 'default', [ 'watch' ] );
 };
