@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 2.2.0
 
 - Add autoprefixer support with grunt-postcss plugin.
 - Add browserslist support in package.json for front-end tools like
