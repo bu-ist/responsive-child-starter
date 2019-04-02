@@ -1,5 +1,9 @@
 # Changelog
 
+## 2.2.1
+
+- Bump Foundation version for new event fields styling on calendar template.
+
 ## 2.2.0
 
 - Add autoprefixer support with grunt-postcss plugin.
