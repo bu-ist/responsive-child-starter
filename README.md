@@ -57,7 +57,7 @@ only need to be run once per theme.
 - [ ] Does your theme have a `screenshot.png` that will help identify it under
  Appearance > Themes?
 - [ ] Did you run `grunt build` to compile your Sass and Javascript files?
-- [ ] Make sure you're pulling in the newest version of Foundation. Use the
+- [ ] In `package.json`, in the line specifying the `responsive-foundation` dependancy, make sure you're pulling in the newest version number of Foundation. Use the
  [newest release](https://github.com/bu-ist/responsive-foundation/releases).
 
 ## Force CSS/JS to refresh
