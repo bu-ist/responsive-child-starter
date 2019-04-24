@@ -12,7 +12,7 @@
       - Website: [http://www.bu.edu/interactive-design/](http://www.bu.edu/interactive-design/)
       - Version: 1.0.0
       - Description: Responsive theme for BU School of Education
-      - Template: responsive-framework
+      - Template: responsive-framework-2x
 
 1. Update theme metadata (see the checklist below).
 1. Install development dependencies.
