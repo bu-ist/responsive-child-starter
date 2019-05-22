@@ -45,7 +45,7 @@
     "node-sass": "^4.10.0"
   },
   "dependencies": {
-    "responsive-foundation": "git+ssh://git@github.com:bu-ist/responsive-foundation#3.2.1"
+    "responsive-foundation": "git+ssh://git@github.com:bu-ist/responsive-foundation#3.2.11"
   },
   "scripts": {
     "postinstall": "grunt install"
