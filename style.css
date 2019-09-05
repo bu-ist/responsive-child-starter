@@ -505,6 +505,45 @@ template {
   margin: 30px;
 }
 
+.skip-link {
+  -ms-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  background-color: #F1F1F1;
+  color: #21759B;
+  display: block;
+  font-family: "Open Sans",sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  height: auto;
+  left: 50%;
+  line-height: normal;
+  margin: 0;
+  padding: 15px 23px 14px;
+  position: fixed;
+  right: 50%;
+  text-align: center;
+  text-decoration: none;
+  top: -130px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  transition: top 0.3s ease-out;
+  width: 90%;
+  z-index: 100000;
+}
+
+@media (min-width: 500px) {
+  .skip-link {
+    width: 190px;
+  }
+}
+
+.skip-link:focus, .skip-link:active {
+  color: #21759B;
+  top: 0;
+  transition: top 0s;
+}
+
 @font-face {
   font-family: "Benton-Sans";
   src: url("//www.bu.edu/cdn/fonts/Benton-Sans-Regular/019c3a13-b3d7-4c5a-be27-07a8334a43e6-2.eot");
@@ -558,7 +597,7 @@ template {
   src: url("//www.bu.edu/cdn/fonts/TiemposText/TiemposText-Semibold.eot");
   src: url("//www.bu.edu/cdn/fonts/TiemposText/TiemposText-Semibold.eot?#iefix") format("embedded-opentype"), url("//www.bu.edu/cdn/fonts/TiemposText/TiemposText-Semibold.woff") format("woff");
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 @font-face {
@@ -566,7 +605,7 @@ template {
   src: url("//www.bu.edu/cdn/fonts/TiemposText/TiemposText-Semibold-Italic.eot");
   src: url("//www.bu.edu/cdn/fonts/TiemposText/TiemposText-Semibold-Italic.eot?#iefix") format("embedded-opentype"), url("//www.bu.edu/cdn/fonts/TiemposText/TiemposText-Semibold-Italic.woff") format("woff");
   font-style: italic;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 @font-face {
@@ -578,7 +617,7 @@ template {
 }
 
 .search-toggle.is-open::before, .mega-nav-toggle .nav-toggle-label-open::before, .bu_collapsible::before, .bu_collapsible_open > .bu_collapsible::before, .search-toggle::before, .gallery-icon a::before, .menu-item [href*="dropbox.com"]::before, .menu-item [href*="facebook.com"]::before, .menu-item [href*="flickr.com"]::before, .menu-item [href*="foursquare.com"]::before, .menu-item [href*="github.com"]::before, .menu-item [href*="plus.google.com"]::before, .menu-item [href*="instagram.com"]::before, .menu-item [href*="kickstarter.com"]::before, .menu-item [href*="linkedin.com"]::before, .menu-item [href*="pinterest.com"]::before, .menu-item [href*="getpocket.com"]::before, .menu-item [href*="reddit.com"]::before, .menu-item [href*="snapchat.com"]::before, .menu-item [href*="twitter.com"]::before, .menu-item [href*="tumblr.com"]::before, .menu-item [href*="vimeo.com"]::before, .menu-item [href*="vine.co"]::before, .menu-item [href*="youtube.com"]::before,
-.menu-item [href*="bu.edu/buniverse"]::before {
+.menu-item [href*="bu.edu/buniverse"]::before, .icon-buhub::before, .icon-questionmark::before {
   color: unset;
   display: inline-block;
   font-family: "bu-default-icons";
@@ -888,6 +927,30 @@ template {
   content: "";
 }
 
+.lt-ie9:hover .icon-buhub {
+  -ms-zoom: 1;
+}
+
+.icon-buhub span {
+  display: none;
+}
+
+.icon-buhub::before {
+  content: "";
+}
+
+.lt-ie9:hover .icon-questionmark {
+  -ms-zoom: 1;
+}
+
+.icon-questionmark span {
+  display: none;
+}
+
+.icon-questionmark::before {
+  content: "❓";
+}
+
 *,
 *::before,
 *::after {
@@ -941,6 +1004,7 @@ figure {
 @media (min-width: 1200px) {
   .container, .content-container, .footbar-container, .content-container-narrow {
     max-width: 1170px;
+    grid-gap: 60px;
   }
 }
 
@@ -964,7 +1028,7 @@ figure {
   flex-wrap: wrap;
 }
 
-.col-1, .col-2, .profile-photo-mini, .col-quarter, .col-3, .col-third, .col-4, .col-5, .col-half, .col-6, .col-7, .col-two-third, .col-8, .col-three-quarter, .col-9, .col-10, .profile-details-mini, .col-11, .col-full, .widget, .col-12, .col-margin-remove, .col-margin-0, .col-push-remove, .col-push-0, .col-pull-remove, .col-pull-0, .col-offset-remove, .col-offset-0, .col-margin-1, .col-push-1, .col-pull-1, .col-offset-1, .col-margin-2, .col-push-2, .col-pull-2, .col-offset-2, .col-margin-quarter, .col-margin-3, .col-push-quarter, .col-push-3, .col-pull-quarter, .col-pull-3, .col-offset-quarter, .col-offset-3, .col-margin-third, .col-margin-4, .col-push-third, .col-push-4, .col-pull-third, .col-pull-4, .col-offset-third, .col-offset-4, .col-margin-5, .col-push-5, .col-pull-5, .col-offset-5, .col-margin-half, .col-margin-6, .col-push-half, .col-push-6, .col-pull-half, .col-pull-6, .col-offset-half, .col-offset-6, .col-margin-7, .col-push-7, .col-pull-7, .col-offset-7, .col-margin-two-third, .col-margin-8, .col-push-two-third, .col-push-8, .col-pull-two-third, .col-pull-8, .col-offset-two-third, .col-offset-8, .col-margin-three-quarter, .col-margin-9, .col-push-three-quarter, .col-push-9, .col-pull-three-quarter, .col-pull-9, .col-offset-three-quarter, .col-offset-9, .col-margin-10, .col-push-10, .col-pull-10, .col-offset-10, .col-margin-11, .col-push-11, .col-pull-11, .col-offset-11, .col-margin-full, .col-margin-12, .col-push-full, .col-push-12, .col-pull-full, .col-pull-12, .col-offset-full, .col-offset-12 {
+.col-1, .col-2, .col-quarter, .col-3, .profile-photo-mini, .col-third, .col-4, .col-5, .col-half, .col-6, .col-7, .col-two-third, .col-8, .col-three-quarter, .col-9, .profile-details-mini, .col-10, .col-11, .col-full, .widget, .content-area, .col-12, .col-margin-remove, .col-margin-0, .col-push-remove, .col-push-0, .col-pull-remove, .col-pull-0, .col-offset-remove, .col-offset-0, .col-margin-1, .col-push-1, .col-pull-1, .col-offset-1, .col-margin-2, .col-push-2, .col-pull-2, .col-offset-2, .col-margin-quarter, .col-margin-3, .col-push-quarter, .col-push-3, .col-pull-quarter, .col-pull-3, .col-offset-quarter, .col-offset-3, .col-margin-third, .col-margin-4, .col-push-third, .col-push-4, .col-pull-third, .col-pull-4, .col-offset-third, .col-offset-4, .col-margin-5, .col-push-5, .col-pull-5, .col-offset-5, .col-margin-half, .col-margin-6, .col-push-half, .col-push-6, .col-pull-half, .col-pull-6, .col-offset-half, .col-offset-6, .col-margin-7, .col-push-7, .col-pull-7, .col-offset-7, .col-margin-two-third, .col-margin-8, .col-push-two-third, .col-push-8, .col-pull-two-third, .col-pull-8, .col-offset-two-third, .col-offset-8, .col-margin-three-quarter, .col-margin-9, .col-push-three-quarter, .col-push-9, .col-pull-three-quarter, .col-pull-9, .col-offset-three-quarter, .col-offset-9, .col-margin-10, .col-push-10, .col-pull-10, .col-offset-10, .col-margin-11, .col-push-11, .col-pull-11, .col-offset-11, .col-margin-full, .col-margin-12, .col-push-full, .col-push-12, .col-pull-full, .col-pull-12, .col-offset-full, .col-offset-12 {
   float: left;
   position: relative;
   min-height: 1px;
@@ -987,11 +1051,11 @@ figure {
   width: 8.33333%;
 }
 
-.col-2, .profile-photo-mini {
+.col-2 {
   width: 16.66667%;
 }
 
-.col-quarter, .col-3 {
+.col-quarter, .col-3, .profile-photo-mini {
   width: 25%;
 }
 
@@ -1015,11 +1079,11 @@ figure {
   width: 66.66667%;
 }
 
-.col-three-quarter, .col-9 {
+.col-three-quarter, .col-9, .profile-details-mini {
   width: 75%;
 }
 
-.col-10, .profile-details-mini {
+.col-10 {
   width: 83.33333%;
 }
 
@@ -1027,7 +1091,7 @@ figure {
   width: 91.66667%;
 }
 
-.col-full, .widget, .col-12 {
+.col-full, .widget, .content-area, .col-12 {
   width: 100%;
 }
 
@@ -1521,7 +1585,7 @@ figure {
     min-height: 1px;
     width: 25%;
   }
-  .col-sm-third, .single-event-schedule, .col-sm-4 {
+  .col-sm-third, .col-sm-4 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -1734,7 +1798,7 @@ figure {
 }
 
 @media (min-width: 992px) {
-  .col-md-margin-remove, .col-md-margin-0, .col-md-margin-1, .col-md-margin-2, .col-md-margin-quarter, .col-md-margin-3, .col-md-margin-third, .col-md-margin-4, .no-csscolumns .footbar-container .widget, .col-md-margin-5, .col-md-margin-half, .col-md-margin-6, .col-md-margin-7, .col-md-margin-two-third, .col-md-margin-8, .col-md-margin-three-quarter, .col-md-margin-9, .col-md-margin-10, .col-md-margin-11, .col-md-margin-full, .col-md-margin-12 {
+  .col-md-margin-remove, .col-md-margin-0, .col-md-margin-1, .col-md-margin-2, .col-md-margin-quarter, .col-md-margin-3, .col-md-margin-third, .col-md-margin-4, .footbar-container .widget, .col-md-margin-5, .col-md-margin-half, .col-md-margin-6, .col-md-margin-7, .col-md-margin-two-third, .col-md-margin-8, .col-md-margin-three-quarter, .col-md-margin-9, .col-md-margin-10, .col-md-margin-11, .col-md-margin-full, .col-md-margin-12 {
     float: left;
     margin-bottom: 2.5641%;
     margin-left: 2.5641%;
@@ -1816,7 +1880,8 @@ figure {
     min-height: 1px;
     width: 91.66667%;
   }
-  .col-md-full, .col-md-12 {
+  .col-md-full, .page-template-no-sidebars .content-area,
+  .error404 .content-area, .col-md-12 {
     float: left;
     position: relative;
     min-height: 1px;
@@ -1834,7 +1899,7 @@ figure {
   .col-md-margin-quarter, .col-md-margin-3 {
     width: 22.4359%;
   }
-  .col-md-margin-third, .col-md-margin-4, .no-csscolumns .footbar-container .widget {
+  .col-md-margin-third, .col-md-margin-4, .footbar-container .widget {
     width: 30.76923%;
   }
   .col-md-margin-5 {
@@ -2591,8 +2656,8 @@ button:hover,
 :hover[type="reset"],
 :hover[type="submit"], .button:hover, .button-primary:hover,
 .button-selected:hover, .paging-navigation a:hover, .archive-link:hover {
-  background-image: linear-gradient(top, transparent, rgba(0, 0, 0, 0.1));
-  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#00000000', EndColorStr='#1A000000');
+  background: transparent;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.1));
 }
 
 button:active,
@@ -3531,6 +3596,10 @@ a:hover .bu-hub-iconstyles::before {
   font-size: 90%;
 }
 
+.syntaxhighlighter .container {
+  display: block;
+}
+
 .profile-format-default {
   border-top: 1px solid #ddd;
 }
@@ -3695,6 +3764,23 @@ a:hover .bu-hub-iconstyles::before {
 .widget_links li:first-child,
 .widget_archive li:first-child {
   border: 0;
+}
+
+#wp-calendar {
+  background: #fff;
+  font-size: 14px;
+  table-layout: fixed;
+}
+
+#wp-calendar td {
+  height: 30px;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#wp-calendar a {
+  display: block;
 }
 
 .widget-calendar-event {
@@ -4323,9 +4409,12 @@ nav a {
   outline-color: white;
 }
 
-.primary-nav-menu li:hover ul,
-.primary-nav-menu li:focus ul,
 .primary-nav-menu li:focus-within ul {
+  left: auto;
+}
+
+.primary-nav-menu li:hover ul,
+.primary-nav-menu li:focus ul {
   left: auto;
 }
 
@@ -4415,7 +4504,6 @@ nav a {
 
 @media (min-width: 768px) {
   .utility-nav li {
-    *display: inline;
     border: 0;
     display: inline-block;
     padding-left: 15px;
@@ -4992,45 +5080,6 @@ nav a {
   font-weight: 700;
 }
 
-.skip-link {
-  -ms-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  -o-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-  background-color: #f1f1f1;
-  color: #21759b;
-  display: block;
-  font-family: "Open Sans",sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  height: auto;
-  left: 50%;
-  line-height: normal;
-  margin: 0;
-  padding: 15px 23px 14px;
-  position: fixed;
-  right: 50%;
-  text-align: center;
-  text-decoration: none;
-  top: -130px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  transition: top 0.3s ease-out;
-  width: 90%;
-  z-index: 100000;
-}
-
-@media (min-width: 500px) {
-  .skip-link {
-    width: 190px;
-  }
-}
-
-.skip-link:focus, .skip-link:active {
-  color: #21759b;
-  top: 0;
-  transition: top 0s;
-}
-
 .banner-container {
   padding: 0;
   text-align: center;
@@ -5099,11 +5148,11 @@ nav a {
 .page-template-no-sidebars .content-area,
 .error404 .content-area {
   left: 0;
-  width: 100%;
 }
 
 .sidebar {
   clear: none;
+  place-content: baseline;
 }
 
 @media (min-width: 992px) {
@@ -5147,24 +5196,8 @@ nav a {
   background: #f5f5f5;
 }
 
-@media (min-width: 992px) {
-  .footbar-container {
-    display: grid;
-    grid-gap: 60px;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 60px 30px;
-  }
-}
-
-@media (min-width: 992px) {
-  .footbar-container .widget {
-    margin-top: 0;
-    padding: 0;
-  }
-  .footbar-container .widget:first-child, .footbar-container .widget:nth-child(3n+1) {
-    clear: left;
-    margin-left: 0;
-  }
+.footbar-container .widget {
+  padding: 0;
 }
 
 body {
@@ -5753,6 +5786,18 @@ body {
 
 .single-event-schedule {
   margin: 0 0 20px;
+}
+
+@media (min-width: 768px) {
+  .single-event-schedule {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    left: initial;
+    margin-left: initial;
+    right: initial;
+    width: 33.33333%;
+  }
 }
 
 @media (min-width: 768px) {
