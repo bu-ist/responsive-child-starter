@@ -1,0 +1,155 @@
+/* This sample CSS is JUST to work in tandem with the changes in `dev-functions.php` in order to provide more visual examples of the locations for the action hooks. */
+
+
+/* To position the sidebar hooks better */
+.content-container {
+	position: relative;
+}
+
+.hook-message {
+	background: #f5f5f5;
+	border: 1px dashed black;
+	border-left: 5px solid black;
+	color: #666;
+	padding: .3em;
+	white-space: nowrap;
+	margin: .3em;
+}
+
+/* Body Tag */
+.r_after_opening_body_tag,
+.r_before_closing_body_tag {
+	border-left: 5px solid red;
+}
+
+/* Masthead */
+.r_before_masthead,
+.r_after_masthead {
+	border-left: 5px solid orange;
+}
+
+/* Utility Nav */
+.responsive_utility_nav_before,
+.responsive_utility_nav_after {
+	border-left: 5px solid yellow;
+	position: absolute;
+	right: 30px;
+	top: 11px;
+	font-size: .65em;
+	padding: .3em;
+}
+
+.responsive_utility_nav_after {
+	top: 76px;
+}
+
+/* Opening Wrapper & Closing Wrapper */
+.r_before_opening_wrapper,
+.r_after_closing_wrapper {
+	border-left: 5px solid lime;
+}
+
+.r_after_opening_wrapper,
+.r_before_closing_wrapper {
+	border-left: 5px solid green;
+}
+
+/* Opening Container Outer  */
+.r_after_opening_container_outer,
+.r_before_closing_container_outer {
+	border-left: 5px solid aqua;
+}
+
+/* Opening Container Inner */
+.r_before_opening_container_inner,
+.r_after_closing_container_inner {
+	border-left: 5px solid blue;
+}
+
+/* Opening Container Inner */
+.r_after_opening_container_inner,
+.r_before_closing_container_inner {
+	border-left: 5px solid purple;
+	width: 66.66667%;
+}
+
+.r_before_closing_container_inner {
+	position: absolute;
+	bottom: 0;
+	width: 60%;
+}
+
+/* Sidebar */
+.r_sidebar_opening_before,
+.r_sidebar_closing_after {
+	border-left: 5px solid pink;
+	width: 37.333%;
+	position: absolute;
+	right: -83px;
+	font-size: .8em;
+	padding: .3em;
+	top: 0;
+}
+}
+
+.r_sidebar_closing_after {
+	top: auto;
+	bottom: 0;
+}
+
+.r_sidebar_closing_before,
+.r_sidebar_opening_after {
+	border-left: 5px solid hotpink;
+	margin-bottom: 20px;
+}
+
+/* Footer */
+.site-footer-brand-assets .hook-message a {
+	float: none;
+	display: inline;
+}
+
+.site-footer-brand-assets {
+	float: left;
+	clear: both;
+}
+
+.site-footer-brand-assets a {
+	float: none;
+}
+
+.r_before_footer_brand_assets,
+.r_after_footer_brand_assets {
+	border-left: 5px solid tan;
+	float: left;
+	clear: both;
+}
+
+.r_sidebar_footbar_closing_after {
+	border-left: 5px solid brown;
+	position: absolute;
+	right: 0;
+}
+
+.r_before_branding_disclaimer,
+.r_after_branding_disclaimer {
+	border-left: 5px solid darksalmon;
+}
+
+.r_before_branding_masterplate,
+.r_after_branding_masterplate {
+	border-left: 5px solid mediumvioletred;
+}
+
+.r_before_bumc_branding_logo,
+.r_after_bumc_branding_logo {
+	border-left: 5px solid orangered;
+}
+
+.r_after_footer_menus {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 600px;
+	border-left: 5px solid tomato;
+}
