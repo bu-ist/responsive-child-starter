@@ -115,6 +115,17 @@ function dev_sections() {
 		'r_before_closing_body_tag'         => false,
 	);
 
+	/**
+	 * Allow all hooks to be turned on via constant or filter.
+	 *
+	 * Default is false (no constant exists, and filter returns false).
+	 *
+	 * @since 2.2.3
+	 */
+	if ( ( defined( 'RESPONSIVE_ENABLE_ALL_DEV_HOOKS' ) && RESPONSIVE_ENABLE_ALL_DEV_HOOKS ) || apply_filters( 'responsive_enable_all_dev_hooks', false ) ) {
+		$hooks = array_map( '__return_true', $hooks );
+	}
+
 	global $hook_messages; // Global OK will only be used in development stage.
 	foreach ( $hooks as $hook => $include ) {
 		$git_url                = 'https://github.com/bu-ist/responsive-framework/search?q=' . $hook;
