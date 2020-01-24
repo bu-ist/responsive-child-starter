@@ -28,7 +28,7 @@
     "babelify": "^10.0.0",
     "browserify-shim": "^3.8.14",
     "eslint": "^5.12.1",
-    "grunt": "^1.0.3",
+    "grunt": "^1.0.4",
     "grunt-browserify": "^5.3.0",
     "grunt-contrib-clean": "^2.0.0",
     "grunt-contrib-concat": "^1.0.1",
