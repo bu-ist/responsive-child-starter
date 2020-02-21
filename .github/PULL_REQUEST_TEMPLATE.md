@@ -13,8 +13,7 @@ You can see my changes in the links below:
 ### Browser support
 
 I have tested my changes in the following browsers:
-
-*If your project requires browser testing beyond the latest two versions, such as IE9, please note this below.*
+<br/><sub><sup>*If your project requires browser testing beyond the latest two versions, such as IE9, please note this below.*</sup></sub>
 
 - [ ] Chrome
 - [ ] Firefox
@@ -31,8 +30,9 @@ I have tested my changes in the following browsers:
 
 ---
 
-## Project information for reviewers
+## Information for reviewers
 
 - [Related issue, ServiceNow ticket, or Trello card, if applicable](#)
 - [ActiveCollab project (track time here)](#)
-- [ ] This project has unusual billing, development, or timing needs (please note below):
+  - [ ] This work is non-billable
+    <br/><sub><sup>*Work is only non-billable if it is a bug fix that occurs after the site has launched, or if the project has an unusual billing arrangement.*</sup></sub>
