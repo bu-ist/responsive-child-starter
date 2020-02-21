@@ -32,5 +32,6 @@ I have tested my changes in the following browsers:
 
 ## Project information for reviewers
 
-- [ActiveCollab project (track time here)](#)
 - [Related issue, ServiceNow ticket, or Trello card, if applicable](#)
+- [ActiveCollab project (track time here)](#)
+- [ ] This project has unusual billing, development, or timing needs (please note below):
