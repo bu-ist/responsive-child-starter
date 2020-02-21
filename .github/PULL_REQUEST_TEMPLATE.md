@@ -22,7 +22,7 @@ I have tested my changes in the following browsers:
 - [ ] Edge
 - [ ] IE11
 
-### Review checklist
+### Pre-review checklist
 
 - [ ] I have tested my changes in my sandbox and they are working correctly.
 - [ ] To the best of my knowledge, this code is stable and ready to be deployed to production or staging at any time.
