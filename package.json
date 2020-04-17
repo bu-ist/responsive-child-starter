@@ -1,26 +1,53 @@
 {
   "name": "responsive-child-starter",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A starting point for Responsive Framework child themes.",
   "repository": "https://github.com/bu-ist/responsive-child-starter/",
   "contributors": [
     "Your Name <you@bu.edu>"
   ],
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "browserify-shim": {
+    "jQuery": "global:jQuery"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  },
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "grunt-bower-task": "^0.4.0",
-    "grunt-contrib-clean": "^1.1.0",
-    "grunt-contrib-concat": "^0.5.1",
-    "grunt-contrib-copy": "^0.8.0",
-    "grunt-contrib-uglify": "^0.9.1",
-    "grunt-contrib-watch": "^0.6.1",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@wordpress/babel-preset-default": "^3.0.2",
+    "@wordpress/eslint-plugin": "^1.0.1",
+    "autoprefixer": "^9.4.9",
+    "babelify": "^10.0.0",
+    "browserify-shim": "^3.8.14",
+    "eslint": "^5.12.1",
+    "grunt": "^1.0.4",
+    "grunt-browserify": "^5.3.0",
+    "grunt-contrib-clean": "^2.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0",
     "grunt-notify": "^0.4.1",
-    "grunt-phplint": "0.0.8",
-    "grunt-sass": "^2.0.0",
-    "grunt-version": "^1.0.0",
-    "grunt-wp-i18n": "^1.0.2"
+    "grunt-phplint": "^0.1.0",
+    "grunt-postcss": "^0.9.0",
+    "grunt-sass": "^3.0.2",
+    "grunt-sass-lint": "^0.2.4",
+    "grunt-version": "^1.2.1",
+    "grunt-wp-i18n": "^1.0.2",
+    "node-sass": "^4.10.0"
+  },
+  "dependencies": {
+    "responsive-foundation": "git+ssh://git@github.com:bu-ist/responsive-foundation#4.0.0"
   },
   "scripts": {
-    "postinstall": "bundle install && grunt install"
+    "postinstall": "grunt install"
   }
 }

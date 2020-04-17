@@ -1,37 +1,36 @@
 ---
 exclude_paths:
-- bower_components/
-- Gemfile
-- Gemfile.lock
-- node_modules/
-- languages/
-- js/vendor/
-- vendor/
-- ".sass-cache/"
-- "hooks/post-merge"
-- "js/script.js"
-- "markdown.rb"
-- "phpunit.xml"
-- "phpunit.xml.dist"
-- "**/*.min.css"
-- "**/*.min.js"
-- "**.css"
-- "**.css.map"
-- "**.gif"
-- "**.jpg"
-- "**.png"
-- "**.svg"
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - languages/
+  - js/vendor/
+  - vendor/
+  - ".sass-cache/"
+  - "hooks/post-merge"
+  - "js/script.js"
+  - "markdown.rb"
+  - "phpunit.xml"
+  - "phpunit.xml.dist"
+  - "**/*.min.css"
+  - "**/*.min.js"
+  - "**.css"
+  - "**.css.map"
+  - "**.gif"
+  - "**.jpg"
+  - "**.png"
+  - "**.svg"
 
 prepare:
   fetch:
-  - url: "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/.scss-lint-r-2.x.yml"
-    path: ".scss-lint.yml"
-  - "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/.eslintrc"
-  - "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/.eslintignore"
-  - "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/.mdlrc"
-  - "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/markdown.rb"
-  - url: "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/phpcs-themes.xml"
-    path: "phpcs.xml"
+    - url: "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/.scss-lint-r-2.x.yml"
+      path: ".scss-lint.yml"
+    - "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/.eslintrc"
+    - "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/.eslintignore"
+    - "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/.mdlrc"
+    - "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/markdown.rb"
+    - url: "https://raw.githubusercontent.com/bu-ist/coding-standards/master/code-climate-rule-sets/phpcs-themes.xml"
+      path: "phpcs.xml"
 
 engines:
   csslint:
@@ -40,13 +39,13 @@ engines:
     enabled: true
     config:
       languages:
-      - javascript
-      - php
+        - javascript
+        - php
     exclude_paths:
       - Gruntfile.js
   eslint:
-    enabled: true
-    channel: eslint-3
+    enabled: false
+    channel: eslint-5
   fixme:
     enabled: true
   markdownlint:
@@ -63,13 +62,13 @@ engines:
     config:
       file_extensions: php
       rulesets: codesize,naming,unusedcode
-  scss-lint:
+  sass-lint:
     enabled: true
 ratings:
   paths:
-  - "**.md"
-  - "**.inc"
-  - "**.js"
-  - "**.json"
-  - "**.php"
-  - "**.scss"
+    - "**.md"
+    - "**.inc"
+    - "**.js"
+    - "**.json"
+    - "**.php"
+    - "**.scss"

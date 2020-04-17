@@ -168,6 +168,24 @@
 
 // $font-margin-dd:                            0 0 0 $margin;
 
+/// Overrides invidividual font size values and allows you to create your
+/// own custom values and placeholders by redeclaring values you want
+/// to override and adding new values here.
+/// For exmaple, uncommenting the snippet below would make all h2s much smaller.
+/// Defaults include `1` for `<h1>`, `2` for
+/// `<h2>`, etc through `<h6>`, `secondary`, and `minimum`.
+/// @group typography
+/// @access public
+/// @since 2.0.0
+
+// $font-styles-theme: (
+// 	'2': (
+// 	  	font-size-mobile: 14px,
+// 	  	font-size-desktop: 18px,
+// 		line-height: 1.3,
+// 	),
+// );
+
 // =================================================================
 // Responsive Typography Import
 // =================================================================
@@ -177,21 +195,3 @@
 // =================================================================
 // Custom Typography Styles
 // =================================================================
-
-/// Overrides invidividual font size values and allows you to create your
-/// own custom values and placeholders by redeclaring values you want
-/// to override and adding new values here.
-/// For exmaple, uncommenting the snippet below would create %font-size-caption.
-/// Defaults include `font-size-1` for `<h1>`, `font-size-2` for
-/// `<h2>`, etc through `<h6>`, `font-size-secondary`, and `font-size-minimum`.
-/// @group typography
-/// @access public
-/// @since 2.0.0
-
-// $font-styles-theme: (
-// 	font-size-caption: (
-// 	  	font-size-mobile: 14px,
-// 	  	font-size-desktop: 18px,
-// 		line-height: 1.3,
-// 	),
-// );

@@ -14,8 +14,11 @@
  *
  * It represents the version of this child theme and is used to version theme
  * assets (style.css, production.js, etc.) when loaded.
+ * 1.0.0 should be reserved for the official site launch.
+ *
+ * @link https://semver.org/
  */
-define( 'RESPONSIVE_CHILD_THEME_VERSION', '1.0.0' );
+define( 'RESPONSIVE_CHILD_THEME_VERSION', '0.0.1' );
 
 /**
  * Specifies the responsive layout for the theme. Disables the option in the
@@ -47,3 +50,11 @@ define( 'BU_BRANDING_TYPE', 'logotype' );
  * Available values: `right`, `left`, `bottom`.
  */
 define( 'BU_RESPONSIVE_SIDEBAR_POSITION', 'right' );
+
+/**
+ * TODO: Delete the following two lines and the php-dev folder before going live.
+ * These lines include the php-dev templates development hooks for use in
+ * designing sections rapidly.
+ */
+require_once 'php-dev/dev-functions.php';
+add_filter( 'after_setup_theme', 'dev_sections' );
