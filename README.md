@@ -20,4 +20,7 @@ CREATIVE DIRECTOR: Please provide a brief description here.
 
 - **Webteam:** [LINK HERE]()
 - **ID Presents:** [LINK HERE]()
-- **Something else:** [LINK HERE]()
+- **ActiveCollab:** [LINK HERE]()
+- **Smartsheet:** [LINK HERE]()
+- **Github Status Project:** [LINK HERE]()
+- **Bugs Status:** [LINK HERE]()
