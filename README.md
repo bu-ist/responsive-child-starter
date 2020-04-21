@@ -1,6 +1,7 @@
 # [Project Name]
 
-CREATIVE DIRECTOR: Please provide a brief description here.
+CREATIVE DIRECTOR: Please provide a brief description here, then fill out Links below
+and set up a new [Github Project](https://github.com/bu-ist/responsive-child-starter/wiki/Setting-up-Github-Projects).
 
 ## Quick Start
 
