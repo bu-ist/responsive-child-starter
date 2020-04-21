@@ -17,11 +17,20 @@ and set up a new [Github Project](https://github.com/bu-ist/responsive-child-sta
 - `grunt build`: Manually build all theme assets.
 - `grunt version`: [Force CSS and JavaScript to refresh when you deploy changes](https://github.com/bu-ist/responsive-child-starter/wiki/Versioning).
 
-## Links
+## Project Information
 
-- **Webteam:** [LINK HERE]()
+This project uses Webteam for maintaining project mockups, ID Presents for showing in-progress development work, Staging for allowing content work, ActiveCollab for billing, Smartsheet for
+
+### **Webteam:** [LINK HERE]()
+
+Used for maintaining information architecture, wireframes, and mockups.
+
+### Development Links
+
+Use
 - **ID Presents:** [LINK HERE]()
-- **ActiveCollab:** [LINK HERE]()
-- **Smartsheet:** [LINK HERE]()
+- **Staging/Live:** [LINK HERE]()
+- **ActiveCollab:** [LINK HERE]() For billing
+- **Smartsheet:** [LINK HERE]() For tracking OVERARCHING STATUS
 - **Github Status Project:** [LINK HERE]()
 - **Bugs Status:** [LINK HERE]()
