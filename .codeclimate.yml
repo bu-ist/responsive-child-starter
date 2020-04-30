@@ -62,8 +62,10 @@ engines:
     config:
       file_extensions: php
       rulesets: codesize,naming,unusedcode
-  sass-lint:
+  stylelint:
     enabled: true
+    config:
+      file_extensions: scss
 ratings:
   paths:
     - "**.md"
