@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Enables stylelint and automatic style fixes using the following commands:
+  - `npm run styles:lint` - Run a linting report.
+  - `npm run styles:fix` - Run a linting report and fix issues automatically.
+
 ## 2.2.1
 
 - Bump Foundation version for new event fields styling on calendar template.
