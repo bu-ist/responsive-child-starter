@@ -525,8 +525,7 @@ template {
   text-align: center;
   text-decoration: none;
   top: -130px;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   transition: top 0.3s ease-out;
   width: 90%;
   z-index: 100000;
@@ -3322,16 +3321,11 @@ a:hover .bu-hub-iconstyles::before {
 }
 
 .gallery-icon img {
-  transition: -webkit-transform 250ms ease-in-out 0s;
   transition: transform 250ms ease-in-out 0s;
-  transition: transform 250ms ease-in-out 0s, -webkit-transform 250ms ease-in-out 0s;
 }
 
 .gallery-icon:hover img {
-  transition: -webkit-transform 250ms ease-in-out 0s;
   transition: transform 250ms ease-in-out 0s;
-  transition: transform 250ms ease-in-out 0s, -webkit-transform 250ms ease-in-out 0s;
-  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -4015,14 +4009,12 @@ a:hover .bu-hub-iconstyles::before {
   position: relative;
   top: 50%;
   display: block;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
 .brand-container, .brand-site-description {
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 
@@ -4080,7 +4072,7 @@ a:hover .bu-hub-iconstyles::before {
   padding: 10px 30px 9px 56px;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .brand-signature {
     background-image: url("https://www.bu.edu/cdn/images/logos/subbrand49x35-retina.png");
     background-size: 49px 35px;
@@ -4138,7 +4130,7 @@ a:hover .bu-hub-iconstyles::before {
   width: 112px;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .brand-masterplate {
     background-image: url("https://www.bu.edu/cdn/images/logos/masterplate112x50-retina.png");
     background-size: 112px 50px;
@@ -4152,7 +4144,7 @@ a:hover .bu-hub-iconstyles::before {
   width: 96px;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .brand-bumclogo {
     background-image: url("https://www.bu.edu/cdn/images/logos/bumclogo96x40-retina.png");
     background-size: 96px 40px;
@@ -4340,12 +4332,10 @@ nav a {
 }
 
 .nav-toggle.is-open span::before {
-  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 
 .nav-toggle.is-open span::after {
-  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 
@@ -4634,7 +4624,6 @@ nav a {
   .l-side-nav .search-toggle {
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     color: #999;
     display: block;
@@ -4781,7 +4770,6 @@ nav a {
   .l-no-nav .brand .search-toggle {
     position: relative;
     top: 50%;
-    -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     display: block;
     right: 10px;
@@ -4824,8 +4812,7 @@ nav a {
 .l-mega-nav .brand-container {
   flex-grow: 1;
   top: auto;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .l-mega-nav .primary-nav {
@@ -5050,8 +5037,7 @@ nav a {
   display: flex;
   margin-left: auto;
   top: auto;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .short-nav ul {
