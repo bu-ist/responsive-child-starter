@@ -33,13 +33,6 @@ module.exports = function( grunt ) {
 					spawn: false,
 				},
 			},
-			phplint: {
-				files: [ '**/*.php' ],
-				tasks: [ 'phplint' ],
-				options: {
-					spawn: false,
-				},
-			},
 		},
 		browserify: {
 			options: {
@@ -159,16 +152,6 @@ module.exports = function( grunt ) {
 				dest: '.git/hooks/post-merge',
 			},
 		},
-		phplint: {
-			options: {
-				phpArgs: {
-					'-l -f': null,
-				},
-			},
-			all: {
-				src: '**/*.php',
-			},
-		},
 		addtextdomain: {
 			options: {
 				textdomain: 'responsive-child-starter',
@@ -231,7 +214,6 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-sass' );
 	grunt.loadNpmTasks( 'grunt-notify' );
 	grunt.loadNpmTasks( 'grunt-version' );
-	grunt.loadNpmTasks( 'grunt-phplint' );
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
 
@@ -245,6 +227,6 @@ module.exports = function( grunt ) {
 		'browserify',
 		'uglify',
 	] );
-	grunt.registerTask( 'build', [ 'styles', 'phplint', 'scripts', 'i18n' ] );
+	grunt.registerTask( 'build', [ 'styles', 'scripts', 'i18n' ] );
 	grunt.registerTask( 'default', [ 'watch' ] );
 };
