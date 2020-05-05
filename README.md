@@ -17,7 +17,7 @@ and set up a new [Github Project](https://github.com/bu-ist/responsive-child-sta
 - `grunt build`: Manually build all theme assets.
 - `grunt version`: [Force CSS and JavaScript to refresh when you deploy changes](https://github.com/bu-ist/responsive-child-starter/wiki/Versioning).
 
-## Project Links
+## Project links
 
 - **Webteam:** [LINK HERE]()
 - **ID Presents:** [LINK HERE]()
@@ -26,3 +26,6 @@ and set up a new [Github Project](https://github.com/bu-ist/responsive-child-sta
 - **Smartsheet:** [LINK HERE]()
 - **Github Issues:** [LINK HERE]()
 - **Github Projects:** [LINK HERE]()
+
+## Information for collaborators
+- [Getting Ready to Work with Boston University's WordPress Team](https://docs.google.com/document/d/1rKIYzcFiFiZaD6_Im-vbXMlfAuJ8C9GMSj1j91CtyI4/edit?usp=sharing)
