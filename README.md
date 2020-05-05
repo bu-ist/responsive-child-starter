@@ -17,39 +17,12 @@ and set up a new [Github Project](https://github.com/bu-ist/responsive-child-sta
 - `grunt build`: Manually build all theme assets.
 - `grunt version`: [Force CSS and JavaScript to refresh when you deploy changes](https://github.com/bu-ist/responsive-child-starter/wiki/Versioning).
 
-## Project Information
+## Project Links
 
-This project uses Webteam for maintaining project mockups, ID Presents for showing in-progress development work, Staging for allowing content work, ActiveCollab for billing, Smartsheet for
-
-### **Webteam:** [LINK HERE]()
-
-Used for maintaining information architecture, wireframes, and mockups.
-
-### **ID Presents:** [LINK HERE]()
-
-Used for showing in-progress development work that is not stable enough for staging or live.
-
-### **Staging/Live:** [LINK HERE]()
-
-Used for entering content and finalizing work for client approval.
-
-### **ActiveCollab:** [LINK HERE]()
-
-Used for tracking time and billing.
-
-### **Smartsheet:** [LINK HERE]()
-
-Used for viewing the high-level, global status of completion of project features. Links to Github issues for specific details and work status (prioritized, in progress, ready for review, released). Maintained by the project manager.
-
-### **Github Issues:** [LINK HERE]()
-
-Used for tracking the fine details of how to complete a development task, and the invididual tasks and questions that need to be addressed to finalize launch. Maintained by the designer and developer.
-
-### **Github Projects:** [LINK HERE]()
-
-Used for tracking the work status of tasks (prioritized, in progress, ready for review, and released). Different team members are responsible for different statuses:
-
-- **Prioritized:** Manually maintained by the creative director, with input from the team, during backlog grooming meetings.
-- **In Progress:** Automatically maintained by Github based on actions a designer or developer takes on issues. Designers and developers are responsible for consistently linking issues to pull requests in order for this to work. Cards move here when pull requests are opened.
-- **Ready for Review:** Automatically maintained by Github based on actions a designer or developer takes on issues. Designers and developers are responsible for consistently linking issues to pull requests in order for this to work. Cards move here when pull requests are closed.
-- **Released:** Manually maintained by the team member who is responsible for releases, typically the developer. When a new release is created and deployed, the developer will move all cards within Ready for Review to Released to signify the release is complete, and track whcih features have been released so far.
+- **Webteam:** [LINK HERE]()
+- **ID Presents:** [LINK HERE]()
+- **Staging/Live:** [LINK HERE]()
+- **ActiveCollab:** [LINK HERE]()
+- **Smartsheet:** [LINK HERE]()
+- **Github Issues:** [LINK HERE]()
+- **Github Projects:** [LINK HERE]()
