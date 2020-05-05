@@ -1,4 +1,10 @@
-# How to Use This Repository
+# Responsive Child Starter
+
+A starter template for child themes of the Responsive Framework.
+
+**Please note:** You may not use this template without explicit permission of Boston University's Interactive Design team.
+
+## How to Use This Repository
 
 1. Download (don't clone!) the master branch of this repository to your `wp-content/themes`
  directory.
