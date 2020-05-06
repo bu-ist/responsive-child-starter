@@ -1,0 +1,6 @@
+## Dependencies
+
+- npm
+- node
+- npx
+
