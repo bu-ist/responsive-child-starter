@@ -1,10 +1,10 @@
 'use strict';
 
-const { series, src, dest } = require('gulp');
-const sourcemaps = require('gulp-sourcemaps');
-const sass = require('gulp-sass');
+const { src, dest } = require( 'gulp' );
+const sourcemaps = require( 'gulp-sourcemaps' );
+const sass = require( 'gulp-sass' );
 
-sass.compiler = require('node-sass');
+sass.compiler = require( 'node-sass' );
 
 const options = {
 	outputStyle: 'expanded',

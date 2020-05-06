@@ -1,13 +1,11 @@
 'use strict';
 
-const { series, src, dest } = require('gulp');
+const { src, dest } = require('gulp');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 const cssnano = require('autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const rename = require('gulp-rename');
-
-//const { parallel } = require( 'gulp' );
 
 const plugins = [
 	autoprefixer(),

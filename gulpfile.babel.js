@@ -1,12 +1,10 @@
 const { sass } = require( './tasks/sass' );
 const { postcss } = require( './tasks/postcss' );
 const { build } = require( './tasks/build' );
-
-function defaultTask(cb) {
-  // place code for your default task here
-  cb();
-}
+const { watch } = require( './tasks/watch' );
 
 exports.sass = sass;
 exports.postcss = postcss;
-exports.default = defaultTask;
+exports.build = build;
+exports.watch = watch;
+exports.default = watch;
