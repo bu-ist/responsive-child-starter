@@ -1,13 +1,6 @@
-const { parallel } = require('gulp');
+const { parallel } = require( 'gulp' );
+const { sass } = require( 'tasks/sass' );
+const { postcss } = require( 'tasks/postcss' );
 
-function javascript(cb) {
-  // body omitted
-  cb();
-}
-
-function css(cb) {
-  // body omitted
-  cb();
-}
-
-exports.build = parallel(javascript, css);
+// exports.build = series(clean, parallel(css, javascript));
+exports.build = series(sass, postcss);
