@@ -20,52 +20,6 @@ module.exports = function( grunt ) {
 				src: [ 'css-dev/style.scss' ],
 			},
 		},
-		addtextdomain: {
-			options: {
-				textdomain: 'responsive-child-starter',
-			},
-			update_all_domains: {
-				options: {
-					updateDomains: true,
-				},
-				src: [
-					'*.php',
-					'**/*.php',
-					'!.git/**/*',
-					'!bin/**/*',
-					'!node_modules/**/*',
-					'!tests/**/*',
-					'!vendor/**/*',
-				],
-			},
-			target: {
-				files: {
-					src: [
-						'**.php',
-						'**/*.php',
-						'!node_modules/**',
-						'!node_modules/**',
-						'!bin/**',
-						'!vendor/**',
-					],
-				},
-			},
-		},
-		makepot: {
-			target: {
-				options: {
-					domainPath: '/languages',
-					potFilename: 'responsive-child-starter.pot',
-					mainFile: 'functions.php',
-					potHeaders: {
-						poedit: true,
-						'x-poedit-keywordslist': true,
-					},
-					type: 'wp-theme',
-					updateTimestamp: true,
-				},
-			},
-		},
 		clean: {
 			languages: [ 'languages/*' ],
 			js: [ 'js/**/*.js', 'js/**/*.map' ],
