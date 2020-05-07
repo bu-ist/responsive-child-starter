@@ -1,6 +1,7 @@
-const { series } = require( 'gulp' );
-const { sass } = require( './sass' );
-const { postcss } = require( './postcss' );
+const { parallel, series } = require( 'gulp' ),
+		{ sass } = require( './sass' ),
+		{ postcss } = require( './postcss' ),
+		{ javascript } = require( './javascript' ),
+		{ translation } = require( './i18n' );
 
-// exports.build = series(clean, parallel(css, javascript));
-exports.build = series(sass, postcss);
+exports.build = parallel( javascript, translation, series( sass, postcss ) );
