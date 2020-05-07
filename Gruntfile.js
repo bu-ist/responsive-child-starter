@@ -19,11 +19,7 @@ module.exports = function( grunt ) {
 				},
 				src: [ 'css-dev/style.scss' ],
 			},
-		},
-		clean: {
-			languages: [ 'languages/*' ],
-			js: [ 'js/**/*.js', 'js/**/*.map' ],
-		},
+		}
 	} );
 
 	// 3. Where we tell Grunt we plan to use this plug-in.
