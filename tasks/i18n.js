@@ -12,7 +12,7 @@
 const { src, dest } = require( 'gulp' ),
 		wpPot = require('gulp-wp-pot'),
 		fs = require('fs'),
-		package = JSON.parse(fs.readFileSync('./package.json'));
+		project = JSON.parse(fs.readFileSync('./package.json'));
 
 function addtextdomain() {
 
@@ -69,9 +69,9 @@ function generatePotfile() {
 		'!vendor/**/*',
 	])
 	.pipe(wpPot( {
-		package: `Boston University Interactive Design ${package.name} WordPress Theme`
+		package: `Boston University Interactive Design ${project.name} WordPress Theme`
 	}))
-	.pipe(dest(`languages/${package.name}.pot`));
+	.pipe(dest(`languages/${project.name}.pot`));
 }
 
 exports.translation = generatePotfile;

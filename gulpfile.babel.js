@@ -1,10 +1,12 @@
-const { sass } = require( './tasks/sass' );
-const { postcss } = require( './tasks/postcss' );
-const { javascript } = require( './tasks/javascript' );
-const { translation } = require( './tasks/i18n' );
-const { build } = require( './tasks/build' );
-const { watch } = require( './tasks/watch' );
+const { clean } = require( './tasks/clean' ),
+		{ sass } = require( './tasks/sass' ),
+		{ postcss } = require( './tasks/postcss' ),
+		{ javascript } = require( './tasks/javascript' ),
+		{ translation } = require( './tasks/i18n' ),
+		{ build } = require( './tasks/build' ),
+		{ watch } = require( './tasks/watch' );
 
+exports.clean = clean;
 exports.sass = sass;
 exports.postcss = postcss;
 exports.javascript = javascript;
