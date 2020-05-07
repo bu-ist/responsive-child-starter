@@ -33,7 +33,6 @@
     "eslint": "^6.8.0",
     "grunt": "^1.0.4",
     "grunt-contrib-clean": "^2.0.0",
-    "grunt-contrib-copy": "^1.0.0",
     "grunt-version": "^2.0.0",
     "grunt-wp-i18n": "^1.0.3",
     "gulp": "^4.0.2",

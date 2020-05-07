@@ -20,15 +20,6 @@ module.exports = function( grunt ) {
 				src: [ 'css-dev/style.scss' ],
 			},
 		},
-		copy: {
-			hooks: {
-				options: {
-					mode: true,
-				},
-				src: 'hooks/post-merge',
-				dest: '.git/hooks/post-merge',
-			},
-		},
 		addtextdomain: {
 			options: {
 				textdomain: 'responsive-child-starter',
