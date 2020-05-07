@@ -4,6 +4,7 @@ const { clean } = require( './tasks/clean' ),
 		{ javascript } = require( './tasks/javascript' ),
 		{ translation } = require( './tasks/i18n' ),
 		{ build } = require( './tasks/build' ),
+		{ version } = require( './tasks/version' ),
 		{ watch } = require( './tasks/watch' );
 
 exports.clean = clean;
@@ -12,5 +13,6 @@ exports.postcss = postcss;
 exports.javascript = javascript;
 exports.translation = translation;
 exports.build = build;
+exports.version = version;
 exports.watch = watch;
 exports.default = watch;
