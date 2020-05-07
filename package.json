@@ -27,6 +27,7 @@
     "@wordpress/eslint-plugin": "^5.1.0",
     "autoprefixer": "^9.7.6",
     "babelify": "^10.0.0",
+    "browserify": "^16.5.1",
     "browserify-shim": "^3.8.14",
     "cssnano": "^4.1.10",
     "eslint": "^6.8.0",
@@ -40,12 +41,14 @@
     "grunt-version": "^2.0.0",
     "grunt-wp-i18n": "^1.0.3",
     "gulp": "^4.0.2",
-    "gulp-minify": "^3.1.0",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "node-sass": "^4.14.1"
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.14.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
     "responsive-foundation": "git+ssh://git@github.com:bu-ist/responsive-foundation#4.0.0",
