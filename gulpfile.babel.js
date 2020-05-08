@@ -18,6 +18,7 @@
 const { clean } = require( './tasks/clean' ),
 		{ sass } = require( './tasks/sass' ),
 		{ postcss } = require( './tasks/postcss' ),
+		{ lint } = require( './tasks/lint' ),
 		{ javascript } = require( './tasks/javascript' ),
 		{ translation } = require( './tasks/i18n' ),
 		{ build } = require( './tasks/build' ),
@@ -27,6 +28,7 @@ const { clean } = require( './tasks/clean' ),
 exports.clean = clean;
 exports.sass = sass;
 exports.postcss = postcss;
+exports.lint = lint;
 exports.javascript = javascript;
 exports.translation = translation;
 exports.build = build;

@@ -5784,4 +5784,8 @@ body {
   word-wrap: break-word;
 }
 
+.bad {
+  color: red;
+}
+
 /*# sourceMappingURL=ie.css.map */
