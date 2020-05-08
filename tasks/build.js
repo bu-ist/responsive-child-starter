@@ -1,3 +1,14 @@
+/**
+ * Gulp task for building all theme assets.
+ *
+ * Cleans all compiled files, then builds
+ * JavaScript, translation files, and Sass.
+ *
+ * @package Responsive_Child_Starter
+ */
+
+'use strict';
+
 const { parallel, series } = require( 'gulp' ),
 		{ clean } = require( './clean' ),
 		{ sass } = require( './sass' ),

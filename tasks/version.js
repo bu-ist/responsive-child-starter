@@ -1,3 +1,12 @@
+/**
+ * Gulp task for bumping the version of a theme.
+ *
+ * Updates the version across files based on package.json,
+ * then rebuilds all assets.
+ *
+ * @package Responsive_Child_Starter
+ */
+
 'use strict';
 
 const { series, parallel, src, dest } = require( 'gulp' ),
@@ -5,10 +14,6 @@ const { series, parallel, src, dest } = require( 'gulp' ),
 		fs = require('fs'),
 		project = JSON.parse(fs.readFileSync('./package.json')),
 		{ build } = require( './build' );
-
-/****
-	Versioning
-***/
 
 function versionSass() {
 	const sassVersion = new RegExp(`Version: \\d+(?:\\.\\d+)+`);

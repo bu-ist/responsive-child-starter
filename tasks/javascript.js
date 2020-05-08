@@ -1,3 +1,18 @@
+/**
+ * Gulp task for compiling JavaScript using es6 syntax.
+ *
+ * Packages modules together using Browserify, then
+ * translates to cross-browser compatible JS using Babel.
+ *
+ * Vinyl modules are required to allow these to talk to
+ * Gulp directly.
+ *
+ * Based on the official Gulp recipe here:
+ *	https://github.com/gulpjs/gulp/blob/master/docs/recipes/browserify-uglify-sourcemap.md
+ *
+ * @package Responsive_Child_Starter
+ */
+
 'use strict';
 
 const { parallel, src, dest } = require( 'gulp' ),
@@ -25,12 +40,6 @@ const paths = {
 	}
 };
 
-/****
-	Based on the official Gulp recipe here:
-	https://github.com/gulpjs/gulp/blob/master/docs/recipes/browserify-uglify-sourcemap.md
-***/
-
-
 function compileScripts() {
 	const bundler = browserify({
 		entries: [
@@ -43,7 +52,6 @@ function compileScripts() {
 		.pipe(source(paths.scripts.filename))
 		.pipe(buffer())
 		.pipe(sourcemaps.init({loadMaps: true}))
-		// Add transformation tasks to the pipeline here.
 		.pipe(uglify())
 		.on('error', log.error)
 		.pipe(sourcemaps.write('./'))
@@ -53,7 +61,6 @@ function compileScripts() {
 function minify() {
 	return src(paths.allothers.src)
 		.pipe(sourcemaps.init({loadMaps: true}))
-		// Add transformation tasks to the pipeline here.
 		.pipe(uglify())
 		.on('error', log.error)
 		.pipe(rename({ suffix: '.min' }))

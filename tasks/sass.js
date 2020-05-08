@@ -1,3 +1,12 @@
+/**
+ * Gulp task for compiling SCSS.
+ *
+ * Note that this task no longer handles compression
+ * or prefixes. See postcss task for these items.
+ *
+ * @package Responsive_Child_Starter
+ */
+
 'use strict';
 
 const { src, dest } = require( 'gulp' );
@@ -26,5 +35,4 @@ function compile() {
    .pipe(dest('./'));
 }
 
-// exports.build = series(clean, parallel(css, javascript));
 exports.sass = compile;

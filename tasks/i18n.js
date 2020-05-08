@@ -1,13 +1,13 @@
-'use strict';
-
 /**
- * Tasks for Internationalization (i18n) and Localization (l10n)
- * in WordPress.
+ * Gulp task for internationalization (i18n) and
+ * localization (l10n) in WordPress.
  *
  * Generates the POT file in the languages folder.
  *
  * @package Responsive_Child_Starter
  */
+
+'use strict';
 
 const { src, dest } = require( 'gulp' ),
 		wpPot = require('gulp-wp-pot'),

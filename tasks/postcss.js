@@ -1,3 +1,11 @@
+/**
+ * Gulp task for compressing and autoprefixing CSS.
+ *
+ * Prepares CSS for production use.
+ *
+ * @package Responsive_Child_Starter
+ */
+
 'use strict';
 
 const { src, dest } = require('gulp');
@@ -30,5 +38,4 @@ function compress() {
 	.pipe(dest('./'));
 }
 
-// exports.build = series(clean, parallel(css, javascript));
 exports.postcss = compress;
