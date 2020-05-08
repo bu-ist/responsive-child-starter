@@ -1,7 +1,6 @@
 'use strict';
 
-const gulp = require('gulp'),
-		del = require('del');
+const del = require('del');
 
 /****
 	Based on the official Gulp recipe here:
