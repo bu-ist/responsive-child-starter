@@ -1,9 +1,10 @@
 'use strict';
 
-const { parallel, src, dest } = require( 'gulp' ),
+const { series, parallel, src, dest } = require( 'gulp' ),
 		replace = require('gulp-replace'),
 		fs = require('fs'),
-		project = JSON.parse(fs.readFileSync('./package.json'));
+		project = JSON.parse(fs.readFileSync('./package.json')),
+		{ build } = require( './build' );
 
 /****
 	Versioning
@@ -29,4 +30,4 @@ function versionPHP() {
 	.pipe(dest('./'));
 }
 
-exports.version = parallel( versionSass, versionPHP );
+exports.version = series( parallel( versionSass, versionPHP ), build );
