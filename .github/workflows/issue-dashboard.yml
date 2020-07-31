@@ -32,8 +32,8 @@ jobs:
             widgets:
             - type: 'table'
               title: 'New Pull Requests (This Week)'
-              issue_query: 'repo:$GITHUB_REPOSITORY is:open is:issue created:>{{ date("-7 days") }} sort:created-asc'
-        token: ${{ secrets.GITHUB_TOKEN }}
+              issue_query: 'repo:${{ github.repository }} is:open is:issue created:>{{ date("-7 days") }} sort:created-asc'
+        token: ${{ github.token }}
 
     - name: Publish Documentation
       run: |
