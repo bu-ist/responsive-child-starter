@@ -1,6 +1,8 @@
 name: Build Dashboard
 
 on:
+  issues:
+  - edited
   schedule:
   - cron: 0 * * * *
 
