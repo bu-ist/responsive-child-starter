@@ -2,7 +2,7 @@ name: Build Dashboard
 
 on:
   issues:
-  - edited
+    types: [opened, edited, milestoned]
   schedule:
   - cron: 0 * * * *
 
