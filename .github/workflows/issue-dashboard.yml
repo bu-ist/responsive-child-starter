@@ -1,9 +1,6 @@
-- name: Issue Dashboard
-  uses: ethomson/issue-dashboard@v1.0.2
-  
+name: Build Dashboard
+
 on:
-  issues:
-  - opened
   schedule:
   - cron: 0 * * * *
 
@@ -21,7 +18,7 @@ jobs:
         path: 'out'
 
     - name: 'Generate Dashboard'
-      uses: ethomson/issue-dashboard@v1
+      uses: ethomson/issue-dashboard@v1.0.2
       with:
         config: |
           title: 'Dashboard'
