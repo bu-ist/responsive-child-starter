@@ -46,13 +46,22 @@ functionality that your theme provides.
 - [ ] Make sure you're pulling in the newest version of Foundation. Use the
  [newest release](https://github.com/bu-ist/responsive-foundation/releases).
 
+## Setting up Documentation site
+
+It is best to create the documentation site right out of the gate. This way documentation of features can happen through out the project instead of piling up at the end.
+- Clone http://wpdocs.bu.edu/ to http://wpdocs.bu.edu/yoursitename
+- Apply your theme 
+- Edit/cut anything existing that doesn’t apply to your custom theme
+- Add new pages for custom functionality as needed.
+Check out [Dining Documentation](http://wpdocs.bu.edu/dining/) for an awesome example!
+
 
 ## Installing Development Dependencies
 
 Before you begin, make sure [Node / Node Package Manager](http://nodejs.org/)
 are installed and the following dependencies are installed globally.
 
-###Fire up Terminal!
+### Fire up Terminal!
 
 This step only needs to be done **One Time**, regardless of how many new child-themes you create.
 
