@@ -80,7 +80,6 @@ It should look something like this:  `"theme-name" username$ `
 Run the following commands.
 
 ```bash
-bower install
 npm install
 ```
 
@@ -138,7 +137,6 @@ Last step: Push your changes! When you're ready to release it to the world, requ
 When completed move your local files over to FTP **Except** the following folders:
 
 ```bash
-bower_components
 node_modules
 ```
 
