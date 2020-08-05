@@ -61,7 +61,7 @@ Check out [Dining Documentation](http://wpdocs.bu.edu/dining/) for an awesome ex
 Before you begin, make sure [Node / Node Package Manager](http://nodejs.org/)
 are installed and the following dependencies are installed globally.
 
-###Fire up Terminal!
+### Fire up Terminal!
 
 This step only needs to be done **One Time**, regardless of how many new child-themes you create.
 
