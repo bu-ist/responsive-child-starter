@@ -61,6 +61,8 @@ Check out [Dining Documentation](http://wpdocs.bu.edu/dining/) for an awesome ex
 Before you begin, make sure [Node / Node Package Manager](http://nodejs.org/)
 are installed and the following dependencies are installed globally.
 
+Responsive is verified to work through Node version 12.19.0 LTS.
+
 ### Fire up Terminal!
 
 This step only needs to be done **One Time**, regardless of how many new child-themes you create.
