@@ -1,5 +1,7 @@
 # [Project Name]
 
+A starter template for child themes of the Responsive Framework.
+
 CREATIVE DIRECTOR: Please provide a brief description here, then fill out links below
 and set up a new [Github Project](https://github.com/bu-ist/responsive-child-starter/wiki/Setting-up-Github-Projects).
 
@@ -17,6 +19,15 @@ and set up a new [Github Project](https://github.com/bu-ist/responsive-child-sta
 - `grunt build`: Manually build all theme assets.
 - `grunt version`: [Force CSS and JavaScript to refresh when you deploy changes](https://github.com/bu-ist/responsive-child-starter/wiki/Versioning).
 
+## Setting up Documentation site
+
+It is best to create the documentation site right out of the gate. This way documentation of features can happen through out the project instead of piling up at the end.
+- Clone http://wpdocs.bu.edu/ to http://wpdocs.bu.edu/yoursitename
+- Apply your theme 
+- Edit/cut anything existing that doesn’t apply to your custom theme
+- Add new pages for custom functionality as needed.
+Check out [Dining Documentation](http://wpdocs.bu.edu/dining/) for an awesome example!
+
 ## Project links
 
 - **Webteam:** [LINK HERE]()
@@ -29,3 +40,8 @@ and set up a new [Github Project](https://github.com/bu-ist/responsive-child-sta
 
 ## Information for collaborators
 - [Getting Ready to Work with Boston University's WordPress Team](https://docs.google.com/document/d/1rKIYzcFiFiZaD6_Im-vbXMlfAuJ8C9GMSj1j91CtyI4/edit?usp=sharing)
+=======
+Before you begin, make sure [Node / Node Package Manager](http://nodejs.org/)
+are installed and the following dependencies are installed globally.
+
+Responsive is verified to work through Node version 12.19.0 LTS.

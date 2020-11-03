@@ -25,66 +25,66 @@ Template: responsive-framework-2-x
 // Global and Base Styles
 // =================================================================
 
-@import 'global/config';
-@import 'global/mixins';
-@import 'burf-base/accessibility';
-@import 'global/fonts';
-@import 'global/icons';
-@import 'global/normalize';
-@import 'global/grid';
-@import 'global/typography';
-@import 'global/tables';
-@import 'global/forms';
+@import "global/config";
+@import "global/mixins";
+@import "burf-base/accessibility";
+@import "global/fonts";
+@import "global/icons";
+@import "global/normalize";
+@import "global/grid";
+@import "global/typography";
+@import "global/tables";
+@import "global/forms";
 
 // =================================================================
 // Content and Shortcodes
 // =================================================================
 
-@import 'content/collapsibles';
-@import 'content/courses';
-@import 'content/galleries';
-@import 'content/slideshows';
-@import 'content/wordpress-editor';
-@import 'profiles/profile-format-default';
-@import 'profiles/profile-format-basic';
-@import 'profiles/profile-format-advanced';
-@import 'profiles/profile-format-mini';
+@import "content/collapsibles";
+@import "content/courses";
+@import "content/galleries";
+@import "content/slideshows";
+@import "content/wordpress-editor";
+@import "profiles/profile-format-default";
+@import "profiles/profile-format-basic";
+@import "profiles/profile-format-advanced";
+@import "profiles/profile-format-mini";
 
 // =================================================================
 // Widgets
 // =================================================================
 
-@import 'widgets/widgets';
-@import 'calendar/widget-calendar';
-@import 'calendar/calendar-picker';
-@import 'widgets/widget-navigation';
-@import 'widgets/widget-posts';
+@import "widgets/widgets";
+@import "calendar/widget-calendar";
+@import "calendar/calendar-picker";
+@import "widgets/widget-navigation";
+@import "widgets/widget-posts";
 
 // =================================================================
 // Layout
 // =================================================================
 
-@import 'layout/branding';
-@import 'layout/navigation';
-@import 'layout/banner';
-@import 'layout/content-area';
-@import 'layout/footer';
+@import "layout/branding";
+@import "layout/navigation";
+@import "layout/banner";
+@import "layout/content-area";
+@import "layout/footer";
 
 // =================================================================
 // Templates
 // =================================================================
 
-@import 'news/base';
-@import 'news/comments';
+@import "news/base";
+@import "news/comments";
 
 // Archive Templates
 
-@import 'news/archive';
-@import 'calendar/calendar-archive';
-@import 'profiles/profile-archive';
+@import "news/archive";
+@import "calendar/calendar-archive";
+@import "profiles/profile-archive";
 
 // Single Templates
 
-@import 'news/single';
-@import 'calendar/calendar-single';
-@import 'profiles/profile-single';
+@import "news/single";
+@import "calendar/calendar-single";
+@import "profiles/profile-single";

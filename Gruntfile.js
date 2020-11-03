@@ -33,13 +33,6 @@ module.exports = function( grunt ) {
 					spawn: false,
 				},
 			},
-			phplint: {
-				files: [ '**/*.php' ],
-				tasks: [ 'phplint' ],
-				options: {
-					spawn: false,
-				},
-			},
 		},
 		browserify: {
 			options: {
@@ -159,16 +152,6 @@ module.exports = function( grunt ) {
 				dest: '.git/hooks/post-merge',
 			},
 		},
-		phplint: {
-			options: {
-				phpArgs: {
-					'-l -f': null,
-				},
-			},
-			all: {
-				src: '**/*.php',
-			},
-		},
 		addtextdomain: {
 			options: {
 				textdomain: 'responsive-child-starter',
@@ -219,10 +202,6 @@ module.exports = function( grunt ) {
 			languages: [ 'languages/*' ],
 			js: [ 'js/**/*.js', 'js/**/*.map' ],
 		},
-		sasslint: {
-			target: 'css-dev/**/*.scss',
-			// see .sasslintrc for options.
-		},
 	} );
 
 	// 3. Where we tell Grunt we plan to use this plug-in.
@@ -235,10 +214,8 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-sass' );
 	grunt.loadNpmTasks( 'grunt-notify' );
 	grunt.loadNpmTasks( 'grunt-version' );
-	grunt.loadNpmTasks( 'grunt-phplint' );
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
-	grunt.loadNpmTasks( 'grunt-sass-lint' );
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask( 'install', [ 'copy:hooks', 'build' ] );
@@ -250,6 +227,6 @@ module.exports = function( grunt ) {
 		'browserify',
 		'uglify',
 	] );
-	grunt.registerTask( 'build', [ 'styles', 'phplint', 'scripts', 'i18n' ] );
+	grunt.registerTask( 'build', [ 'styles', 'scripts', 'i18n' ] );
 	grunt.registerTask( 'default', [ 'watch' ] );
 };

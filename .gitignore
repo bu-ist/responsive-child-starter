@@ -11,3 +11,4 @@ npm-debug.log
 markdown.rb
 phpcs.xml
 .DS-Store
+.stylelintcache
