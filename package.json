@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A starting point for Responsive Framework child themes.",
   "repository": "https://github.com/bu-ist/responsive-child-starter/",
+  "license": "GPL-3.0-or-later",
   "contributors": [
     "Your Name <you@bu.edu>"
   ],
