@@ -7,7 +7,7 @@ and set up a new [Github Project](https://github.com/bu-ist/responsive-child-sta
 
 ## Quick Start
 
-- [Set up a new custom theme](https://github.com/bu-ist/responsive-child-starter/wiki/Setting-up-new-custom-themes)
+- [Set up a new custom theme](https://github.com/bu-ist/responsive-child-starter/wiki/Set-up-a-new-custom-theme)
 - Install your [development dependencies](https://github.com/bu-ist/responsive-child-starter/wiki/Install-development-dependencies)
 - Run  `npm install`, then `grunt` to begin watching changes.
 - Upload to [your sandbox](http://sites.bu.edu/marcom-team/departments/interactive-design/interactive-design-workflow/development/sandboxes-overview/) to see changes.
