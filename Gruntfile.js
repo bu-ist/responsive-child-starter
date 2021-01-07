@@ -25,7 +25,7 @@ module.exports = function( grunt ) {
 			},
 			styles: {
 				files: [
-					'node_modules/responsive-foundation/css-dev/**/*.scss',
+					'node_modules/responsive-foundation/**/*.scss',
 					'css-dev/**/*.scss',
 				],
 				tasks: [ 'styles' ],
@@ -84,7 +84,7 @@ module.exports = function( grunt ) {
 				includePaths: [
 					'node_modules/normalize-scss/sass',
 					'node_modules/mathsass/dist/',
-					'node_modules/responsive-foundation/css-dev',
+					'node_modules/responsive-foundation',
 				],
 				bundleExec: true,
 			},
