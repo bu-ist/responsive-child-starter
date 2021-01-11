@@ -2,7 +2,7 @@
 
 A starter template for child themes of the Responsive Framework.
 
-CREATIVE DIRECTOR: Please provide a brief description here, then fill out links below
+**CREATIVE DIRECTOR:** Please provide a brief description here, then fill out links below
 and set up a new [Github Project](https://github.com/bu-ist/responsive-child-starter/wiki/Setting-up-Github-Projects).
 
 ## Quick Start
