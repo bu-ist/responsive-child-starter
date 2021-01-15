@@ -23,7 +23,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
-    "@bu-ist/burf-customizations": "^5.0.0-alpha.3",
+    "@bu-ist/burf-customizations": "^5.0.0-alpha.5",
     "@wordpress/babel-preset-default": "^4.12.1",
     "@wordpress/eslint-plugin": "^5.1.0",
     "autoprefixer": "^9.7.6",
