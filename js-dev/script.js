@@ -7,7 +7,7 @@
  */
 
 // Import Foundation scripts.
-import { toggle } from 'responsive-foundation/js-dev/dist/toggle';
+import { toggle } from '@bu-ist/burf-theme/js-dev/dist/toggle';
 
 // Run JS scripts here.
 toggle();
