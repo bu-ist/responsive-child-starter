@@ -28,7 +28,7 @@ define( 'RESPONSIVE_CHILD_THEME_VERSION', '0.0.1' );
  *
  * Available values: `default`, `top-nav`, `side-nav`, `no-nav`, `mega-nav`.
  *
- * @link https://github.com/bu-ist/responsive-framework-documentation/blob/2x-documentation/code-examples/Changing-Available-Layouts-And-Default-Layout.md
+ * @link https://github.com/bu-ist/responsive-framework/wiki/Changing-Available-Layouts-And-Default-Layout
  */
 define( 'BU_RESPONSIVE_LAYOUT', 'default' );
 
