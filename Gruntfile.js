@@ -3,8 +3,13 @@ module.exports = function( grunt ) {
 	const autoprefixer = require( 'autoprefixer' );
 	const sass = require( 'node-sass' );
 
+	// Get the theme's name for updating text domains across the board.
+	const pkg = require( './package.json' );
+
 	// 1. All configuration goes here
 	grunt.initConfig( {
+		// Read package so we can get the name.
+		pkg: grunt.file.readJSON( 'package.json' ),
 		// 2. All functions go here.
 		watch: {
 			grunt: {
@@ -154,7 +159,7 @@ module.exports = function( grunt ) {
 		},
 		addtextdomain: {
 			options: {
-				textdomain: 'responsive-child-starter',
+				textdomain: '<%= pkg.name %>',
 			},
 			update_all_domains: {
 				options: {
