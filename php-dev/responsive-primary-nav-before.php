@@ -9,5 +9,14 @@
  * @package responsive-child-starter
  */
 
-global $hook_messages; // Global OK will only be used in development stage.
-echo wp_kses_post( $hook_messages['responsive_primary_nav_before'] );
+?>
+<section class="hook-message responsive_primary_nav_before"
+		 	style=" border: 5px dotted purple;
+   			font-size: 36px;
+			box-shadow: 4px 7px beige;
+
+">
+	<?php echo "Hello Marcom World! This is the before primary nav hook"; ?>
+</section>
+
+
