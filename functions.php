@@ -55,6 +55,8 @@ define( 'BU_NAVIGATION_SUPPORTED_DEPTH', '2' );
 
 define( 'RESPONSIVE_POSTS_SIDEBAR_SHOW_BOTTOM', true );
 
+define( 'RESPONSIVE_ENABLE_ALL_DEV_HOOKS', true );
+
 /**
  * TODO: Delete the following two lines and the php-dev folder before going live.
  * These lines include the php-dev templates development hooks for use in
