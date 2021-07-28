@@ -55,7 +55,13 @@ define( 'BU_NAVIGATION_SUPPORTED_DEPTH', '2' );
 
 define( 'RESPONSIVE_POSTS_SIDEBAR_SHOW_BOTTOM', true );
 
-define( 'RESPONSIVE_ENABLE_ALL_DEV_HOOKS', true );
+//define( 'RESPONSIVE_ENABLE_ALL_DEV_HOOKS', true );
+
+function test_hooks() {
+	echo "hooks lotoo";
+}
+
+add_action( 'comment_form', 'test_hooks', 10 );
 
 /**
  * TODO: Delete the following two lines and the php-dev folder before going live.
