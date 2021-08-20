@@ -3,8 +3,13 @@ module.exports = function( grunt ) {
 	const autoprefixer = require( 'autoprefixer' );
 	const sass = require( 'node-sass' );
 
+	// Get the theme's name for updating text domains across the board.
+	const pkg = require( './package.json' );
+
 	// 1. All configuration goes here
 	grunt.initConfig( {
+		// Read package so we can get the name.
+		pkg: grunt.file.readJSON( 'package.json' ),
 		// 2. All functions go here.
 		watch: {
 			grunt: {
@@ -29,13 +34,6 @@ module.exports = function( grunt ) {
 					'css-dev/**/*.scss',
 				],
 				tasks: [ 'styles' ],
-				options: {
-					spawn: false,
-				},
-			},
-			phplint: {
-				files: [ '**/*.php' ],
-				tasks: [ 'phplint' ],
 				options: {
 					spawn: false,
 				},
@@ -159,19 +157,9 @@ module.exports = function( grunt ) {
 				dest: '.git/hooks/post-merge',
 			},
 		},
-		phplint: {
-			options: {
-				phpArgs: {
-					'-l -f': null,
-				},
-			},
-			all: {
-				src: '**/*.php',
-			},
-		},
 		addtextdomain: {
 			options: {
-				textdomain: 'responsive-child-starter',
+				textdomain: '<%= pkg.name %>',
 			},
 			update_all_domains: {
 				options: {
@@ -219,10 +207,6 @@ module.exports = function( grunt ) {
 			languages: [ 'languages/*' ],
 			js: [ 'js/**/*.js', 'js/**/*.map' ],
 		},
-		sasslint: {
-			target: 'css-dev/**/*.scss',
-			// see .sasslintrc for options.
-		},
 	} );
 
 	// 3. Where we tell Grunt we plan to use this plug-in.
@@ -235,10 +219,8 @@ module.exports = function( grunt ) {
 	grunt.loadNpmTasks( 'grunt-sass' );
 	grunt.loadNpmTasks( 'grunt-notify' );
 	grunt.loadNpmTasks( 'grunt-version' );
-	grunt.loadNpmTasks( 'grunt-phplint' );
 	grunt.loadNpmTasks( 'grunt-wp-i18n' );
 	grunt.loadNpmTasks( 'grunt-contrib-clean' );
-	grunt.loadNpmTasks( 'grunt-sass-lint' );
 
 	// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
 	grunt.registerTask( 'install', [ 'copy:hooks', 'build' ] );
@@ -250,6 +232,6 @@ module.exports = function( grunt ) {
 		'browserify',
 		'uglify',
 	] );
-	grunt.registerTask( 'build', [ 'styles', 'phplint', 'scripts', 'i18n' ] );
+	grunt.registerTask( 'build', [ 'styles', 'scripts', 'i18n' ] );
 	grunt.registerTask( 'default', [ 'watch' ] );
 };
