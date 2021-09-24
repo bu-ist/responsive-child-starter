@@ -20,7 +20,7 @@ module.exports = function( grunt ) {
 			},
 			scripts: {
 				files: [
-					//'node_modules/responsive-foundation/js-dev/*.js',
+					//'node_modules/@bu-ist/js-dev/*.js',
 					'js-dev/**/*.js',
 				],
 				tasks: [ 'scripts' ],
@@ -30,7 +30,7 @@ module.exports = function( grunt ) {
 			},
 			styles: {
 				files: [
-					'node_modules/responsive-foundation/css-dev/**/*.scss',
+					'node_modules/@bu-ist/**/*.scss',
 					'css-dev/**/*.scss',
 				],
 				tasks: [ 'styles' ],
@@ -89,7 +89,7 @@ module.exports = function( grunt ) {
 				includePaths: [
 					'node_modules/normalize-scss/sass',
 					'node_modules/mathsass/dist/',
-					'node_modules/responsive-foundation/css-dev',
+					'node_modules/@bu-ist',
 				],
 				bundleExec: true,
 			},

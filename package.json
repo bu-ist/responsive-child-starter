@@ -23,6 +23,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
+    "@bu-ist/burf-customizations": "^5.0.0-alpha.5",
     "@wordpress/babel-preset-default": "^4.12.1",
     "@wordpress/eslint-plugin": "^5.1.0",
     "autoprefixer": "^9.7.6",
@@ -41,10 +42,7 @@
     "grunt-sass": "^3.1.0",
     "grunt-version": "^2.0.0",
     "grunt-wp-i18n": "^1.0.3",
-    "node-sass": "^4.14.0"
-  },
-  "dependencies": {
-    "responsive-foundation": "git+ssh://git@github.com:bu-ist/responsive-foundation#4.0.0",
+    "node-sass": "^4.14.0",
     "stylelint": "^13.3.3",
     "stylelint-config-wordpress": "^16.0.0"
   },
