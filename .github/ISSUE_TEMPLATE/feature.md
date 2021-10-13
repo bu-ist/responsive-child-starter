@@ -27,6 +27,11 @@ assignees: ''
 - [ ] Tech specs
 - [ ] (fill in)
 
+**Additional info, requests, or considerations**
+- [ ] List any design/styling info
+- [ ] List any markup info
+- [ ] List any backend/admin/metabox info
+
 **Acceptance criteria**
 
 - [ ] Criteria
