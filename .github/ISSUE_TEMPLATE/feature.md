@@ -12,18 +12,27 @@ assignees: ''
 * Problem description
 * Related idea number, if applicable
 
+**What are the business requirements?**
+
+- [ ] Business requirements
+- [ ] (fill in)
+
 **What kind of content is required to make this feature work? Please describe.**
 
-* Content requirements
+- [ ] Content requirements
+- [ ] (fill in)
 
 **How will this feature be built?**
 
-* Tech specs
+- [ ] Tech specs
+- [ ] (fill in)
 
 **Acceptance criteria**
 
-* Criteria
+- [ ] Criteria
+- [ ] (fill in)
 
 **Related components**
 
-* List any related components by issue number
+- [ ] List any related components by issue number
+- [ ] (fill in)
