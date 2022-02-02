@@ -1,6 +1,11 @@
 # [Project Name]
 
-A starter template for child themes of the Responsive Framework.
+A starter template for child themes of Responsive Framework 2. For Responsive Framework 3, please see https://github.com/bu-ist/responsive-child-starter-3x/.
+
+## Supported Technologies 
+Please update this if you have a newer version of Node and can verify the theme compiles with it.
+- **Node version:** Tested up to X. 
+- **npm version:** Tested up to X. 
 
 **CREATIVE DIRECTOR:** Please provide a brief description here, then fill out links below
 and set up a new [Github Project](https://github.com/bu-ist/responsive-child-starter/wiki/Setting-up-Github-Projects).
