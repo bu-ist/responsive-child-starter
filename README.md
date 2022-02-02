@@ -147,6 +147,7 @@ Please update this if you have a newer version of Node and can verify the theme 
 ## Troubleshooting
 ### Compiling errors
 You'll see these types of errors in the terminal, and this should be your first stop if anything isn't working as expected, including styles not showing up. Try running the following if your theme is not compiling successfully when you run `grunt build`.
+1. If this theme successfully compiled before, check for a code error first. Look for red in the terminal, and see if you can trace it back to a file and line number. If the error is in your code, try to fix the error. If the error is in Responsive Foundation, continue with the following steps to see if it can be resolved. Both CSS and JavaScript errors can cause this behavior.
 1. Delete `package-lock.json`, then run `npm install`, even if you have already run it before.
 2. Run `node -v` and `npm -v` to see your current node and npm versions. Do they match the versions in the [supported technologies list](#supported-technologies)? If not, use nvm to change the version by running `nvm use [VERSION NUMBER]`, where `[VERSION NUMBER]` is replaced with the version from the list above.
 3. Run `npm rebuild node-sass --force`, then rerun `npm install`. This one is helpful if you see a Node Sass OSX bindings error, or just switched npm/node versions for this theme.
