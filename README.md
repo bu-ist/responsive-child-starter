@@ -1,14 +1,9 @@
 # [Project Name]
 
-A starter template for child themes of Responsive Framework 2. For Responsive Framework 3, please see https://github.com/bu-ist/responsive-child-starter-3x/.
-
-## Supported Technologies 
-Please update this if you have a newer version of Node and can verify the theme compiles with it.
-- **Node version:** Tested up to X. 
-- **npm version:** Tested up to X. 
-
 **CREATIVE DIRECTOR:** Please provide a brief description here, then fill out links below
 and set up a new [Github Project](https://github.com/bu-ist/responsive-child-starter/wiki/Setting-up-Github-Projects).
+
+> A starter template for child themes of Responsive Framework 2. For Responsive Framework 3, please see https://github.com/bu-ist/responsive-child-starter-3x/.
 
 ## Quick Start
 
@@ -45,8 +40,32 @@ Check out [Dining Documentation](http://wpdocs.bu.edu/dining/) for an awesome ex
 
 ## Information for collaborators
 - [Getting Ready to Work with Boston University's WordPress Team](https://docs.google.com/document/d/1rKIYzcFiFiZaD6_Im-vbXMlfAuJ8C9GMSj1j91CtyI4/edit?usp=sharing)
-=======
+
 Before you begin, make sure [Node / Node Package Manager](http://nodejs.org/)
 are installed and the following dependencies are installed globally.
 
-Responsive is verified to work through Node version 12.19.0 LTS.
+## Supported Technologies 
+Please update this if you have a newer version of Node and can verify the theme compiles with it.
+| Name | Version | Purpose |
+|---|---|---|
+| node.js | 12.19.0 LTS | Support for npm |
+| npm | X | Package management. See package.json for a full list of packages. |
+| [@babel/core](https://babeljs.io/docs/en/babel-core) | See package.json | Allows you to use newer JavaScript (ES6) syntax, such as import and arrow functions. |
+| [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env) | See package.json | Allows you to tell Babel which browsers to provide compatibility for. |
+| [@wordpress/babel-preset-default](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-babel-preset-default/) | See package.json | Default Babel preset for WordPress development. |
+| [@wordpress/eslint-plugin](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-eslint-plugin/) | See package.json | JavaScript linting, configurations and custom rules for WordPress development. |
+| [autoprefixer](https://github.com/postcss/autoprefixer) | See package.json | Adds browser prefixes to CSS. Used with PostCSS. |
+| [babelify](https://github.com/babel/babelify) | See package.json | Sends anything going through Browserify on to Babel. |
+| [browserify-shim](https://github.com/thlorenz/browserify-shim) | See package.json | Allows jQuery and other non-Common JS libraries to go through Browserify. |
+| [eslint](https://eslint.org/) | See package.json | Lints JavaScript, checks against coding standards and finds errors. |
+| [grunt](https://gruntjs.com/) | See package.json | Compiles the theme SCSS and runs commands like linting. We plan to replace this in the future. |
+| [grunt-browserify](https://www.npmjs.com/package/grunt-browserify) | See package.json | Lets you require modules. In this theme, it handles the jQuery dependency. |
+| [grunt-contrib-clean](https://www.npmjs.com/package/grunt-contrib-clean) | See package.json | Small utility to clean out files and folders as part of compiling. |
+| [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat) | See package.json | Combines separate JavaScript files into one as part of compiling. |
+| [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy) | See package.json | Copies files and folders as part of compiling. |
+| [grunt-contrib-uglify](https://www.npmjs.com/package/grunt-contrib-uglify) | See package.json | Minifies files as part of compiling. |
+| [grunt-postcss](https://www.npmjs.com/package/grunt-postcss) | See package.json | Adds CSS browser prefixes as part of compiling. |
+| [grunt-sass](https://www.npmjs.com/package/grunt-sass) | See package.json | Settings to compile SCSS files as part of compiling process. |
+| [grunt-version](https://www.npmjs.com/package/grunt-version) | See package.json | Looks for a version number in package.json and copies it to other files during the compiling process. |
+| [grunt-wp-i18n](https://www.npmjs.com/package/grunt-wp-i18n) | See package.json | Sets internationalization theme domain text throughout the theme as part of compiling. |
+| [node-sass](https://www.npmjs.com/package/node-sass) | See package.json | Compiles the SCSS according to grunt settings as part of compiling. We currently use the LibSass setting behind the scenes as compiling engine. Dart Sass is possible to use, but is much slower. |
