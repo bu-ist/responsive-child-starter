@@ -51,7 +51,7 @@ Please update this if you have a newer version of Node and can verify the theme 
 | node.js | 12.19.0 LTS | Support for npm |
 | npm | X | Package management. See package.json for a full list of packages. |
 | [@babel/core](https://babeljs.io/docs/en/babel-core) | See package.json | Allows you to use newer JavaScript (ES6) syntax, such as import and arrow functions. |
-| [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env) | See package.json | Allows you to tell Babel which browsers to provide compatibility for. |
+| [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env) | See package.json | Allows you to tell Babel which browsers to provide compatibility for. Settings are set according to [our browser support standards](https://www.bu.edu/tech/services/cccs/websites/www/wordpress/design-options/custom/browser-support-for-custom-bu-wordpress-themes/). |
 | [@wordpress/babel-preset-default](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-babel-preset-default/) | See package.json | Default Babel preset for WordPress development. |
 | [@wordpress/eslint-plugin](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-eslint-plugin/) | See package.json | JavaScript linting, configurations and custom rules for WordPress development. |
 | [autoprefixer](https://github.com/postcss/autoprefixer) | See package.json | Adds browser prefixes to CSS. Used with PostCSS. |
