@@ -151,3 +151,17 @@ You'll see these types of errors in the terminal, and this should be your first 
 1. Delete `package-lock.json`, then run `npm install`, even if you have already run it before.
 2. Run `node -v` and `npm -v` to see your current node and npm versions. Do they match the versions in the [supported technologies list](#supported-technologies)? If not, use nvm to change the version by running `nvm use [VERSION NUMBER]`, where `[VERSION NUMBER]` is replaced with the version from the list above.
 3. Run `npm rebuild node-sass --force`, then rerun `npm install`. This one is helpful if you see a Node Sass OSX bindings error, or just switched npm/node versions for this theme.
+
+### "X isn't showing on my sandbox" errors
+Once you've confirmed your theme is compiling, the next step is to make sure your files are uploading correctly.
+1. If you are using monitoring or upload on save, check that the monitoring is actually enabled.
+2. Check the settings in your FTP tool of choice (usually SFTP for Sublime Text, Publishing settings in Coda, or SFTP for VSCode). Is your theme mapped to the correct sandbox, and uploading to the correct folder?
+3. Create a simple text file in your code editor, such as `text.txt`. Upload (don't monitor) the file using your code editor. Now, open a FTP program such as Transmit, Filezilla, or Cyberduck, and navigate to your theme folder in the server. Did the file upload? If so, your FTP is working correctly, and this is either a monitoring problem (go back to step 1) or a CSS problem (go to the next section).
+
+### Styling errors
+If you've confirmed a file is uploading, but the CSS you expect to see still isn't showing up, it's probably your CSS selector. Here's how to test that.
+1. Choose a very broad text selector you can easily see, such as `body` or `h1`. Set the color to red, and use the important flag, like so: `h1 { color: red !important; }` Upload your file again.
+2. If you see the change, the problem is with your selector and overriding. If you do not see the change, try one more time with a different selector.
+3. If you still do not see the change, clear your cache. Try a hard refresh first (shift+cmd+r). You can also try opening a private window.
+4. If you _still_ do not see the change, wait five minutes, and try again. Rarely, the issue will be with caching on the server side. Grab a coffee, come back, and give it one more try.
+5. If you're still not seeing the change here, it's time to ask for help. See if a designer or developer has a few minutes to help you out in the #interactive-design channel.
