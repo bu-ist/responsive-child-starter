@@ -111,7 +111,7 @@ Please update this if you have a newer version of Node and can verify the theme 
 ### Frontend Dependencies
 | Name | Version | Purpose |
 |---|---|---|
-| Responsive Foundation (Required) | X | Basic styles and utilities for all Boston University themes |
+| Responsive Foundation (Required) | 4.0.0 | Basic styles and utilities for all Boston University themes |
 | BU PrePress (Optional, delete if irrelevant to this project) | X | Editorial tools for Boston University schools and colleges which produce magazines or other news publications. |
 | BU Blocks (Optional, delete if irrelevant to this project) | X | Custom Gutenberg blocks for Boston University websites. Required by BU PrePress. |
 
