@@ -46,10 +46,16 @@ are installed and the following dependencies are installed globally.
 
 ## Supported Technologies 
 Please update this if you have a newer version of Node and can verify the theme compiles with it.
+
+### Package Management
 | Name | Version | Purpose |
 |---|---|---|
 | node.js | 12.19.0 LTS | Support for npm |
 | npm | X | Package management. See package.json for a full list of packages. |
+
+### Linting and Browser Support Tools
+| Name | Version | Purpose |
+|---|---|---|
 | [@babel/core](https://babeljs.io/docs/en/babel-core) | See package.json | Allows you to use newer JavaScript (ES6) syntax, such as import and arrow functions. |
 | [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env) | See package.json | Allows you to tell Babel which browsers to provide compatibility for. Settings are set according to [our browser support standards](https://www.bu.edu/tech/services/cccs/websites/www/wordpress/design-options/custom/browser-support-for-custom-bu-wordpress-themes/). |
 | [@wordpress/babel-preset-default](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-babel-preset-default/) | See package.json | Default Babel preset for WordPress development. |
@@ -58,6 +64,10 @@ Please update this if you have a newer version of Node and can verify the theme 
 | [babelify](https://github.com/babel/babelify) | See package.json | Sends anything going through Browserify on to Babel. |
 | [browserify-shim](https://github.com/thlorenz/browserify-shim) | See package.json | Allows jQuery and other non-Common JS libraries to go through Browserify. |
 | [eslint](https://eslint.org/) | See package.json | Lints JavaScript, checks against coding standards and finds errors. |
+
+### Task Management and Compilation Tools
+| Name | Version | Purpose |
+|---|---|---|
 | [grunt](https://gruntjs.com/) | See package.json | Compiles the theme SCSS and runs commands like linting. We plan to replace this in the future. |
 | [grunt-browserify](https://www.npmjs.com/package/grunt-browserify) | See package.json | Lets you require modules. In this theme, it handles the jQuery dependency. |
 | [grunt-contrib-clean](https://www.npmjs.com/package/grunt-contrib-clean) | See package.json | Small utility to clean out files and folders as part of compiling. |
