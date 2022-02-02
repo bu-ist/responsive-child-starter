@@ -1,23 +1,40 @@
 # [Project Name]
 
-**CREATIVE DIRECTOR:** Please provide a brief description here, then fill out links below
-and set up a new [Github Project](https://github.com/bu-ist/responsive-child-starter/wiki/Setting-up-Github-Projects).
+---
+## Setup instructions (delete after repository setup is complete)
+
+- [ ] **DEVELOPER:** Please set up CodeClimate and branch protections.
+- [ ] **DEVELOPER:** Please review [supported technologies](#supported-technologies) and see if any immediate changes are needed for your project. Apply security updates on first install using `npm run fix`, if any, and ensure the theme still compiles by running `grunt build`.
+- [ ] **CREATIVE DIRECTOR:** Please [import our standard label set](https://github.com/bu-ist/responsive-child-starter/wiki/Import-Labels).
+- [ ] **CREATIVE DIRECTOR:** Please provide a brief description of the purpose of the theme in the next section, then fill out the [project information](#project-information) section.
+and set up a new [Github Project](https://github.com/bu-ist/responsive-child-starter/wiki/Set-up-Github-Projects).
+- [ ] **CREATIVE DIRECTOR:** Please set up a documentation site.
+	- Clone http://wpdocs.bu.edu/ to http://wpdocs.bu.edu/yoursitename.
+- [ ] **CREATIVE DIRECTOR:** Please review [project information](#project-information) and see if any immediate changes are needed for your project.
+- [ ] **DEVELOPER:** Please review [development workflow](#development-workflow) and see if any immediate changes are needed for your project.
+- [ ] **ENTIRE TEAM:** Please review [project information](#project-information) together and approve.
+- [ ] **ENTIRE TEAM:** Please review [development workflow](#development-workflow) together and approve.
+
+You're ready for work! Go ahead and delete this section when all boxes are checked.
+
+---
 
 A starter template for child themes of Responsive Framework 2. For Responsive Framework 3, please see https://github.com/bu-ist/responsive-child-starter-3x/.
 
-## Quick Start
-Before you begin, make sure [Node / Node Package Manager](http://nodejs.org/)
-are installed and the following dependencies are installed globally. See [[Supported Technologies]] for more in-depth information on dependencies.
+**Contents:**
+- [Quick start](#quick-start)
+- [Project information](#project-information)
+- [Development workflow](#development-workflow)
+- [Supported technologies](#supported-technologies)
+
+---
+
+## Quick start
 
 - [Set up a new custom theme](https://github.com/bu-ist/responsive-child-starter/wiki/Set-up-a-new-custom-theme)
 - Install your [development dependencies](https://github.com/bu-ist/responsive-child-starter/wiki/Install-development-dependencies)
 - Run  `npm install`, then `grunt` to begin watching changes.
 - Upload to [your sandbox](http://sites.bu.edu/marcom-team/departments/interactive-design/interactive-design-workflow/development/sandboxes-overview/) to see changes.
-
-## Contributing to the codebase
-- [Git-Flow](https://www.git-tower.com/help/guides/integration/git-flow/mac) will be the workflow.
-
----
 
 ### Common commands this theme supports
 
@@ -26,39 +43,11 @@ are installed and the following dependencies are installed globally. See [[Suppo
 - `grunt build`: Manually build all theme assets.
 - `grunt version`: [Force CSS and JavaScript to refresh when you deploy changes](https://github.com/bu-ist/responsive-child-starter/wiki/Versioning).
 
-### Pull Requests:
-- Pull requests should stay in `draft` status until they are actually ready for review.
-- [todo] Decide how to handle `code review` vs `functionality review`.
-
-### Github Project Organization
-- This project uses [PLEASE CHOOSE: GITHUB PROJECTS OR GITHUB PROJECTS BETA]. See the project here: [PROJECT LINK HERE]
-- Boards you'll find:
-  - [PLEASE LIST IMPORTANT BOARDS]
-
-### Issue Tags & Columns, Assignees, etc:
-- [ADD RELEVANT INFORMATION SPECIFIC TO YOUR WORKFLOW HERE]
-
-### Branch structure:
-- `main` & `develop` will be used, but _never_ directly committed to.
-- All changes should be in branches based off of `develop` and include the **issue #** when there is one. Examples:
-  - branches/18-repo-setup
-  - branches/29-foundational-styles
-  - branches/feature/53-glossary
-  - branches/hotfix/99-branding-explosion
-- Frontend vs Backend branches. Only when complex & necessary should we make seperate branches created for the **same feature/issue**.
-
 ---
 
-## Setting up a Documentation site
+## Project information
 
-It is best to create the documentation site right out of the gate. This way documentation of features can happen through out the project instead of piling up at the end.
-- Clone http://wpdocs.bu.edu/ to http://wpdocs.bu.edu/yoursitename
-- Apply your theme 
-- Edit/cut anything existing that doesn’t apply to your custom theme
-- Add new pages for custom functionality as needed.
-Check out [Dining Documentation](http://wpdocs.bu.edu/dining/) for an awesome example!
-
-## Project links
+### Important links
 
 - **Webteam:** [LINK HERE]()
 - **ID Presents:** [LINK HERE]()
@@ -68,8 +57,44 @@ Check out [Dining Documentation](http://wpdocs.bu.edu/dining/) for an awesome ex
 - **Github Issues:** [LINK HERE]()
 - **Github Projects:** [LINK HERE]()
 
-## Information for collaborators
+**Information for collaborators**
 - [Getting Ready to Work with Boston University's WordPress Team](https://docs.google.com/document/d/1rKIYzcFiFiZaD6_Im-vbXMlfAuJ8C9GMSj1j91CtyI4/edit?usp=sharing)
+
+### Github Project Organization
+- This project uses [PLEASE CHOOSE: GITHUB PROJECTS OR GITHUB PROJECTS BETA]. See the project here: [PROJECT LINK HERE]
+- Boards you'll find:
+  - [PLEASE LIST IMPORTANT BOARDS]
+
+### Issue Tags & Columns, Assignees, etc:
+- [ADD RELEVANT INFORMATION SPECIFIC TO YOUR WORKFLOW HERE]
+
+---
+
+## Development workflow
+- [Git-Flow](https://www.git-tower.com/help/guides/integration/git-flow/mac) will be the workflow.
+
+### Pull requests
+- Pull requests should stay in `draft` status until they are actually ready for review.
+- [todo] Decide how to handle `code review` vs `functionality review`.
+
+### Branch structure
+- `main` & `develop` will be used, but _never_ directly committed to.
+- All changes should be in branches based off of `develop` and include the **issue #** when there is one. Examples:
+  - branches/18-repo-setup
+  - branches/29-foundational-styles
+  - branches/feature/53-glossary
+  - branches/hotfix/99-branding-explosion
+- Frontend vs Backend branches. Only when complex & necessary should we make seperate branches created for the **same feature/issue**.
+
+### Code review and CodeClimate
+- Code reviews are required to merge.
+- CodeClimate is not required to merge. However, you should make your best effort to fix CodeClimate errors within reason.
+
+### Environments
+- All active development will happen in team member sandboxes.
+- All code ready for review will be uploaded to the shared `id-presents` sandbox before review with the client.
+- All code that is merged to `develop` is ready to deploy to staging at any time.
+- All code that is released to staging will be done via release numbers.
 
 --- 
 
