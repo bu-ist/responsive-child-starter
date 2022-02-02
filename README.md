@@ -26,6 +26,7 @@ A starter template for child themes of Responsive Framework 2. For Responsive Fr
 - [Project information](#project-information)
 - [Development workflow](#development-workflow)
 - [Supported technologies](#supported-technologies)
+- [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -107,6 +108,13 @@ Please update this if you have a newer version of Node and can verify the theme 
 | node.js | 12.19.0 LTS | Support for npm |
 | npm | X | Package management. See package.json for a full list of packages. |
 
+### Frontend Dependencies
+| Name | Version | Purpose |
+|---|---|---|
+| Responsive Foundation (Required) | X | Basic styles and utilities for all Boston University themes |
+| BU PrePress (Optional, delete if irrelevant to this project) | X | Editorial tools for Boston University schools and colleges which produce magazines or other news publications. |
+| BU Blocks (Optional, delete if irrelevant to this project) | X | Custom Gutenberg blocks for Boston University websites. Required by BU PrePress. |
+
 ### Linting and Browser Support Tools
 | Name | Version | Purpose |
 |---|---|---|
@@ -133,3 +141,12 @@ Please update this if you have a newer version of Node and can verify the theme 
 | [grunt-version](https://www.npmjs.com/package/grunt-version) | See package.json | Looks for a version number in package.json and copies it to other files during the compiling process. |
 | [grunt-wp-i18n](https://www.npmjs.com/package/grunt-wp-i18n) | See package.json | Sets internationalization theme domain text throughout the theme as part of compiling. |
 | [node-sass](https://www.npmjs.com/package/node-sass) | See package.json | Compiles the SCSS according to grunt settings as part of compiling. We currently use the LibSass setting behind the scenes as compiling engine. Dart Sass is possible to use, but is much slower. |
+
+--- 
+
+## Troubleshooting
+### Compiling errors
+You'll see these types of errors in the terminal, and this should be your first stop if anything isn't working as expected, including styles not showing up. Try running the following if your theme is not compiling successfully when you run `grunt build`.
+1. Delete `package-lock.json`, then run `npm install`, even if you have already run it before.
+2. Run `node -v` and `npm -v` to see your current node and npm versions. Do they match the versions in the [supported technologies list](#supported-technologies)? If not, use nvm to change the version by running `nvm use [VERSION NUMBER]`, where `[VERSION NUMBER]` is replaced with the version from the list above.
+3. Run `npm rebuild node-sass --force`, then rerun `npm install`. This one is helpful if you see a Node Sass OSX bindings error, or just switched npm/node versions for this theme.
