@@ -3,23 +3,53 @@
 **CREATIVE DIRECTOR:** Please provide a brief description here, then fill out links below
 and set up a new [Github Project](https://github.com/bu-ist/responsive-child-starter/wiki/Setting-up-Github-Projects).
 
-> A starter template for child themes of Responsive Framework 2. For Responsive Framework 3, please see https://github.com/bu-ist/responsive-child-starter-3x/.
+A starter template for child themes of Responsive Framework 2. For Responsive Framework 3, please see https://github.com/bu-ist/responsive-child-starter-3x/.
 
 ## Quick Start
+Before you begin, make sure [Node / Node Package Manager](http://nodejs.org/)
+are installed and the following dependencies are installed globally. See [[Supported Technologies]] for more in-depth information on dependencies.
 
 - [Set up a new custom theme](https://github.com/bu-ist/responsive-child-starter/wiki/Set-up-a-new-custom-theme)
 - Install your [development dependencies](https://github.com/bu-ist/responsive-child-starter/wiki/Install-development-dependencies)
 - Run  `npm install`, then `grunt` to begin watching changes.
 - Upload to [your sandbox](http://sites.bu.edu/marcom-team/departments/interactive-design/interactive-design-workflow/development/sandboxes-overview/) to see changes.
 
-## Common commands this theme supports
+## Contributing to the codebase
+- [Git-Flow](https://www.git-tower.com/help/guides/integration/git-flow/mac) will be the workflow.
+
+---
+
+### Common commands this theme supports
 
 - `npm install`: Install your development dependencies
 - `grunt`: Watch your theme for changes and compile when a change is detected.
 - `grunt build`: Manually build all theme assets.
 - `grunt version`: [Force CSS and JavaScript to refresh when you deploy changes](https://github.com/bu-ist/responsive-child-starter/wiki/Versioning).
 
-## Setting up Documentation site
+### Pull Requests:
+- Pull requests should stay in `draft` status until they are actually ready for review.
+- [todo] Decide how to handle `code review` vs `functionality review`.
+
+### Github Project Organization
+- This project uses [PLEASE CHOOSE: GITHUB PROJECTS OR GITHUB PROJECTS BETA]. See the project here: [PROJECT LINK HERE]
+- Boards you'll find:
+  - [PLEASE LIST IMPORTANT BOARDS]
+
+### Issue Tags & Columns, Assignees, etc:
+- [ADD RELEVANT INFORMATION SPECIFIC TO YOUR WORKFLOW HERE]
+
+### Branch structure:
+- `main` & `develop` will be used, but _never_ directly committed to.
+- All changes should be in branches based off of `develop` and include the **issue #** when there is one. Examples:
+  - branches/18-repo-setup
+  - branches/29-foundational-styles
+  - branches/feature/53-glossary
+  - branches/hotfix/99-branding-explosion
+- Frontend vs Backend branches. Only when complex & necessary should we make seperate branches created for the **same feature/issue**.
+
+---
+
+## Setting up a Documentation site
 
 It is best to create the documentation site right out of the gate. This way documentation of features can happen through out the project instead of piling up at the end.
 - Clone http://wpdocs.bu.edu/ to http://wpdocs.bu.edu/yoursitename
@@ -41,8 +71,7 @@ Check out [Dining Documentation](http://wpdocs.bu.edu/dining/) for an awesome ex
 ## Information for collaborators
 - [Getting Ready to Work with Boston University's WordPress Team](https://docs.google.com/document/d/1rKIYzcFiFiZaD6_Im-vbXMlfAuJ8C9GMSj1j91CtyI4/edit?usp=sharing)
 
-Before you begin, make sure [Node / Node Package Manager](http://nodejs.org/)
-are installed and the following dependencies are installed globally.
+--- 
 
 ## Supported Technologies 
 Please update this if you have a newer version of Node and can verify the theme compiles with it.
