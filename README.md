@@ -5,6 +5,7 @@
 
 - [ ] **DEVELOPER:** Please [set up CodeClimate and branch protections](https://sites.bu.edu/marcom-team/departments/interactive-design/interactive-design-workflow/development/git-repo-create-new/).
 - [ ] **DEVELOPER:** Please review [supported technologies](#supported-technologies) and see if any immediate changes are needed for your project. Apply security updates on first install using `npm run fix`, if any, and ensure the theme still compiles by running `grunt build`.
+- [ ] **CREATIVE DIRECTOR AND DEVELOPER:** Please review the Plugins section of Supported Technologies, and add or remove any plugins as needed for your theme.
 - [ ] **CREATIVE DIRECTOR:** Please [import our standard label set](https://github.com/bu-ist/responsive-child-starter/wiki/Import-Labels).
 - [ ] **CREATIVE DIRECTOR:** Please provide a brief description of the purpose of the theme in the next section, then fill out the [project information](#project-information) section.
 and set up a new [Github Project](https://github.com/bu-ist/responsive-child-starter/wiki/Set-up-Github-Projects).
@@ -101,6 +102,28 @@ A starter template for child themes of Responsive Framework 2. For Responsive Fr
 
 ## Supported Technologies 
 Please update this if you have a newer version of Node and can verify the theme compiles with it.
+
+### Plugins and Framework Version
+Please remove any plugins you do not plan to support in this theme.
+- Responsive Framework 2x
+- [BU Navigation](https://github.com/bu-ist/bu-navigation)
+- [BU Banners](https://github.com/bu-ist/bu-banners)
+- [BU Front End Library](https://github.com/bu-ist/bu-front-end-library)
+- [BU Profiles](https://github.com/bu-ist/bu-profiles/)
+- [BU Landing Pages](https://github.com/bu-ist/bu-landing-pages/)
+- [BU Program Pages](https://github.com/bu-ist/bu-program-pages)
+- [BU Filtering](https://github.com/bu-ist/bu-filtering)
+- [BU Post Details](https://github.com/bu-ist/bu-post-details)
+- [BU Sharing](https://github.com/bu-ist/bu-sharing)
+- [BU Slideshow](https://github.com/bu-ist/bu-slideshow)
+- [BU Text Widget](https://github.com/bu-ist/bu-text-widget)
+- [Course Feeds](https://github.com/bu-ist/course-feeds)
+- [cmb2](https://github.com/bu-ist/CMB2)
+- [Display Posts](https://github.com/bu-ist/display-posts)
+- Gutenberg in the following areas:
+	- [PLEASE LIST PAGES, SECTIONS, POST TYPES, ETC]
+- [BU PrePress](https://github.com/bu-ist/bu-prepress)
+- [BU Blocks](https://github.com/bu-ist/bu-blocks/)
 
 ### Package Management
 | Name | Version | Purpose |
