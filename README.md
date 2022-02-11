@@ -3,7 +3,7 @@
 ---
 ## Setup instructions (delete after repository setup is complete)
 
-- [ ] **DEVELOPER:** Please set up CodeClimate and branch protections.
+- [ ] **DEVELOPER:** Please [set up CodeClimate and branch protections](https://sites.bu.edu/marcom-team/departments/interactive-design/interactive-design-workflow/development/git-repo-create-new/).
 - [ ] **DEVELOPER:** Please review [supported technologies](#supported-technologies) and see if any immediate changes are needed for your project. Apply security updates on first install using `npm run fix`, if any, and ensure the theme still compiles by running `grunt build`.
 - [ ] **CREATIVE DIRECTOR:** Please [import our standard label set](https://github.com/bu-ist/responsive-child-starter/wiki/Import-Labels).
 - [ ] **CREATIVE DIRECTOR:** Please provide a brief description of the purpose of the theme in the next section, then fill out the [project information](#project-information) section.
