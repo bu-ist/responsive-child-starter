@@ -3,6 +3,7 @@
 ---
 ## Setup instructions (delete after repository setup is complete)
 
+- [ ] **DEVELOPER AND CREATIVE DIRECTOR:** Choose a framework version to develop your work on. This repo will create a child theme using Responsive Framework 2x, which is the stable version. The beta version is Responsive Framework 3x and can be started from [responsive-child-starter-3x](https://github.com/bu-ist/responsive-child-starter-3x). If you choose the beta version, you will get the newest updates, but you will also run into bugs which need to be fixed. Please factor in project time to assist in fixing these bugs when choosing versions.
 - [ ] **DEVELOPER:** Please [set up CodeClimate and branch protections](https://sites.bu.edu/marcom-team/departments/interactive-design/interactive-design-workflow/development/git-repo-create-new/).
 - [ ] **DEVELOPER:** Please review [supported technologies](#supported-technologies) and see if any immediate changes are needed for your project. Apply security updates on first install using `npm run fix`, if any, and ensure the theme still compiles by running `grunt build`.
 - [ ] **CREATIVE DIRECTOR AND DEVELOPER:** Please review the Plugins section of Supported Technologies, and add or remove any plugins as needed for your theme.
