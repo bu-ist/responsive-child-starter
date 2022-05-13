@@ -12,13 +12,11 @@ jobs:
         uses: actions/checkout@v2
       -
         name: Run Labeler
-        if: success()
-        uses: crazy-max/ghaction-github-labeler@v3
+        uses: ulbme/gh-action-manage-label@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          yaml-file: .github/labels.yml
+          from: https://raw.githubusercontent.com/bu-ist/responsive-child-starter/labels-patch-1/.github/labels.yml
           skip-delete: true
-          dry-run: false
           exclude: |
             help*
             *issue
