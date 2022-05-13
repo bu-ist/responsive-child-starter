@@ -10,28 +10,22 @@
 - name: "🚦 Question"
   color: F5B404
 - name: "💡 Duplicate"
-  from_name: 'duplicate'
   color: ffffff
 - name: "💡 Idea"
   color: CDFBFF
 - name: "💡 Feature"
   color: 9BF7FF
 - name: "💡 Bug"
-  from_name: 'bug'
   color: 9BF7FF
 - name: "💡 Enhancement"
   color: 39F0FF
-  from_name: 'enhancement'
 - name: '✅ Needs requirements'
   color: E0F7C9
 - name: '✅ Needs frontend'
-  from_name: '✅ To Do: HTML/CSS'
   color: E0F7C9
 - name: '✅ Needs backend'
-  from_name: '✅ To Do: PHP'
   color: E0F7C9
 - name: '✅ Needs documentation'
-  from_name: '✅ To Do: Documentation'
   color: C1EF93
 - name: '⏰ Critical'
   color: D33336
@@ -43,7 +37,6 @@
   color: FBD7D8
 - name: '⏰ Deferred'
   color: FEF2F2
-  from_name: 'wontfix'
 - name: '🔌 BU Banners'
   color: F0DCFF
 - name: '🔌 BU Blocks'
