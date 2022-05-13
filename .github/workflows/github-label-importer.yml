@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v2
       -
         name: Run Labeler
-        uses: ulbme/gh-action-manage-label@v1
+        uses: julbme/gh-action-manage-label@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           from: https://raw.githubusercontent.com/bu-ist/responsive-child-starter/labels-patch-1/.github/labels.yml
