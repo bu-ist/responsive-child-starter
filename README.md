@@ -36,6 +36,7 @@ A starter template for child themes of Responsive Framework 2. For Responsive Fr
 
 - [Set up a new custom theme](https://github.com/bu-ist/responsive-child-starter/wiki/Set-up-a-new-custom-theme)
 - Install your [development dependencies](https://github.com/bu-ist/responsive-child-starter/wiki/Install-development-dependencies), including [nvm](https://github.com/nvm-sh/nvm) if you haven't already.
+- Run `nvm use` to set the correct node version.
 - Run  `npm install`, then `grunt` to begin watching changes.
 - Upload to [your sandbox](http://sites.bu.edu/marcom-team/departments/interactive-design/interactive-design-workflow/development/sandboxes-overview/) to see changes.
 
