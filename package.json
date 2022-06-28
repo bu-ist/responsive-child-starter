@@ -49,7 +49,6 @@
     "stylelint-config-wordpress": "^16.0.0"
   },
   "scripts": {
-    "preinstall": "nvm use",
     "postinstall": "grunt install",
     "styles:lint": "stylelint \"**/*.scss\" --cache || echo \"\"",
     "styles:fix": "stylelint \"**/*.scss\" --cache --fix --s || echo \"\" && npm run styles:fix:success --s && npm run styles:fix:warn --s",
