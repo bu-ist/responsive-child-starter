@@ -18,7 +18,7 @@
  *
  * @link https://semver.org/
  */
-define( 'RESPONSIVE_CHILD_THEME_VERSION', '0.0.1' );
+define( 'RESPONSIVE_CHILD_THEME_VERSION', '0.0.0' );
 
 /**
  * Specifies the responsive layout for the theme. Disables the option in the

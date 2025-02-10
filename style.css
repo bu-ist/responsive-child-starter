@@ -3,7 +3,7 @@
 Theme Name: Responsive Child Starter
 Author: Boston University Interactive Design
 Website: http://www.bu.edu/interactive-design/
-Version: 0.0.1
+Version: 0.0.0
 Description: Enter child theme description here
 Template: responsive-framework-2-x
 */
@@ -479,7 +479,6 @@ template {
 .ui-helper-hidden-accessible, .search-toggle span, .l-mega-nav .site-description, .event-time-make-sentence {
   border: 0;
   clip: rect(0, 0, 0, 0);
-  -webkit-clip-path: inset(50%);
   clip-path: inset(50%);
   height: 1px;
   margin: -1px;
@@ -615,7 +614,7 @@ template {
   font-style: normal;
 }
 
-.search-toggle.is-open::before, .mega-nav-toggle .nav-toggle-label-open::before, .bu_collapsible::before, .bu_collapsible_open > .bu_collapsible::before, .search-toggle::before, .gallery-icon a::before, .menu-item [href*="dropbox.com"]::before, .menu-item [href*="facebook.com"]::before, .menu-item [href*="flickr.com"]::before, .menu-item [href*="foursquare.com"]::before, .menu-item [href*="github.com"]::before, .menu-item [href*="plus.google.com"]::before, .menu-item [href*="instagram.com"]::before, .menu-item [href*="kickstarter.com"]::before, .menu-item [href*="linkedin.com"]::before, .menu-item [href*="pinterest.com"]::before, .menu-item [href*="getpocket.com"]::before, .menu-item [href*="reddit.com"]::before, .menu-item [href*="snapchat.com"]::before, .menu-item [href*="twitter.com"]::before, .menu-item [href*="tumblr.com"]::before, .menu-item [href*="vimeo.com"]::before, .menu-item [href*="vine.co"]::before, .menu-item [href*="youtube.com"]::before,
+.search-toggle.is-open::before, .mega-nav-toggle .nav-toggle-label-open::before, .bu_collapsible::before, .bu_collapsible_open > .bu_collapsible::before, .search-toggle::before, .gallery-icon a::before, .menu-item [href*="bsky.app"]::before, .menu-item [href*="dropbox.com"]::before, .menu-item [href*="facebook.com"]::before, .menu-item [href*="flickr.com"]::before, .menu-item [href*="foursquare.com"]::before, .menu-item [href*="github.com"]::before, .menu-item [href*="plus.google.com"]::before, .menu-item [href*="instagram.com"]::before, .menu-item [href*="kickstarter.com"]::before, .menu-item [href*="linkedin.com"]::before, .menu-item [href*="pinterest.com"]::before, .menu-item [href*="getpocket.com"]::before, .menu-item [href*="reddit.com"]::before, .menu-item [href*="snapchat.com"]::before, .menu-item [href*="twitter.com"]::before, .menu-item [href*="tumblr.com"]::before, .menu-item [href*="vimeo.com"]::before, .menu-item [href*="vine.co"]::before, .menu-item [href*="x.com"]::before, .menu-item [href*="youtube.com"]::before,
 .menu-item [href*="bu.edu/buniverse"]::before, .icon-buhub::before, .icon-questionmark::before {
   color: unset;
   display: inline-block;
@@ -706,6 +705,18 @@ template {
 
 .gallery-icon a::before {
   content: "";
+}
+
+.lt-ie9:hover .menu-item [href*="bsky.app"], .menu-item .lt-ie9:hover [href*="bsky.app"] {
+  -ms-zoom: 1;
+}
+
+.menu-item [href*="bsky.app"] span {
+  display: none;
+}
+
+.menu-item [href*="bsky.app"]::before {
+  content: "";
 }
 
 .lt-ie9:hover .menu-item [href*="dropbox.com"], .menu-item .lt-ie9:hover [href*="dropbox.com"] {
@@ -910,6 +921,18 @@ template {
 
 .menu-item [href*="vine.co"]::before {
   content: "";
+}
+
+.lt-ie9:hover .menu-item [href*="x.com"], .menu-item .lt-ie9:hover [href*="x.com"] {
+  -ms-zoom: 1;
+}
+
+.menu-item [href*="x.com"] span {
+  display: none;
+}
+
+.menu-item [href*="x.com"]::before {
+  content: "";
 }
 
 .lt-ie9:hover .menu-item [href*="youtube.com"], .menu-item .lt-ie9:hover [href*="youtube.com"],
@@ -4072,7 +4095,7 @@ a:hover .bu-hub-iconstyles::before {
   padding: 10px 30px 9px 56px;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .brand-signature {
     background-image: url("https://www.bu.edu/cdn/images/logos/subbrand49x35-retina.png");
     background-size: 49px 35px;
@@ -4130,7 +4153,7 @@ a:hover .bu-hub-iconstyles::before {
   width: 112px;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .brand-masterplate {
     background-image: url("https://www.bu.edu/cdn/images/logos/masterplate112x50-retina.png");
     background-size: 112px 50px;
@@ -4144,7 +4167,7 @@ a:hover .bu-hub-iconstyles::before {
   width: 96px;
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+@media only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .brand-bumclogo {
     background-image: url("https://www.bu.edu/cdn/images/logos/bumclogo96x40-retina.png");
     background-size: 96px 40px;
