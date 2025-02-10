@@ -1,7 +1,7 @@
 {
   "name": "responsive-child-starter",
-  "version": "0.0.1",
-  "description": "A starting point for Responsive Framework child themes.",
+  "version": "0.0.0",
+  "description": "A starting point for Responsive Framework child themes. (2.3.0)",
   "repository": "https://github.com/bu-ist/responsive-child-starter/",
   "license": "GPL-3.0-or-later",
   "contributors": [
@@ -41,10 +41,8 @@
     "grunt-sass": "^3.1.0",
     "grunt-version": "^2.0.0",
     "grunt-wp-i18n": "^1.0.3",
-    "node-sass": "^4.14.0"
-  },
-  "dependencies": {
-    "responsive-foundation": "git+ssh://git@github.com:bu-ist/responsive-foundation#4.0.1",
+    "node-sass": "^4.14.0",
+    "responsive-foundation": "git+ssh://git@github.com:bu-ist/responsive-foundation#v4",
     "stylelint": "^13.3.3",
     "stylelint-config-wordpress": "^16.0.0"
   },
