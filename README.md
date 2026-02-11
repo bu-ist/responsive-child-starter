@@ -1,3 +1,5 @@
+Please use https://github.com/bu-ist/responsive-child-starter-3x for new projects.
+
 # [Project Name]
 
 ---
